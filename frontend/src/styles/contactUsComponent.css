@@ -1,0 +1,17 @@
+.contactField{
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputFields{
+    display: flex;
+    flex-direction: row;
+}
+
+.nameField{
+    display: flex;
+    flex-direction: row;
+}

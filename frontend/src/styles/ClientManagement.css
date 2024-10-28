@@ -1,0 +1,344 @@
+/* styles.css */
+
+.client-management-container {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.client-management-headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background-color: rgba(140, 144, 148, 0.18);
+}
+
+.client-management-tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.client-searchSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.client-srchwrapps{
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 34px;
+  position: relative;
+}
+.client-srchIntContnr {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.client-srchIcony {
+  position: absolute;
+  left: 12px; /* Adjust the position of the icon */
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: black;
+}
+
+.client-searchsInput {
+  width: 100%;
+  padding: 8px 16px 8px 40px; /* Increase the left padding to make space for the icon */
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+.client-searchsInput::placeholder {
+  color: black;
+}
+
+.client-searchInput:focus {
+  outline: none;
+}
+
+.client-dropdown {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.client-overviewSection {
+  padding: 10px;
+ 
+}
+
+.client-overviewSection p {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  margin: 10px 0;
+}
+
+.client-overviewTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: red;
+}
+
+
+
+.client-statBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #8c9094;
+  border-radius: 30px;
+  width: 15%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.client-statNumber {
+  font-size: 100%;
+  font-weight: bold;
+  /* margin-bottom: 5px; */
+  display: flex;
+}
+
+.client-statLabel {
+  font-size: 100%;
+  text-align: center;
+}
+
+.client-statIcon {
+  background-color: #d90000;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.client-performanceSection {
+  margin-bottom: 20px;
+}
+
+.client-performanceTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+.client-performanceStats {
+  display: flex;
+  gap: 20px;
+}
+
+.client-performanceBox {
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  border: 2px solid #8c9094;
+  width: 35%;
+  height: 12%;
+  padding: 20px;
+}
+
+.client-performanceBox p {
+  font-size: 12px;
+  color: #333;
+  margin: 0;
+  padding: 10px;
+}
+
+.client-performanceNumber {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.client-performanceLabel {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.client-listingsTableWrapper {
+  background-color: #e9ecef;
+  border-radius: 20px;
+  width: 100%;
+  height: 77px;
+}
+
+.manage-new-Button {
+  border: none;
+  color: black;
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.manage-new-Button:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+}
+
+.client-overviewStats{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Media queries for responsiveness */
+/* Styles for screen sizes between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+ .client-overviewSection{
+  
+ }
+ .client-overviewStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    "box1 box4"
+    "box2 box5"
+    "box3 .";
+}
+
+  .performanceStats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .client-management-headerSection {
+    display: flex;
+    align-items: flex-start;
+  }
+  .client-searchSection{
+  align-items: center;
+  margin-top: 20px;
+  }
+  .client-management-tabs{
+
+  }
+  .client-srchwrapps,
+  .client-statBox,
+  .client-performanceBox,
+  .client-manage-new-Button {
+    width: 100%;
+  }
+
+  .client-statBox {
+    padding: 10px;
+  }
+
+  .client-performanceBox {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+
+  .manage-new-Button {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+}
+
+
+/* Styles for screen sizes below 320px */
+@media (max-width: 320px) {
+
+  .client-management-tabs,
+  .searchSection,
+  .overviewStats,
+  .performanceStats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .client-management-headerSection {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+  }
+  .client-overviewStats {
+    display: flex;
+   flex-direction: column;
+  
+ 
+  }
+  .client-srchwrapps,
+  .client-statBox,
+  .client-performanceBox,
+  .client-manage-new-Button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .statBox {
+    padding: 5px;
+    display: grid;
+  }
+
+  .statIcon {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .statNumber,
+  .statLabel {
+    font-size: 12px;
+  }
+
+  .client-performanceBox {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .client-performanceBox p { 
+    font-size: 10px;
+  }
+
+  .client-performanceNumber {
+    font-size: 20px;
+  }
+
+  .client-performanceLabel {
+    font-size: 14px;
+  }
+  .client-performanceStats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  .manage-new-Button {
+    padding:15px 15px;
+    font-size: 12px;
+  }
+  .client-searchSection {
+    display: flex;
+  flex-direction: column;
+    gap: 10px;
+  }
+  .client-dropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .client-contentContainer{
+    margin: 20px;
+  }
+}

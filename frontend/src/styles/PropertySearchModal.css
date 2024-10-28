@@ -1,0 +1,113 @@
+/* General modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  transition: 0.3s;
+}
+
+.modal.show {
+  display: block; /* Show the modal */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  position: relative;
+  border-radius: 10px;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h2, 
+.modal-content h3 {
+  margin: 0;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.modal-content p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.modal-content ul, 
+.modal-content ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-content ul li,
+.modal-content ol li {
+  margin-bottom: 10px;
+}
+
+.property-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.property-search-form input,
+.property-search-form select,
+.property-search-form button {
+  padding: 10px;
+  margin: 5px 0;
+  width: calc(50% - 10px); /* Adjusting width to fit two fields per row */
+  box-sizing: border-box;
+}
+
+.property-search-form button {
+  width: 100%; /* Full width for the button */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.property-search-form button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+  }
+
+  .property-search-form input,
+  .property-search-form select,
+  .property-search-form button {
+    width: 100%; /* Full width for small screens */
+  }
+}

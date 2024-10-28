@@ -1,0 +1,471 @@
+.listing-steps-container {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 20 auto;
+  padding: 30px 30px 20px;
+  background: white;
+}
+
+
+.step-intro {
+  font-family: "Poppins", Helvetica;
+  margin: auto;
+  width: 100%;
+}
+
+.step-intro .p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  /* margin-top: 18px; */
+  width: 100%;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.steps {
+  font-family: "Poppins", Helvetica;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60%;
+  padding: 20px 20px 0;
+}
+.ant-steps-item.ant-steps-item-custom, .ant-steps-item{
+  margin: 0 10px;
+}
+
+.ant-steps-item-icon {
+  background-color: transparent !important;
+  border-color: #ff0000 !important;
+  border-width: 3px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px !important;
+  width: 23px !important;
+  height: 23px!important;
+  margin-inline-end: 20px !important;
+}
+
+.ant-steps-item-process .ant-steps-item-icon {
+  background-color: transparent !important;
+
+}
+
+.listing-steps-container .ant-steps-item .ant-steps-item-content{
+  min-height: 40px !important;
+}
+
+.listing-steps-container .ant-steps-item-finish .ant-steps-item-icon {
+  background-color: var(--red) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-steps-item-finish .ant-steps-icon {
+  color: #ffffff !important;
+  font-size: 16px;
+  /* padding-left: 20%; */
+}
+
+.ant-steps-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.ant-steps-item-wait .ant-steps-item-icon .ant-steps-icon {
+  display: none;
+}
+
+
+
+/* listing steps process */
+
+.listing-steps-process {
+
+  border-radius: 30px;
+  padding: 10%;
+  text-align: left;
+  /* background-color: #fceaea; */
+  border: 1px solid #d90000;
+  max-width: 90%;
+  margin: 0 20 auto;
+  margin-top: 2%;
+
+
+}
+
+.process-listing-info p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.process-listing-info p strong {
+  color: red;
+}
+
+.process-listing-status {
+  margin-top: 10px;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 35px;
+  /* Space for the custom radio */
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-radio-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px;
+  color: red;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-radio input:checked~.custom-radio-checkmark {
+  background-color: white;
+}
+
+.custom-radio input:checked~.custom-radio-checkmark:after {
+  display: block;
+}
+
+.process-preview-button {
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 8px 15px;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 65%;
+}
+
+
+
+
+/* Listing Denied */
+
+
+.listing-steps-denied {
+
+  border-radius: 30px;
+  padding: 10%;
+  text-align: left;
+  /* background-color: #fceaea; */
+  border: 1px solid #ff0000;
+  max-width: 90%;
+  margin: 0 20 auto;
+  margin-top: 2%;
+
+}
+
+.denied-listing-info p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.denied-listing-info p strong {
+  color: red;
+}
+
+.denied-listing-status {
+  margin-top: 10px;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 35px;
+  /* Space for the custom radio */
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-radio-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #FFDBDB;
+  border: 2px solid red;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px;
+  color: red;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-radio input:checked~.custom-radio-checkmark {
+  background-color: white;
+}
+
+.custom-radio input:checked~.custom-radio-checkmark:after {
+  display: block;
+}
+
+.denied-preview-button {
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 8px 15px;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 65%;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+  .listing-steps-container {
+    /* border: 1px solid #ff0000;
+    border-radius: 35px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .listing-steps-process {
+
+    border-radius: 30px;
+    padding: 10%;
+    text-align: left;
+    /* background-color: #fceaea; */
+    border: 1px solid #d90000;
+    max-width: 100%;
+    margin: 0 20 auto;
+    margin-top: 2%;
+
+
+  }
+
+  .process-listing-info p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .process-listing-info p strong {
+    color: red;
+  }
+
+  .process-listing-status {
+    margin-top: 10px;
+  }
+
+  .process-preview-button {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 8px 15px;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+
+  .listing-steps-denied {
+
+    border-radius: 30px;
+    padding: 10%;
+    text-align: left;
+    /* background-color: #fceaea; */
+    border: 1px solid #ff0000;
+    max-width: 100%;
+    margin: 0 20 auto;
+    margin-top: 2%;
+
+  }
+
+  .denied-listing-info p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .denied-listing-info p strong {
+    color: red;
+  }
+
+  .denied-listing-status {
+    margin-top: 10px;
+  }
+
+  .denied-preview-button {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 8px 15px;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  .step-intro .p{
+    font-size: 22px !important;
+  }
+
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+  .listing-steps-container {
+    /* background-color: #fff0f0; */
+    /* border: 1px solid #ff0000; */
+    /* border-radius: 35px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    /* margin: 0  20 auto;
+    margin-top: 2%;
+    margin-left: 20px; */
+
+  }
+
+  .listing-steps-process {
+
+    border-radius: 30px;
+    padding: 10%;
+    text-align: left;
+    /* background-color: #fceaea; */
+    border: 1px solid #d90000;
+    max-width: 100%;
+    margin: 0 20 auto;
+    margin-top: 2%;
+
+
+  }
+
+  .process-listing-info p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .process-listing-info p strong {
+    color: red;
+  }
+
+  .process-listing-status {
+    margin-top: 10px;
+  }
+
+  .process-preview-button {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 8px 15px;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+
+  .listing-steps-denied {
+
+    border-radius: 30px;
+    padding: 10%;
+    text-align: left;
+    /* background-color: #fceaea; */
+    border: 1px solid #ff0000;
+    max-width: 100%;
+    margin: 0 20 auto;
+    margin-top: 2%;
+  }
+  .step-intro .p{
+    font-size: 23px !important;
+  }
+  
+}
+
+@media screen and (min-width: 769px)and (max-width: 1024px) {
+
+  .step-intro .p {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 1000;
+    margin-top: 18px;
+    width: 100%;
+    /* padding: 20px; */
+  }
+
+  .listing-steps-denied {
+
+    border-radius: 30px;
+    padding: 10%;
+    text-align: left;
+    /* background-color: #fceaea; */
+    border: 1px solid #ff0000;
+    max-width: 100%;
+    margin: 0 20 auto;
+    margin-top: 2%;
+
+  }
+
+  .listing-steps-container {
+    padding: 20px;
+  }
+
+  .steps {
+    padding: 15px 15px 0;
+  }
+}

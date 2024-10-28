@@ -1,0 +1,32 @@
+.unit-details-container {
+    margin-top: 20px;
+  }
+  
+  .unit-details-content {
+    border: 2px solid #ff4d4f;
+    border-radius: 35px;
+    padding: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .form-row .ant-form-item {
+    width: 48%;
+  }
+  
+  .ant-slider-mark-text {
+    font-size: 12px;
+  }
+  
+  .ant-radio-button-wrapper {
+    border-radius: 25px !important;
+  }
+  
+  .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    background: #ff4d4f;
+    border-color: #ff4d4f;
+  }

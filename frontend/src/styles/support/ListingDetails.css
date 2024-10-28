@@ -1,0 +1,332 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p,
+h2 {
+  margin: 0;
+}
+.listing-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.updatesButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.updatesButton button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: #d90000 solid 1px;
+  color: #d90000;
+}
+.updatesButton .updateBtn {
+  background: #d90000;
+  color: #fff;
+  border: none;
+}
+.bodySection {
+  width: 95%;
+  padding: 1%;
+}
+.contentContainer .btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 10px;
+  width: 100%;
+}
+.fields {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sbutton {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  border: #000 1px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.labelForAction.pending {
+  color: orange;
+}
+.labelForAction.approve {
+  color: green;
+}
+.labelForAction.disapprove {
+  color: red;
+}
+.sbutton:hover {
+  border: #d90000 1px solid;
+  color: #d90000;
+}
+.select-field {
+  width: 100%;
+}
+
+.contentContainer .leftSide {
+  width: 49%;
+}
+.contentContainer .rightSide {
+  width: 49%;
+}
+.contentContainer .leftSide .propertyDetailsText {
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(36, 34, 34);
+  width: 100%;
+}
+.contentContainer .leftSide .propertyDetailsFields {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.listing-details-container .bodySection .features .featuresButton {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.listing-details-container .features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+.bodySection .features .IndoorFeatures,
+.bodySection .features .OutdoorFeatures,
+.bodySection .features .featuresAndAmmenities,
+.bodySection .features .includes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1%;
+  justify-content: space-between;
+  height: 20%;
+}
+.bodySection .features .inputFieldss .fieldFeatures {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+.bodySection .features .inputFieldss {
+  display: grid;
+  width: 100%;
+  gap: 1.5%;
+  grid-template-columns: auto auto auto auto;
+}
+.bodySection .features .ammenitiesInputField,
+.bodySection .features .includesInputField {
+  width: 98.5%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+.bodySection .features {
+  display: flex;
+  flex-direction: column;
+}
+.bodySection .features .includesInputField {
+  width: 100%;
+  padding: 1px;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+.bodySection .features .ammenitiesFields {
+  display: grid;
+  width: 100%;
+  justify-content: space-between;
+  grid-template-columns: 49% 49%;
+}
+.bodySection .features .includesFields {
+  display: grid;
+  width: 100%;
+  justify-content: space-between;
+  grid-template-columns: 49% 49%;
+}
+.secondTab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.secondTab p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: #d90000;
+  font-weight: bold;
+}
+.secondTab p strong {
+  color: #000;
+}
+.addButton {
+  background: #d90000;
+  padding: 2px 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 2px 5px gray;
+  color: #fff;
+}
+.subtractButton {
+  border: 1px solid #d90000;
+  padding: 2px 10px;
+  border-radius: 10px;
+  color: #d90000;
+  box-shadow: 1px 2px 5px gray;
+}
+.bottomBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.bottomBtns button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 2px 5px gray;
+  color: #fff;
+}
+.bottomBtns #edit {
+  background: #ea4335;
+}
+.bottomBtns #move-to-pending {
+  background: #f68721;
+}
+.bottomBtns #approve {
+  background: #256e2c;
+}
+.bottomBtns #disapprove {
+  background: #d90000;
+}
+
+@media only screen and (max-width: 320px) {
+  .fields .leftSide {
+    width: 90%;
+  }
+  .fields .leftSide .propertyDetailsFields {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodySection .contentContainer .fields {
+    display: flex;
+    flex-direction: column;
+  }
+  .contentContainer .btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodySection .secondTab {
+    display: flex;
+    flex-direction: column;
+  }
+  .fields .leftSide .location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .rightSide {
+    width: 90%;
+  }
+  .bodySection .features {
+    padding-top: 1%;
+  }
+}
+@media only screen and (max-width: 680px) and (min-width: 320px) {
+  .fields .leftSide .propertyDetailsFields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bodySection .contentContainer .fields {
+    display: flex;
+    flex-direction: column;
+  }
+  .contentContainer .btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodySection .secondTab {
+    display: flex;
+    flex-direction: column;
+  }
+  .fields .leftSide .location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .rightSide {
+    width: 90%;
+  }
+  .bodySection .features {
+    padding-top: 1%;
+  }
+  .FeaturesFields {
+    font-size: small;
+  }
+  .features .ammenitiesFields input[type="text"] {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 860px) and (min-width: 680px) {
+  .fields .leftSide .propertyDetailsFields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bodySection .contentContainer .fields {
+    display: flex;
+    flex-direction: column;
+  }
+  .contentContainer .btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodySection .secondTab {
+    display: flex;
+    flex-direction: column;
+  }
+  .fields .leftSide .location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .rightSide {
+    width: 90%;
+  }
+  .bodySection .features {
+    padding-top: 1%;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1280px) {
+  .fields .leftSide .propertyDetailsFields {
+    display: flex;
+    flex-direction: column;
+  }
+  .fields .leftSide .unitDetailsFields {
+    display: flex;
+    flex-direction: column;
+  }
+}

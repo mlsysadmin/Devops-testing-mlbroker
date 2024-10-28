@@ -1,0 +1,69 @@
+.support-header.ant-layout-header {
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /* padding: 15px 20px; */
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: auto;
+    font-family: var(--font-family);
+}
+.support-header--menu.ant-menu.ant-menu-light{
+    background: none;
+    margin: 0 10px;
+}
+.support-header--menu.ant-menu li{
+    color: white;
+    padding-inline: 10px;
+    margin: 0 5px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+.support-header--menu.ant-menu .ant-menu-submenu .ant-menu-submenu-title {
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.support-header--menu.ant-menu .ant-menu-item-selected,
+.support-header--menu.ant-menu .ant-menu-item-selected:hover,
+.support-header--menu.ant-menu .ant-menu-item-selected::after,
+.support-header--menu.ant-menu .ant-menu-item-active::after,
+.support-header--menu.ant-menu .ant-menu-item:hover,
+.support-header--menu.ant-menu .ant-menu-item:hover,
+.support-header--menu.ant-menu .ant-menu-submenu-open::after,
+.support-header--menu.ant-menu .ant-menu-submenu-active,
+.support-header--menu.ant-menu .ant-menu-submenu-selected,
+.support-header--menu.ant-menu li.ant-menu-submenu:hover
+{
+    background: white;
+    color: black;
+    font-family: var(--font-family);
+    border-bottom: none;
+}
+.support-header--menu.ant-menu .ant-menu-submenu .ant-menu-submenu-title:hover,
+.support-header--menu.ant-menu .ant-menu-submenu-selected .ant-menu-submenu-title
+{
+    color: black;
+}
+.support-header--menu.ant-menu .ant-menu-submenu-selected::after{
+    border-bottom: none;
+}
+
+.ant-menu-submenu .ant-menu-sub .ant-menu-item-selected{
+    background: var(--mute-gray);
+    color: black;
+}
+/* SUPPORT USER PROFILE */
+.support-header .user-profile{
+
+}
+.support-header .header-user--profile{
+    color: white;
+    cursor: pointer;
+}

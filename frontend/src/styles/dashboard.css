@@ -1,0 +1,1485 @@
+.dashboard {
+  /* flex-direction: column; */
+  width: 100%;
+  background-color: #ffffff;
+}
+.manualSearchingDashboardDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  justify-items: center;
+  width: 90%;
+  margin: 150px auto 0px auto;
+  padding: 0px 20px 100px 0px;
+}
+
+.manualSearchingDashboardDiv .manual-searching-title h1 {
+  text-align: center;
+}
+
+.manualSearchingDashboardDiv .manual-searching-desc p {
+  text-align: center;
+  font-weight: 500;
+}
+
+/* button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  grid-column: 1 / span 1;
+  justify-self: center;
+} */
+
+#dashboard .banner {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../asset/banners/dashboard-banner.png') !important; */
+  background: rgba(0, 0, 0, 0.4) url("../asset/banners/dashboard-banner.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-blend-mode: darken !important;
+  /* height: 100vh; */
+  height: 800px;
+}
+
+#dashboard .banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+  padding: 0px 30px;
+  height: -webkit-fill-available;
+  gap: 15px;
+}
+
+#dashboard .banner .banner-content .ant-col {
+  margin: 10px auto;
+}
+
+#dashboard .banner .banner-content .ant-row.search-container .ant-col {
+  margin: 0;
+}
+
+#dashboard .banner .banner-title {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+}
+
+#dashboard .banner .banner-tags .menu-tags {
+  background-color: transparent;
+  border-bottom: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#dashboard .banner .banner-tags .menu-tags li {
+  background: white;
+  margin: 6px 8px;
+  border-radius: 30px;
+  line-height: 30px;
+  padding-inline: 13px;
+  font-size: 16px;
+}
+
+#dashboard .banner .banner-tags .menu-tags li::after {
+  color: black;
+  border-bottom: none;
+}
+
+#dashboard .banner .banner-tags .menu-tags li.ant-menu-item-selected {
+  color: white;
+  background: var(--red);
+}
+
+#dashboard .banner .banner-content .banner-search {
+  background: #bbbcc184;
+  padding: 18px;
+  border-radius: 30px;
+  width: 100%;
+  /* max-width: 76%; */
+  max-width: 1370px;
+}
+
+#dashboard .banner .banner-content .banner-search .ant-card {
+  border-radius: 15px;
+  width: 100% !important;
+}
+
+#dashboard .banner .banner-content .banner-search .card-item {
+  margin: 5px;
+}
+
+#dashboard .banner .banner-content .banner-search .ant-card .ant-card-body {
+  padding: 20px 0px;
+}
+
+#dashboard
+  :where(.css-dev-only-do-not-override-1uq9j6g).ant-btn-default:not(
+    :disabled
+  ):not(.ant-btn-disabled):hover {
+  color: #d90000;
+  border-color: #d90000;
+  background: #ffffff;
+}
+
+#dashboard .banner .banner-content .banner-search .card-item.field {
+  width: 100%;
+}
+
+/* #dashboard .banner .banner-content .banner-search .card-item.field.ant-btn{
+    text-align: end;
+  } */
+
+#dashboard
+  .banner
+  .banner-content
+  .banner-search
+  .card-item.field
+  .ant-select-selection-placeholder {
+  color: var(--mute-gray);
+}
+
+#dashboard
+  .banner
+  .banner-content
+  .banner-search
+  .card-item.field
+  .ant-select-selector,
+#dashboard .banner .banner-content .banner-search .card-item.field.ant-input {
+  border-radius: 5px !important;
+  border: 1px solid #d9d9d9 !important;
+  color: var(--mute-gray);
+}
+
+#dashboard .banner .banner-content .banner-search .card-item.field,
+#dashboard
+  .banner
+  .banner-content
+  .banner-search
+  .card-item.field
+  .ant-select-selector,
+#dashboard .banner .banner-content .banner-search .card-item.field.ant-input {
+  height: 50px;
+  font-family: var(--font-family);
+}
+
+#dashboard
+  .banner
+  .banner-content
+  .banner-search
+  .card-item.field
+  .ant-select-selector:focus,
+#dashboard
+  .banner
+  .banner-content
+  .banner-search
+  .card-item.field.ant-input:focus,
+#dashboard
+  .banner
+  .banner-content
+  .banner-search
+  .card-item.field
+  .ant-select-selector:hover,
+#dashboard
+  .banner
+  .banner-content
+  .banner-search
+  .card-item.field.ant-input:hover {
+  border-color: var(--red) !important;
+}
+
+#dashboard .banner .banner-content .banner-search .round-btn {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+#dashboard .banner .banner-content .banner-search .advanced.round-btn {
+  background-color: var(--mute-red);
+  border: none;
+}
+
+#dashboard .banner .banner-content .banner-search .search.round-btn {
+  color: white;
+  background-color: var(--red);
+  height: 50px;
+  width: 100%;
+  font-size: 14px;
+}
+
+#dashboard .banner .banner-content .banner-search .search.round-btn:hover,
+#dashboard .banner .banner-content .banner-search .advanced.round-btn:hover {
+  border-color: var(--red);
+}
+
+#dashboard .banner .banner-content .banner-search .advanced.round-btn:hover {
+  color: black;
+}
+
+#dashboard .banner .banner-content .banner-search .advanced.round-btn svg {
+  color: var(--red);
+}
+
+/* Section 2 Discover*/
+.dashboard .discover {
+  background-color: #ffffff;
+  margin-top: 150px;
+}
+
+.dashboard .discover .discover-content {
+  flex-direction: column;
+  width: 1230px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.dashboard .discover .discover-content .featured--title {
+  margin-top: 80px;
+}
+
+.dashboard
+  .discover
+  .discover-content
+  .discover-section--sub-title
+  .section-2-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dashboard
+  .discover
+  .discover-content
+  .section-2-title
+  .see-all-new-listing-dashboard {
+  text-decoration: underline;
+  color: #8c9094;
+  font-weight: 500;
+}
+
+.listing-carousel-dashboard {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  /* gap: 100px; */
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 0px 20px;
+}
+
+.dashboard .discover .discover-content .discover-section--title h2 {
+  font-size: 32px;
+  /* text-align: left; */
+  /* margin-left: 250px; */
+}
+
+.dashboard .discover .discover-content .discover-section--title p {
+  font-size: 18px;
+  color: var(--mute-gray);
+}
+
+.dashboard .discover .discover-content .card-listing-row .ant-card {
+  margin: auto 15px;
+}
+
+.discover
+  .container-carousel.card-listing--carousel
+  .react-multiple-carousel__arrow {
+  background-color: var(--red);
+}
+
+.discover .listing-carousel {
+  width: 100%;
+  margin: auto;
+}
+
+.discover .container-carousel {
+  margin: auto;
+  border: none;
+  /* width: 80%; */
+}
+
+.discover .carousel-item {
+  width: 350px !important;
+  margin: auto 20px;
+}
+
+/* .discover .carousel-slider-ul{
+    justify-content: center;
+    margin: auto;
+} */
+
+.dashboard .discover .see-more--container {
+  margin: 15px auto 20px auto;
+}
+
+.dashboard .discover .see-more--container {
+  margin: 15px auto 60px auto;
+}
+
+.dashboard .discover .see-more--btn {
+  padding: 8px 12px;
+  border-radius: 13px;
+  color: var(--red);
+  font-weight: bold;
+  border: 1px solid var(--red);
+}
+
+.dashboard .discover .see-more--btn:hover {
+  background-color: var(--red);
+  color: white;
+  border: 1px solid var(--red);
+}
+
+.dashboard .discover .discover--section-2 {
+  margin: 130px auto 0px auto;
+  width: 100%;
+  height: auto;
+  padding: 70px 20px;
+  /* padding: 20px 20px; */
+  background-color: #f7f7f7;
+}
+
+.dashboard .discover .discover--section-2 h3 {
+  color: black;
+  font-size: 32px;
+  text-align: center;
+}
+
+.dashboard .discover .discover--section-2 .card--brokerage-category {
+  margin: 50px auto;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.dashboard .discover .discover--section-2 .card--brokerage-category .ant-card {
+  /* margin: auto 10px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 380px;
+  /* width: 330px; */
+  border-radius: 10px;
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  /* width: 100%; */
+}
+
+.dashboard
+  .discover
+  .discover--section-2
+  .card--brokerage-category
+  .overlay-content {
+  /* background-color: rgba(0, 0, 0, 0.373); */
+  height: auto;
+  color: #333333;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* width: 210px; */
+  row-gap: 10px;
+}
+
+.dashboard
+  .discover
+  .discover--section-2
+  .card--brokerage-category
+  .overlay-content
+  .button-card-class.ant-btn {
+  height: 45px;
+  border-color: #00000081;
+  font-weight: 600;
+}
+
+.dashboard
+  .discover
+  .discover--section-2
+  .card--brokerage-category
+  .overlay-content
+  .button-card-class.ant-btn:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.dashboard .discover .card--brokerage-category .overlay-content .overlay-icon {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.dashboard
+  .discover
+  .card--brokerage-category
+  .overlay-content
+  .overlay-icon
+  span {
+  background-color: white;
+  padding: 10px 13px;
+  border-radius: 80px;
+}
+
+.dashboard
+  .discover
+  .card--brokerage-category
+  .overlay-content
+  .overlay-description,
+.dashboard .discover .card--brokerage-category .overlay-content .overlay-title {
+  padding: 15px auto !important;
+}
+
+.dashboard .discover .card--brokerage-category .overlay-content .overlay-title {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.95px;
+}
+
+.dashboard
+  .discover
+  .card--brokerage-category
+  .overlay-content
+  .overlay-description {
+  font-weight: 300;
+  font-size: 14px;
+  /* margin: 10px auto; */
+  align-content: center;
+  height: 130px;
+}
+
+.dashboard .discover .discover--section-3 {
+  /* background-color: #d9d9d9a1; */
+  background-color: #d9d9d9;
+  margin: 0px auto 0px auto;
+  width: 1210px;
+  /* width: 90%; */
+  border-radius: 10px;
+}
+
+.discover--section-3 .card--brokerage-inquire {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  margin: 0px;
+  /* align-items: center; */
+  /* justify-content: space-between;
+    flex-wrap: wrap; */
+}
+
+.discover--section-3 .card--brokerage-inquire .inquire--content {
+  margin: 50px;
+  /* width: 100%; */
+}
+
+.dashboard .discover .discover--section-3 h3,
+.dashboard .discover .discover--section-4 h3,
+.dashboard .discover .manualSearchingDashboardDiv .manual-searching-title h3 {
+  font-size: 35px;
+  color: black;
+}
+
+.dashboard .discover .discover--section-3 h3 {
+  text-align: left;
+}
+
+.discover--section-3 .card--brokerage-inquire .ant-col {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire-image {
+  width: 50%;
+}
+
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire-image
+  .ant-image {
+  display: block;
+}
+
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire-image
+  .ant-image-img {
+  height: 70vh;
+}
+
+.dashboard .discover--section-3 .card--brokerage-inquire .inquire-container {
+  width: 100%;
+  text-align: left;
+}
+
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire--description,
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire--sub-desc,
+.dashboard .discover .manualSearchingDashboardDiv .manual-searching-desc {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1111119b;
+  text-align: center;
+}
+
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire--sub-desc {
+  margin: 50px 0px 0px 0px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire--description {
+  margin: 50px 0px 0px 0px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire--content
+  .inquire--actions {
+  margin-top: 60px;
+}
+
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire--actions
+  .contact-us--action.action-btn,
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire--actions
+  .contact-us--action.action-btn:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.dashboard
+  .discover
+  .discover--section-3
+  .card--brokerage-inquire
+  .inquire--actions
+  .sign-in--action.action-btn,
+.dashboard
+  .discover
+  .manualSearchingDashboardDiv
+  .manualSearch--actions
+  .manual-search-action.action-btn {
+  background-color: #000000;
+  color: #ffffff;
+  height: 60px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 20px;
+}
+
+/* FEATURED PROPERTIES */
+.dashboard .discover .discover--section-4 {
+  margin-top: 0px;
+}
+
+.dashboard .discover .card--brokerage-featured {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+}
+
+.dashboard .discover .discover--section-4 h3 {
+  text-align: left;
+}
+
+/* RATING */
+.dashboard .ratings {
+  margin: 60px auto 15px auto;
+  width: 70%;
+}
+
+.dashboard .ratings .rating--title h3 {
+  color: black !important;
+  font-size: 30px;
+}
+
+.dashboard .rating--content {
+  margin: 30px auto;
+}
+
+.dashboard-first-content {
+  background-color: rgba(187, 188, 193, 0.62);
+  color: white;
+  width: 75%;
+  margin: 30px auto;
+  /* Centers the element horizontally */
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  z-index: 2000;
+  flex-direction: column;
+  align-items: center;
+  /* Centers the child elements */
+}
+
+.dashboard-sub-content1 {
+  width: 95%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  /* Centers the element within the parent */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.dashboard-subcontent-inputs {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+.dashboard-searh-custom-slider {
+  width: 100%;
+}
+
+.dashboard-input-field,
+.dashboard-select-fields {
+  flex: 1;
+  margin: 0 10px;
+  color: black;
+  border-radius: 10px;
+}
+
+.dashboard
+  :where(.css-dev-only-do-not-override-m4timi).ant-input-outlined:hover {
+  border-color: #ff0000;
+  background-color: #ffffff;
+}
+
+.custom-select .ant-select-selector {
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  /* Adjust based on your preference */
+  color: #a01818;
+  /* Set text color to gray */
+  padding: 8px 16px;
+  /* Adjust padding based on your preference */
+  width: 50%;
+}
+
+.custom-dropdown .ant-select-item {
+  color: #808080;
+  /* Set dropdown item text color to gray */
+}
+
+.custom-dropdown .ant-select-item:hover {
+  background-color: #a6a6a6;
+  /* Optional: Set hover background color */
+  color: black;
+}
+
+.custom-dropdown .ant-select-item-option-selected {
+  background-color: #fff;
+  /* Optional: Set selected item background color */
+}
+
+:where(.css-dev-only-do-not-override-m4timi).ant-select-outlined:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+:where(.css-dev-only-do-not-override-m4timi).ant-btn-default:not(:disabled):not(
+    .ant-btn-disabled
+  ):hover {
+  color: #d90000;
+  border-color: #d90000;
+  background: #ffffff;
+}
+
+:where(.css-dev-only-do-not-override-m4timi).ant-select-outlined:not(
+    .ant-select-disabled
+  ):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover
+  .ant-select-selector {
+  border-color: #ff0000;
+}
+
+.dashboard-input-fields::placeholder {
+  color: black;
+}
+
+.dashboard-select-fields::placeholder {
+  color: black;
+}
+
+.dashboard-right-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 0px 30px;
+  border-radius: 5px;
+}
+.search-container {
+  justify-content: center;
+  gap: 15px;
+}
+
+.col-field .ant-btn.card-item {
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1000px) {
+  .manualSearchingDashboardDiv .manual-searching-desc {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 315px) and (max-width: 480px) {
+  #dashboard .banner .banner-content .banner-search .card-item.field,
+  #dashboard .banner .banner-content .banner-search .round-btn,
+  #dashboard .banner .banner-content .banner-search .search-buttons {
+    width: 100%;
+  }
+
+  #dashboard .banner .banner-content {
+    padding: 20px 10px;
+  }
+
+  #dashboard .banner .banner-content .banner-title {
+    font-size: 25px;
+  }
+
+  .dashboard
+    .discover
+    .discover--section-3
+    .card--brokerage-inquire
+    .inquire-image,
+  .dashboard
+    .discover
+    .discover--section-3
+    .card--brokerage-inquire
+    .inquire--description,
+  .dashboard
+    .discover
+    .discover--section-3
+    .card--brokerage-inquire
+    .inquire--sub-desc {
+    width: 100%;
+  }
+
+  .dashboard
+    .discover
+    .discover--section-3
+    .card--brokerage-inquire
+    .inquire-image
+    .ant-image-img {
+    height: 55vh;
+  }
+
+  .dashboard .discover .discover--section-2 {
+    margin: 80px auto 0px auto;
+  }
+
+  .dashboard .discover .discover--section-2 .card--brokerage-category {
+    margin: 40px auto 0px auto;
+  }
+
+  .dashboard .discover .discover--section-3 {
+    margin: 0px auto auto auto;
+    width: 100%;
+  }
+
+  .dashboard .discover .card--brokerage-featured {
+    width: 85%;
+    text-align: center;
+  }
+
+  .dashboard .discover--section-4 .featured--title h3 {
+    text-align: center;
+  }
+
+  .dashboard .ratings {
+    width: 90%;
+  }
+
+  .dashboard-first-content {
+    top: 60%;
+  }
+
+  .dashboard-right-button {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+  }
+
+  .listing-carousel-dashboard,
+  .dashboard .discover .discover--section-2 .card--brokerage-category {
+    gap: 30px;
+  }
+
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .ant-card {
+    width: 100%;
+  }
+
+  /* Thinking about selling your home */
+
+  .discover--section-3 .card--brokerage-inquire .inquire--content {
+    margin: 50px 30px;
+  }
+
+  .dashboard
+    .discover
+    .discover--section-3
+    .card--brokerage-inquire
+    .inquire--actions {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dashboard
+    .discover
+    .discover--section-3
+    .card--brokerage-inquire
+    .inquire--actions
+    .sign-in--action.action-btn {
+    font-size: 16px;
+    padding: 0px 15px;
+  }
+
+  .dashboard
+    .discover
+    .card--brokerage-category
+    .overlay-content
+    .overlay-icon {
+    display: none;
+  }
+
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .overlay-content {
+    height: auto;
+  }
+
+  .dashboard .discover .discover--section-2 h3 {
+    font-size: 30px;
+  }
+
+  .dashboard .discover .discover-content {
+    width: 300px;
+    flex-direction: row;
+    margin: 50px auto 30px;
+  }
+
+  .dashboard .discover .discover-content.featured {
+    width: 300px;
+    margin: 0px auto 0px;
+    text-align: center;
+  }
+
+  .dashboard
+    .discover
+    .discover-content
+    .discover-section--sub-title
+    .section-2-title
+    .see-all-new-listing-dashboard {
+    display: none;
+  }
+
+  .listing-carousel-dashboard {
+    margin-top: 10px;
+    padding: 0 30px;
+  }
+
+  .dashboard .discover .discover--section-4 .featured--title {
+    width: 100%;
+  }
+
+  .listing-carousel-dashboard .carousel--see-all-btn {
+    display: flex !important;
+  }
+
+  .section--3 {
+    padding: 0px 20px;
+  }
+  .dashboard
+    .discover
+    .card--brokerage-category
+    .overlay-content
+    .overlay-description {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 315px) and (max-width: 380px) {
+  .dashboard
+    .discover
+    .discover--section-3
+    .card--brokerage-inquire
+    .inquire--actions
+    .sign-in--action.action-btn {
+    font-size: 15px;
+    padding: 0px 15px;
+    margin: auto 5px;
+    text-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 496px) {
+  .dashboard .discover .discover-content {
+    width: 440px;
+  }
+}
+
+@media screen and (min-width: 497px) and (max-width: 499px) {
+  .dashboard .discover .discover-content {
+    width: 495px;
+  }
+
+  .discover-section--title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .dashboard
+    .discover
+    .discover-content
+    .discover-section--sub-title
+    .section-2-title {
+    justify-content: space-around;
+  }
+
+  .listing-carousel-dashboard {
+    margin-top: 20px;
+  }
+
+  .dashboard .discover .discover--section-4 .featured--title h3 {
+    text-align: center;
+  }
+
+  .dashboard .discover .discover--section-4 .featured--title {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 601px) {
+  .dashboard .discover .discover-content {
+    width: 500px;
+  }
+
+  .discover-section--title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .dashboard
+    .discover
+    .discover-content
+    .discover-section--sub-title
+    .section-2-title {
+    justify-content: space-around;
+  }
+
+  .listing-carousel-dashboard {
+    margin-top: 20px;
+  }
+
+  .dashboard .discover .discover--section-4 .featured--title h3 {
+    text-align: center;
+  }
+
+  .dashboard .discover .discover--section-4 .featured--title {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 654px) {
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .ant-card {
+    width: 450px;
+  }
+
+  .listing-carousel-dashboard,
+  .dashboard .discover .discover--section-2 .card--brokerage-category {
+    gap: 25px;
+  }
+
+  .dashboard .discover .discover--section-3 {
+    width: 95%;
+  }
+  .dashboard .ratings {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 655px) and (max-width: 664px) {
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .ant-card {
+    width: 295px;
+  }
+
+  .listing-carousel-dashboard,
+  .dashboard .discover .discover--section-2 .card--brokerage-category {
+    gap: 25px;
+  }
+
+  .dashboard .discover .discover--section-3 {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 665px) and (max-width: 689px) {
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .ant-card {
+    width: 300px;
+  }
+
+  .listing-carousel-dashboard,
+  .dashboard .discover .discover--section-2 .card--brokerage-category {
+    gap: 25px;
+  }
+
+  .dashboard .discover .discover--section-3 {
+    width: 95%;
+  }
+}
+@media (min-width: 481px) and (max-width: 496px) {
+  .dashboard .discover .discover-content {
+    width: 350px !important;
+  }
+}
+@media (min-width: 497px) and (max-width: 614px) {
+  .dashboard .discover .discover-content {
+    width: 400px !important;
+  }
+}
+@media (min-width: 615px) and (max-width: 624px) {
+  .dashboard .discover .discover-content {
+    width: 550px !important;
+  }
+  .dashboard
+    .discover
+    .discover-content
+    .discover-section--sub-title
+    .section-2-title {
+    justify-content: space-between !important;
+  }
+  .discover-section--title {
+    text-align: center !important;
+  }
+}
+@media screen and (min-width: 602px) and (max-width: 654px) {
+  .dashboard .discover .discover-content {
+    width: 600px;
+  }
+
+  .discover-section--title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .dashboard
+    .discover
+    .discover-content
+    .discover-section--sub-title
+    .section-2-title {
+    justify-content: space-around;
+  }
+
+  .listing-carousel-dashboard {
+    margin-top: 20px;
+  }
+
+  .dashboard .discover .discover--section-4 .featured--title h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 690px) and (max-width: 788px) {
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .ant-card {
+    width: 310px;
+  }
+
+  .dashboard .discover .discover--section-3 {
+    width: 90%;
+  }
+
+  .listing-carousel-dashboard,
+  .dashboard .discover .discover--section-2 .card--brokerage-category {
+    gap: 30px;
+  }
+
+  .dashboard .discover .discover-content.featured {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 655px) and (max-width: 709px) {
+  .dashboard .discover .discover-content {
+    width: 620px;
+  }
+
+  .dashboard .discover .discover-content.featured {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 710px) and (max-width: 729px) {
+  .dashboard .discover .discover-content {
+    width: 670px;
+  }
+
+  .dashboard .discover .discover-content.featured {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 759px) {
+  .dashboard .discover .discover-content.featured {
+    width: 720px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 779px) {
+  .dashboard .discover .discover-content.featured {
+    width: 720px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 829px) {
+  .dashboard .discover .discover-content.featured {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 830px) and (max-width: 1024px) {
+  .dashboard .discover .discover-content.featured {
+    width: 920px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 908px) {
+  .dashboard .discover .discover-content {
+    width: 620px !important;
+  }
+  .dashboard .discover .discover--section-3 {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 909px) and (max-width: 914px) {
+  .listing-carousel-dashboard {
+    gap: 22px !important;
+  }
+
+  .dashboard .discover .discover-content {
+    width: 830px !important;
+  }
+}
+@media screen and (min-width: 915px) and (max-width: 919px) {
+  .listing-carousel-dashboard {
+    gap: 25px !important;
+  }
+  .dashboard .discover .discover-content {
+    width: 850px !important;
+  }
+}
+@media screen and (min-width: 920px) and (max-width: 940px) {
+  .listing-carousel-dashboard {
+    gap: 20px !important;
+  }
+}
+
+@media screen and (min-width: 870px) and (max-width: 969px) {
+  .dashboard .discover .discover-content {
+    width: 860px !important;
+    justify-content: center;
+  }
+  .dashboard .discover .discover--section-3 {
+    width: 90%;
+  }
+  .listing-carousel-dashboard {
+    gap: 25px;
+  }
+}
+
+@media screen and (min-width: 970px) and (max-width: 1024px) {
+  .dashboard .discover .discover-content {
+    width: 900px;
+    justify-content: center;
+  }
+
+  .listing-carousel-dashboard,
+  .dashboard .discover .discover--section-2 .card--brokerage-category {
+    gap: 15px;
+  }
+
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .ant-card {
+    width: 330px;
+  }
+
+  .dashboard .discover .discover--section-3 {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1079px) {
+  .dashboard .discover .discover-content.featured {
+    width: 720px;
+  }
+  .dashboard .ratings {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 730px) and (max-width: 1079px) {
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .overlay-content {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1149px) {
+  .dashboard .discover .discover-content {
+    width: 1030px;
+  }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1239px) {
+  .dashboard .discover .discover-content {
+    width: 1100px;
+  }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1279px) {
+  .listing-carousel-dashboard {
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1239px) {
+  .dashboard .discover .discover--section-4 .featured--title {
+    width: 1030px;
+  }
+
+  .dashboard .discover .discover--section-4 .featured--title {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1239px) {
+  /* .dashboard .discover .discover-content {
+          width: 65%;
+          justify-content: center;
+      } */
+
+  .listing-carousel-dashboard,
+  .dashboard .discover .discover--section-2 .card--brokerage-category {
+    gap: 25px;
+  }
+
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .ant-card {
+    width: 330px;
+  }
+
+  .dashboard .discover .discover--section-3 {
+    width: 90%;
+  }
+
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .overlay-content {
+    height: auto;
+  }
+
+  .dashboard .discover .discover-content {
+    width: 950px;
+  }
+  .dashboard .discover .discover-content.featured {
+    width: 1050px;
+  }
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1279px) {
+  .dashboard .discover .discover-content {
+    width: 1190px;
+  }
+
+  .dashboard
+    .discover
+    .discover--section-2
+    .card--brokerage-category
+    .overlay-content {
+    height: auto;
+  }
+
+  .dashboard .discover .discover-content.featured {
+    width: 1180px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1800px) {
+  .dashboard .discover .discover-content.featured {
+    width: 1210px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 489px) {
+  #dashboard .banner {
+    height: auto;
+  }
+
+  #dashboard .banner .banner-content {
+    height: fit-content;
+    padding-bottom: 50px;
+  }
+
+  #dashboard .banner .banner-content .banner-search {
+    min-height: auto;
+  }
+
+  .search-container {
+    gap: 7px;
+    justify-content: flex-start;
+  }
+
+  #dashboard .banner .banner-content .banner-search .ant-card .ant-card-body {
+    padding: 20px 15px;
+  }
+
+  #dashboard
+    .banner
+    .banner-content
+    .ant-row.search-container
+    .ant-col-4.col-field,
+  #dashboard
+    .banner
+    .banner-content
+    .ant-row.search-container
+    .ant-col-2.col-field {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  #dashboard .banner .banner-content .banner-search .search.round-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 490px) and (max-width: 899px) {
+  .search-container {
+    gap: 7px;
+    justify-content: flex-start;
+  }
+
+  #dashboard .banner .banner-content .banner-search .ant-card .ant-card-body {
+    padding: 20px 15px;
+  }
+
+  #dashboard
+    .banner
+    .banner-content
+    .ant-row.search-container
+    .ant-col-4.col-field,
+  #dashboard
+    .banner
+    .banner-content
+    .ant-row.search-container
+    .ant-col-2.col-field {
+    max-width: 100%;
+    flex: 0 0 49%;
+  }
+
+  #dashboard .banner .banner-content .banner-search .search.round-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1045px) {
+  .search-container {
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  #dashboard .banner .banner-content .banner-search .ant-card .ant-card-body {
+    padding: 20px;
+  }
+}

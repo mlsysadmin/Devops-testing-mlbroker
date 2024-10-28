@@ -1,0 +1,10 @@
+.buttons .left-button{
+    background: none;
+    border: none;
+    color: #8C9094;
+}
+.sub-content1 .buttons{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}

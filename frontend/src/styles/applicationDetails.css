@@ -1,0 +1,290 @@
+.application-details-main-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.application-details-main-container .application-details {
+  width: 95%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .application-details-main-container .application-details .status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .application-details-main-container .application-details .processing {
+    color: blue;
+  }
+
+  .application-details-main-container .application-details .cancelled {
+    color: red;
+  }
+  
+  .application-details-main-container .application-details .approved {
+    color: green;
+  }
+
+  .application-details-main-container .application-details h3{
+    color: #000;
+    margin-top: 20px;
+    font-size: x-large;
+  }
+        
+  .application-details-main-container .application-details .app-id {
+    color: red;
+  }
+
+  .application-details-main-container .application-details hr{
+    border-top: 4px solid #d90000;
+  }
+  
+  .application-details-main-container .application-details .property-details-section {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .application-details-main-container  .application-details .property-header {
+    margin-bottom: 20px;
+  }
+  
+  .application-details-main-container  .application-details .property-header h2 {
+    margin: 0;
+  }
+  
+  .application-details-main-container  .application-details .property-header p {
+    margin: 5px 0;
+  }
+  
+  .application-details-main-container .application-details .property-header .price {
+    font-weight: bold;
+  }
+  
+  .application-details-main-container .application-details .property-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .application-details-main-container .application-details .details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  
+  .application-details-main-container  .application-details .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .application-details-main-container  .application-details .applicant-details-section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .application-details-main-container  .application-details .applicant-details h3 {
+    margin-bottom: 10px;
+  }
+
+  
+  .application-details-main-container .application-details .applicant-details-section .fries{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .application-details-main-container  .application-details .applicant-details-section .fries .form-group{
+    width: 23.5%;
+  }
+
+  .application-details-main-container .application-details .applicant-details-section .pizza{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .application-details-main-container .application-details .applicant-details-section .sundae{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .application-details-main-container .application-details .applicant-details-section .burger{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .application-details-main-container .application-details .applicant-details-section .burger .form-group #label{
+    width: 48%;
+    display: flex;
+  }
+  
+  .application-details-main-container .application-details .form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .application-details-main-container .application-details .form-group {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+  }
+  
+  .application-details-main-container .application-details .form-group label {
+    color: #8C9094;
+  }
+  
+  .application-details-main-container .application-details .form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #8C9094;
+    font-size: small;
+  }
+  
+  .application-details-main-container .application-details .uploaded-documents {
+    margin-bottom: 20px;
+  }
+  
+  .application-details-main-container .application-details .uploaded-documents h3 {
+    margin-bottom: 10px;
+  }
+  
+  .application-details-main-container  .application-details .documents {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .application-details-main-container  .application-details .document {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .application-details-main-container .application-details  .document img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  
+  .application-details-main-container .application-details .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 30px;
+  }
+  
+  .application-details-main-container .application-details #cancel-btn {
+    background-color: #d90000;
+    color: white;
+    border: none;
+    padding:25px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .application-details-main-container .application-details #go-back-btn {
+    background-color: transparent;
+    color: #d90000;
+    border: none;
+    padding: 24px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #d90000;
+    font-weight: bold;
+  }
+  
+  .application-details-main-container  .application-details .cancel-btn:hover, .go-back-btn:hover {
+    opacity: 0.8;
+  }
+
+  .application-details-main-container  .application-details .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 25%); 
+    gap: 1px;
+  }
+
+  .application-details-main-container  .application-details .grid-item{
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    height: auto;
+  }
+
+  .application-details-main-container  .application-details .grid-item input[type="file"] {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.application-details-main-container  .application-details .files-container{
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 1024px){
+    .application-details-main-container  .application-details .files-container{
+      width: 100%;
+    }
+
+    .application-details-main-container .application-details .applicant-details-section .fries{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .application-details-main-container  .application-details .applicant-details-section .fries .form-group{
+      width: 23.5%;
+    }
+  
+    .application-details-main-container .application-details .applicant-details-section .pizza{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  
+    .application-details-main-container .application-details .applicant-details-section .sundae{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  
+    .application-details-main-container .application-details .applicant-details-section .burger{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  
+    .application-details-main-container .application-details .applicant-details-section .burger .form-group #label{
+      width: 48%;
+      display: flex;
+    }
+  
+  }
+  
