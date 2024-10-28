@@ -16,7 +16,7 @@ steps:
     timeoutInSeconds: 40
     command: |
       export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
-      echo "BUILDRUN_HASH: " $BUILDRUN_HASH
+      echo "BUILDRUN_HASH: $BUILDRUN_HASH"
 
   - type: Command
     name: "Verify Dockerfile and workspace contents"
@@ -32,11 +32,13 @@ steps:
 
   - type: Command
     timeoutInSeconds: 1200
-    name: "Build container image"
+    name: "Build container image with logging"
     command: |
       cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java
       docker build --pull --rm --no-cache --progress=plain -t oci_devops_java_app . || {
         echo "Docker build failed with exit code $?"
+        echo "Printing npm error log contents"
+        cat /root/.npm/_logs/* || echo "No NPM logs found"
         exit 1
       }
     onFailure:
