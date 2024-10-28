@@ -13,7 +13,7 @@ env:
   vaultVariables:
   #  EXAMPLE_SECRET: "YOUR-SECRET-OCID"
   
-  # exportedVariables are made available to use as parameters in sucessor Build Pipeline stages
+  # exportedVariables are made available to use as parameters in successor Build Pipeline stages
   # For this Build to run, the Build Pipeline needs to have a BUILDRUN_HASH parameter set
   exportedVariables:
     - BUILDRUN_HASH
@@ -23,61 +23,38 @@ steps:
     name: "Define unique image tag"
     timeoutInSeconds: 40
     command: |
-#      export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
-#      echo "BUILDRUN_HASH: " $BUILDRUN_HASH
+      export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
+      echo "BUILDRUN_HASH: " $BUILDRUN_HASH
 
-  # - type: Command
-  #   timeoutInSeconds: 600
-  #   name: "Install Node Prereqs"
-  #   command: |
-  #     cd ${OCI_WORKSPACE_DIR}/node_express
-  #     # install nvm
-  #     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-  #     export NVM_DIR="$HOME/.nvm"
-  #     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-  #     nvm install lts/erbium
-  #     echo "NODE VERSION: $(node -v)"
-  #     echo "NPM VERSION: $(npm -v)"
-
+  - type: Command
+    name: "Check workspace contents"
+    timeoutInSeconds: 40
+    command: |
+      cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java
+      ls -al
     onFailure:
       - type: Command
         command: |
-          echo "Handling Failure"
-          echo "Failure successfully handled"
-        timeoutInSeconds: 40
-        runAs: root
-  
-  # - type: Command
-  #   timeoutInSeconds: 600
-  #   name: "NPM install"
-  #   command: |
-  #     cd ${OCI_WORKSPACE_DIR}/node_express
-  #     npm install
-  #   onFailure:
-  #     - type: Command
-  #       command: |
-  #         echo "Handling Failure"
-  #         echo "Failure successfully handled"
-  #       timeoutInSeconds: 40
-  #       runAs: root
-
-  # - type: Command
-  #   timeoutInSeconds: 1200
-  #   name: "Run Tests"
-  #   command: |
-  #     cd ${OCI_WORKSPACE_DIR}/node_express
-  #     npm test
+          echo "Error: Directory ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java does not contain expected files."
+        timeoutInSeconds: 20
 
   - type: Command
     timeoutInSeconds: 1200
     name: "Build container image"
     command: |
       cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java
-      docker build --pull --rm -t oci_devops_java_app .
+      docker build --pull --rm --no-cache --progress=plain -t oci_devops_java_app .
+    onFailure:
+      - type: Command
+        command: |
+          echo "Handling Failure in Build container image step"
+          echo "Failure successfully handled"
+        timeoutInSeconds: 40
+        runAs: root
 
 outputArtifacts:
   - name: backend
     type: DOCKER_IMAGE
-    # this location tag doesn't effect the tag used to deliver the container image
+    # this location tag doesn't affect the tag used to deliver the container image
     # to the Container Registry
     location: oci_devops_java_app:latest
