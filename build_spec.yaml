@@ -4,17 +4,9 @@ timeoutInSeconds: 6000
 runAs: root
 shell: bash
 env:
-  # these are local variables to the build config
   variables:
     key: "value"
 
-  # the value of a vaultVariable is the secret-id (in OCI ID format) stored in the OCI Vault service
-  # you can then access the value of that secret in your build_spec.yaml commands
-  vaultVariables:
-  #  EXAMPLE_SECRET: "YOUR-SECRET-OCID"
-  
-  # exportedVariables are made available to use as parameters in successor Build Pipeline stages
-  # For this Build to run, the Build Pipeline needs to have a BUILDRUN_HASH parameter set
   exportedVariables:
     - BUILDRUN_HASH
 
@@ -27,23 +19,26 @@ steps:
       echo "BUILDRUN_HASH: " $BUILDRUN_HASH
 
   - type: Command
-    name: "Check workspace contents"
+    name: "Verify Dockerfile and workspace contents"
     timeoutInSeconds: 40
     command: |
       cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java
+      echo "Current directory: $(pwd)"
       ls -al
-    onFailure:
-      - type: Command
-        command: |
-          echo "Error: Directory ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java does not contain expected files."
-        timeoutInSeconds: 20
+      if [ ! -f Dockerfile ]; then
+        echo "Error: Dockerfile not found in ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java"
+        exit 1
+      fi
 
   - type: Command
     timeoutInSeconds: 1200
     name: "Build container image"
     command: |
       cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java
-      docker build --pull --rm --no-cache --progress=plain -t oci_devops_java_app .
+      docker build --pull --rm --no-cache --progress=plain -t oci_devops_java_app . || {
+        echo "Docker build failed with exit code $?"
+        exit 1
+      }
     onFailure:
       - type: Command
         command: |
@@ -55,6 +50,4 @@ steps:
 outputArtifacts:
   - name: backend
     type: DOCKER_IMAGE
-    # this location tag doesn't affect the tag used to deliver the container image
-    # to the Container Registry
     location: oci_devops_java_app:latest
