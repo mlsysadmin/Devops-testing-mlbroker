@@ -1,0 +1,16 @@
+FATAL 2024-08-14T15:51:18.837 HOTGOJT128 
+ Logging.. | ML BROKERAGE Error: WHERE parameter "listing_id" has invalid "undefined" value 49     at ErrorHandler (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:49:21)
+    at Layer.handle_error (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at Immediate.next (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Immediate._onImmediate (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:646:15)
+FATAL 2024-08-14T15:51:18.873 HOTGOJT128 
+ Logging.. | ML BROKERAGE Error: WHERE parameter "listing_id" has invalid "undefined" value 49     at ErrorHandler (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:49:21)
+    at Layer.handle_error (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at Immediate.next (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Immediate._onImmediate (C:\Users\BELI2024005\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:646:15)
