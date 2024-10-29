@@ -19,30 +19,28 @@ steps:
     name: "Verify Environment and Workspace"
     timeoutInSeconds: 60
     command: |
-      # Check if OCI_WORKSPACE_DIR is set
+      # Verify OCI_WORKSPACE_DIR
       if [ -z "${OCI_WORKSPACE_DIR}" ]; then
-        echo "Error: OCI_WORKSPACE_DIR is not set."
+        echo "Error: OCI_WORKSPACE_DIR environment variable is not set."
         exit 1
       fi
       echo "OCI_WORKSPACE_DIR is set to: ${OCI_WORKSPACE_DIR}"
-
-      # Check if the expected directory exists
+      
+      # Check directory existence and permissions
       if [ ! -d "${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java" ]; then
         echo "Error: Directory ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java does not exist."
         exit 1
       fi
+      echo "Directory ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java exists with permissions:"
+      ls -ld "${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java"
 
-      # Navigate to the workspace and list contents
-      cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java
-      echo "Current directory: $(pwd)"
-      echo "Listing files in ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java:"
-      ls -al
-      # Check if Dockerfile exists
-      if [ ! -f Dockerfile ]; then
+      # Check Dockerfile existence and permissions
+      if [ ! -f "${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java/Dockerfile" ]; then
         echo "Error: Dockerfile not found in ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java"
         exit 1
       fi
-      echo "Dockerfile found."
+      echo "Dockerfile found with permissions:"
+      ls -l "${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java/Dockerfile"
 
   - type: Command
     timeoutInSeconds: 1200
@@ -50,7 +48,7 @@ steps:
     command: |
       cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java
       docker build --pull --rm --no-cache -t oci_devops_java_app . || {
-        echo "Docker build failed with exit code $?"
+        echo "Docker build failed. Check Dockerfile syntax or unsupported commands."
         exit 1
       }
     onFailure:
