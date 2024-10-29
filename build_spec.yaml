@@ -4,9 +4,6 @@ timeoutInSeconds: 6000
 runAs: root
 shell: bash
 env:
-  variables:
-    key: "value"
-
   exportedVariables:
     - BUILDRUN_HASH
 
@@ -19,16 +16,33 @@ steps:
       echo "BUILDRUN_HASH: $BUILDRUN_HASH"
 
   - type: Command
-    name: "Verify Dockerfile and Workspace"
-    timeoutInSeconds: 40
+    name: "Verify Environment and Workspace"
+    timeoutInSeconds: 60
     command: |
-      cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java || exit 1
+      # Check if OCI_WORKSPACE_DIR is set
+      if [ -z "${OCI_WORKSPACE_DIR}" ]; then
+        echo "Error: OCI_WORKSPACE_DIR is not set."
+        exit 1
+      fi
+      echo "OCI_WORKSPACE_DIR is set to: ${OCI_WORKSPACE_DIR}"
+
+      # Check if the expected directory exists
+      if [ ! -d "${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java" ]; then
+        echo "Error: Directory ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java does not exist."
+        exit 1
+      fi
+
+      # Navigate to the workspace and list contents
+      cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java
       echo "Current directory: $(pwd)"
+      echo "Listing files in ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java:"
       ls -al
+      # Check if Dockerfile exists
       if [ ! -f Dockerfile ]; then
         echo "Error: Dockerfile not found in ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java"
         exit 1
       fi
+      echo "Dockerfile found."
 
   - type: Command
     timeoutInSeconds: 1200
@@ -43,7 +57,6 @@ steps:
       - type: Command
         command: |
           echo "Handling Failure in Build container image step"
-          exit 1
         timeoutInSeconds: 40
         runAs: root
 
