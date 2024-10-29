@@ -1,9 +1,11 @@
-version: 0.1
+version: 0.2
 component: build
 timeoutInSeconds: 6000
 runAs: root
 shell: bash
 env:
+  variables:
+    key: "value"
   exportedVariables:
     - BUILDRUN_HASH
 
@@ -12,53 +14,54 @@ steps:
     name: "Define unique image tag"
     timeoutInSeconds: 40
     command: |
-      export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
+      export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
       echo "BUILDRUN_HASH: $BUILDRUN_HASH"
-
-  - type: Command
-    name: "Verify Environment and Workspace"
-    timeoutInSeconds: 60
-    command: |
-      # Verify OCI_WORKSPACE_DIR
-      if [ -z "${OCI_WORKSPACE_DIR}" ]; then
-        echo "Error: OCI_WORKSPACE_DIR environment variable is not set."
-        exit 1
-      fi
-      echo "OCI_WORKSPACE_DIR is set to: ${OCI_WORKSPACE_DIR}"
-      
-      # Check directory existence and permissions
-      if [ ! -d "${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java" ]; then
-        echo "Error: Directory ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java does not exist."
-        exit 1
-      fi
-      echo "Directory ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java exists with permissions:"
-      ls -ld "${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java"
-
-      # Check Dockerfile existence and permissions
-      if [ ! -f "${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java/Dockerfile" ]; then
-        echo "Error: Dockerfile not found in ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java"
-        exit 1
-      fi
-      echo "Dockerfile found with permissions:"
-      ls -l "${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java/Dockerfile"
+    onFailure:
+      - type: Command
+        command: |
+          echo "Handling Failure"
+          echo "Failure successfully handled"
+        timeoutInSeconds: 40
+        runAs: root
 
   - type: Command
     timeoutInSeconds: 1200
     name: "Build container image"
     command: |
-      cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java
-      docker build --pull --rm --no-cache -t oci_devops_java_app . || {
-        echo "Docker build failed. Check Dockerfile syntax or unsupported commands."
-        exit 1
-      }
+      # cd ${OCI_WORKSPACE_DIR}/github_oci-DevOps-Java
+      docker build --pull --rm -t nrt.ocir.io/nrcbpbtrtyz0/regs-container:${BUILDRUN_HASH} -f Dockerfile .
+
+  - type: Command
+    timeoutInSeconds: 1200
+    name: "Push container image to registry"
+    command: |
+      docker push nrt.ocir.io/nrcbpbtrtyz0/regs-container:${BUILDRUN_HASH}
     onFailure:
       - type: Command
         command: |
-          echo "Handling Failure in Build container image step"
+          echo "Failed to create a docker image"
+          echo "Failure successfully handled"
+        timeoutInSeconds: 40
+        runAs: root
+
+  - type: Command
+    name: "Upload artifact"
+    timeoutInSeconds: 40
+    command: |
+      oci artifacts generic artifact upload-by-path \
+          --repository-id ocid1.devopsdeployartifact.oc1.ap-tokyo-1.amaaaaaa46pqqoyaju5tunynouos245zkyll6bmxzdfy25wkkeppprzh6rgq \
+          --artifact-path BACKEND-ml-brokerage-manifest \
+          --artifact-version "${BUILDRUN_HASH}"
+      echo "Artifact uploaded."
+    onFailure:
+      - type: Command
+        command: |
+          echo "Handling Failure"
+          echo "Failure successfully handled"
         timeoutInSeconds: 40
         runAs: root
 
 outputArtifacts:
-  - name: backend
+  - name: output01
     type: DOCKER_IMAGE
     location: oci_devops_java_app:latest
