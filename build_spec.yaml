@@ -5,7 +5,7 @@ runAs: root
 shell: bash
 env:
   variables:
-    key: "value"
+    npm_config_build_from_source: true # Forces bcrypt to build from source
   exportedVariables:
     - BUILDRUN_HASH
 
@@ -14,19 +14,23 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - echo "Installing dependencies for bcrypt and node-gyp..."
+      - echo "Installing necessary build tools for bcrypt and node-gyp..."
       - apt-get update
-      - apt-get install -y python3 make g++ build-essential
+      - apt-get install -y python3 make g++ build-essential libssl-dev
   pre_build:
     commands:
-      - echo "Starting build process at $(date)"
-      - export npm_config_build_from_source=true # Force build from source for bcrypt
+      - echo "Setting up environment for bcrypt compilation"
   build:
     commands:
-      - echo "Running npm install..." || { echo "npm install failed"; exit 1; }
-      - npm install || { echo "npm install failed"; exit 1; }
+      - echo "Running npm install..."
+      - |
+        npm install || { 
+          echo "Initial npm install failed. Retrying..."; 
+          sleep 5; 
+          npm install; 
+        }
       - echo "Building application..."
-      - npm run build || { echo "npm run build failed"; exit 1; }
+      - npm run build || { echo "Build failed"; exit 1; }
   post_build:
     commands:
       - echo "Build completed at $(date)"
