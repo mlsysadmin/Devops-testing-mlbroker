@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.2
 component: build
 timeoutInSeconds: 6000
 runAs: root
@@ -16,22 +16,22 @@ phases:
     commands:
       - echo "Installing dependencies for bcrypt and node-gyp..."
       - apt-get update
-      - apt-get install -y python3 make g++
+      - apt-get install -y python3 make g++ build-essential
   pre_build:
     commands:
       - echo "Starting build process at $(date)"
       - export npm_config_build_from_source=true # Force build from source for bcrypt
   build:
     commands:
-      - echo "Running npm install..."
-      - npm install # Install Node.js dependencies
+      - echo "Running npm install..." || { echo "npm install failed"; exit 1; }
+      - npm install || { echo "npm install failed"; exit 1; }
       - echo "Building application..."
-      - npm run build # Run any build script if required (e.g., for TypeScript or bundling)
+      - npm run build || { echo "npm run build failed"; exit 1; }
   post_build:
     commands:
       - echo "Build completed at $(date)"
       - echo "Packaging application for deployment..."
-      - zip -r application.zip . # Package for deployment if needed
+      - zip -r application.zip . || { echo "Packaging failed"; exit 1; }
 
 steps:
   - type: Command
@@ -73,4 +73,18 @@ steps:
     command: |
       oci artifacts generic artifact upload-by-path \
           --repository-id ocid1.devopsdeployartifact.oc1.ap-tokyo-1.amaaaaaa46pqqoyaju5tunynouos245zkyll6bmxzdfy25wkkeppprzh6rgq \
-          --artifact-path BACKEND-ml-brokerage
+          --artifact-path BACKEND-ml-brokerage-manifest \
+          --artifact-version "${BUILDRUN_HASH}"
+      echo "Artifact uploaded."
+    onFailure:
+      - type: Command
+        command: |
+          echo "Handling Failure"
+          echo "Failure successfully handled"
+        timeoutInSeconds: 40
+        runAs: root
+
+outputArtifacts:
+  - name: output01
+    type: DOCKER_IMAGE
+    location: oci_devops_java_app:latest
