@@ -1,0 +1,70 @@
+.rating .ant-rate {
+    font-size: 25px;
+}
+
+.rating .ant-carousel .rate-carousel button.slick-prev::after,
+.rating .ant-carousel .rate-carousel button.slick-next::after {
+    /* height: 30px; */
+    /* background: yellow;    */
+    width: 35px !important;
+    height: 35px !important;
+    color: rgb(255, 196, 0);
+    border-top-width: 4px;
+    border-left-width: 4px;
+}
+
+
+.rating .rate {
+    margin: 20px 280px;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+.rating .rate p {
+    font-weight: 500;
+    font-size: 15px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.rating .rate--user-name {
+    color: var(--mute-gray);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 315px) and (max-width: 480px) {
+
+    .rating .ant-carousel .rate-carousel button.slick-prev::after,
+    .rating .ant-carousel .rate-carousel button.slick-next::after {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .rating .rate{
+        margin: 20px 40px;
+    }
+    .rating .rate p{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    .rating .rate{
+        margin: 20px 70px;
+    }
+    .rating .ant-carousel .rate-carousel button.slick-prev::after,
+    .rating .ant-carousel .rate-carousel button.slick-next::after {
+        width: 23px !important;
+        height: 23px !important;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1600px) {
+    .rating .rate{
+        margin: 20px 80px;
+    }
+}

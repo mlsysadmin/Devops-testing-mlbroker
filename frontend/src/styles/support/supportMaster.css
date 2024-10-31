@@ -1,0 +1,105 @@
+.support--table-footer,
+.support--top-controls {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.support--table-footer {
+    grid-template-columns: 14% 50%;
+}
+
+.support--top-controls {
+    margin-top: 50px;
+}
+
+.support--top-controls .ant-select.support--select-entries{
+    width: 70px;
+}
+
+.support--top-controls .ant-select.support--select-entries .ant-select-selector:hover,
+.support--top-controls .ant-select.support--select-entries.ant-select-focused .ant-select-selector,
+.support--top-controls .ant-input:hover,
+.support--top-controls .ant-input:focus {
+    border-color: var(--red) !important;
+    box-shadow: 0 0 0 2px #f778783f !important;
+}
+
+.ant-select-item-option.ant-select-item-option-selected,
+.ant-select-item-option.ant-select-item-option-active:hover{
+    background-color: #fdd1d1b8;
+}
+
+.support--table-footer .support--approval-btns,
+.support--show-entries,
+.support--top-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.support--table-footer.active-list{
+    justify-content: end;
+    grid-template-columns: 100%;
+}
+
+.support--show-entries {
+    align-items: center;
+    max-width: 170px;
+    width: 100%;
+}
+
+.support--table-footer .support--table-pagination {
+    display: flex;
+    justify-content: end;
+}
+
+.support--table-footer .support--approval-btns button {
+    padding: 20px 25px;
+}
+
+.support--table-footer .support--approval-btns button.approve-btn,
+.support--table-footer .support--approval-btns button.approve-btn:hover {
+    background: rgb(0, 114, 0);
+}
+
+.support--table-footer .support--approval-btns button.denied-btn,
+.support--table-footer .support--approval-btns button.denied-btn:hover {
+    background: var(--red);
+}
+
+.support--table-footer ul.ant-pagination.support--table-pagination li:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.support--table-footer ul.ant-pagination.support--table-pagination li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.support--table-footer .ant-pagination.support--table-pagination .ant-pagination-item-active {
+    border-color: var(--red);
+}
+
+.support--table-pagination .ant-pagination-prev.ant-pagination-disabled a,
+.support--table-pagination .ant-pagination-next.ant-pagination-disabled a {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.support--table-footer .ant-pagination-prev a,
+.support--table-pagination .ant-pagination-next a,
+.support--table-footer .ant-pagination.support--table-pagination .ant-pagination-item-active a {
+    color: var(--red);
+}
+
+.ant-message .ant-message-notice-wrapper .ant-message-notice-content{
+    /* width: 40%; */
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.ant-message .ant-message-notice-wrapper .ant-message-custom-content{
+    justify-content: center;
+    margin: 0 13px;
+}

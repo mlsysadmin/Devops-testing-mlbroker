@@ -1,0 +1,21 @@
+.text-field input.ant-input:hover,
+.text-field input.ant-input:focus {
+  /* padding: 5%; */
+  /* border-radius: 10px; */
+  /* border: 1px #8c9094 solid; */
+  border-color: var(--red) !important;
+  box-shadow: 0 0 0 2px #f778783f !important;
+}
+.text-field textarea {
+  /* border: 1px #8c9094 solid;
+  border-radius: 10px; */
+}
+
+.text-field input.ant-input-disabled{
+  color: rgb(0 0 0 / 63%);
+  background-color: rgb(0 0 0 / 3%);
+}
+
+/* textarea[label="Caption"] {
+  height: 60vh;
+} */

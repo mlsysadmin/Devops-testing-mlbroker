@@ -1,0 +1,818 @@
+INFO 2024-10-29T11:14:36.412 HOTGQCD09 
+ ML Brokerage Server listening on port 8002
+INFO 2024-10-29T11:14:46.080 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcxOTg2MDA5LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzE2ODYsImV4cCI6MTczMDE3MTk4Nn0.gBdlg0iMIvz_n_rfcNB15ooH8v9eLSPZYE2oPzhAWcM"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.110 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcxOTg2MDQzLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzE2ODYsImV4cCI6MTczMDE3MTk4Nn0.uMSFzGdZ9V_ZuKritU4ydi-MAr0dFisrN1QI9cjSOCA"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.113 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcxOTg2MDQ1LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzE2ODYsImV4cCI6MTczMDE3MTk4Nn0.c9jhmnSfl5PQGz7JN6g9eWFSEMpk5s6EGUryJsa1GH0"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.176 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcxOTg2MTA5LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzE2ODYsImV4cCI6MTczMDE3MTk4Nn0.x3wx_i6CnfKfD44dW4Um8R1XVbFdujsjeB9IiOWkdq8"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.399 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcxOTg2MDA5LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzE2ODYsImV4cCI6MTczMDE3MTk4Nn0.gBdlg0iMIvz_n_rfcNB15ooH8v9eLSPZYE2oPzhAWcM","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'OK',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.400 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.492 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcxOTg2MDQ1LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzE2ODYsImV4cCI6MTczMDE3MTk4Nn0.c9jhmnSfl5PQGz7JN6g9eWFSEMpk5s6EGUryJsa1GH0","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'OK',
+    message: 'Cities Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.492 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.544 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcxOTg2MTA5LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzE2ODYsImV4cCI6MTczMDE3MTk4Nn0.x3wx_i6CnfKfD44dW4Um8R1XVbFdujsjeB9IiOWkdq8","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'OK',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.544 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.584 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcxOTg2MDQzLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzE2ODYsImV4cCI6MTczMDE3MTk4Nn0.uMSFzGdZ9V_ZuKritU4ydi-MAr0dFisrN1QI9cjSOCA","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'OK',
+    message: 'Cities Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:14:46.584 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:20:04.719 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyMzA0NjUyLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIwMDQsImV4cCI6MTczMDE3MjMwNH0.vHB-0sGTptKxwCu0Sy-vpqwIi-poZTvvgYl_zRlWxoM"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:20:04.725 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyMzA0NjYyLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIwMDQsImV4cCI6MTczMDE3MjMwNH0.s9azCf_Yq7S1Ig0MhD3sHQbeOINR-CTvliUe8uF1JgU"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:20:04.727 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyMzA0NjY0LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIwMDQsImV4cCI6MTczMDE3MjMwNH0.A4zlxPHednlyiPBP-s17bBMqBji7ZFKnobxJ0lNi04A"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:20:04.787 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyMzA0NzI2LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIwMDQsImV4cCI6MTczMDE3MjMwNH0.-4p5UBjNR2tzoXZ0-GAnLDj97jdkZPT5Aduos4FL5C8"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:20:04.989 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyMzA0NjUyLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIwMDQsImV4cCI6MTczMDE3MjMwNH0.vHB-0sGTptKxwCu0Sy-vpqwIi-poZTvvgYl_zRlWxoM","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'OK',
+    message: 'Cities Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:20:04.989 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:20:05.035 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyMzA0NjYyLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIwMDQsImV4cCI6MTczMDE3MjMwNH0.s9azCf_Yq7S1Ig0MhD3sHQbeOINR-CTvliUe8uF1JgU","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'OK',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:20:05.036 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:20:05.074 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyMzA0NzI2LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIwMDQsImV4cCI6MTczMDE3MjMwNH0.-4p5UBjNR2tzoXZ0-GAnLDj97jdkZPT5Aduos4FL5C8","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'OK',
+    message: 'Cities Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:20:05.075 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:20:05.144 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyMzA0NjY0LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIwMDQsImV4cCI6MTczMDE3MjMwNH0.A4zlxPHednlyiPBP-s17bBMqBji7ZFKnobxJ0lNi04A","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'OK',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:20:05.144 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:30.952 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDUwODkzLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTAsImV4cCI6MTczMDE3MjQ1MH0.9b5pCmosKqs8O3Q9iJqU3ANQYAOTdEMXLh6hfsAs2Zw"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:22:30.956 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDUwODk1LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTAsImV4cCI6MTczMDE3MjQ1MH0.ApHg3lkp_1GqycvfxzCwHGa802PS4pvZoSYTWxghfTQ"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:22:30.965 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDUwOTAxLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTAsImV4cCI6MTczMDE3MjQ1MH0.rTFPp4PbGcOKGpiD40JDCwsYJrtZy0vQ7P_ldWLDz_E"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:22:31.048 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDUwOTgyLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTAsImV4cCI6MTczMDE3MjQ1MH0.38-SaQnmSM3WLA9fh9gqLxX6IcR3IwnbPIDP2xEZl2s"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:22:31.234 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDUwODkzLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTAsImV4cCI6MTczMDE3MjQ1MH0.9b5pCmosKqs8O3Q9iJqU3ANQYAOTdEMXLh6hfsAs2Zw","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'OK',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:31.235 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:31.334 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDUwODk1LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTAsImV4cCI6MTczMDE3MjQ1MH0.ApHg3lkp_1GqycvfxzCwHGa802PS4pvZoSYTWxghfTQ","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'OK',
+    message: 'Cities Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:31.334 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:31.441 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDUwOTgyLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTAsImV4cCI6MTczMDE3MjQ1MH0.38-SaQnmSM3WLA9fh9gqLxX6IcR3IwnbPIDP2xEZl2s","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'OK',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:31.442 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:31.460 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDUwOTAxLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTAsImV4cCI6MTczMDE3MjQ1MH0.rTFPp4PbGcOKGpiD40JDCwsYJrtZy0vQ7P_ldWLDz_E","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'OK',
+    message: 'Cities Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:31.461 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:37.975 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDU3OTEwLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTcsImV4cCI6MTczMDE3MjQ1N30.XyS3KeTpjEAmknJMthLK8rKcaYmb2Wsj248VZ43xfeY"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:22:37.977 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDU3OTEyLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTcsImV4cCI6MTczMDE3MjQ1N30.pxtM7ykNxc9cNy5Ou-EUtVnDS9f9DVjZydsuxR2cAh4"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:22:38.015 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDU3OTYxLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTcsImV4cCI6MTczMDE3MjQ1N30.NQAVbVcUJrR9iumroalCNiEsKp9M1aUzCE-czmO1y7A"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:22:38.020 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"9fa508059e4660856195b380fd87e8a4a59965b55de65fb8ca8476e30d660774000f722c5b34ea076af2dc1d5993ee0e8fbc3e836daa008ca033bb6b68113189"},"signature":"mlibApiKey|mlibSecret|2024-10-29"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDU3OTYzLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTcsImV4cCI6MTczMDE3MjQ1N30.RqILnFcLFFYsvw2b1dyKkOcbw8gu90cPA5dQ7l85TH0"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-29T11:22:38.186 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDU3OTEwLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTcsImV4cCI6MTczMDE3MjQ1N30.XyS3KeTpjEAmknJMthLK8rKcaYmb2Wsj248VZ43xfeY","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'OK',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:38.187 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:38.212 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDU3OTEyLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTcsImV4cCI6MTczMDE3MjQ1N30.pxtM7ykNxc9cNy5Ou-EUtVnDS9f9DVjZydsuxR2cAh4","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'OK',
+    message: 'Cities Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:38.213 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:38.263 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDU3OTYzLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTcsImV4cCI6MTczMDE3MjQ1N30.RqILnFcLFFYsvw2b1dyKkOcbw8gu90cPA5dQ7l85TH0","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'OK',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:38.263 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/provinces',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '82',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:38.347 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com/api/v1/addresses/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzMwMTcyNDU3OTYxLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3MzAxNzIxNTcsImV4cCI6MTczMDE3MjQ1N30.NQAVbVcUJrR9iumroalCNiEsKp9M1aUzCE-czmO1y7A","Accept":"application/json","Content-Type":"application/json"}}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'OK',
+    message: 'Cities Retrieved Successfully'
+  }
+}
+INFO 2024-10-29T11:22:38.348 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/cities',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","pragma":"no-cache","cache-control":"no-cache","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Brave\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","sec-gpc":"1","accept-language":"en-US,en","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd"}'
+  },
+  RES: {
+    data: '1636',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'Provinces Retrieved Successfully'
+  }
+}

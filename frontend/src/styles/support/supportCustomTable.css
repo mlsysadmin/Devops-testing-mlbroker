@@ -1,0 +1,36 @@
+.support--custom-table{
+    margin: 30px 0;
+}
+
+.support--custom-table .support-table table th.ant-table-cell{
+    background: none;
+}
+.support--custom-table .support-table table th.ant-table-cell::before{
+    display: none;
+}
+.support--custom-table .support-table table td.ant-table-cell,
+.support--custom-table .support-table table th.ant-table-cell{
+    border: none;
+}
+.support--custom-table .support--show-details-btn,
+.support--custom-table .support--show-details-btn.ant-btn:hover{
+    border-color: var(--red);
+    color: black;
+    font-weight: 500;
+}
+
+.support--custom-table .support-table .ant-checkbox .ant-checkbox-inner{
+    width: 20px;
+    height: 20px;
+}
+
+.support--custom-table .support-table .ant-checkbox-checked .ant-checkbox-inner,
+.support--custom-table .support-table .ant-checkbox-input:focus,
+.support--custom-table .ant-table-selection-column .ant-checkbox-indeterminate .ant-checkbox-inner:after{
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
+.support--custom-table .support-table .ant-table-row.ant-table-row-selected >.ant-table-cell{
+    background: #ffdbdb;
+}

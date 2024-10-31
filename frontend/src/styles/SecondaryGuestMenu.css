@@ -1,0 +1,90 @@
+.menuContainer{
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #FFE9E9;
+    gap: 1rem;
+}
+.top{
+    padding: 1%;
+    border: 10px;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+.top input[type="text"]{
+    width: 24%;
+    border: none;
+    border-bottom: 1px solid #8C9094;
+    outline: none;
+    font-size: large;
+
+}
+.top select{
+    font-size: large;
+    color: #111;
+    width: 24%;
+    border: none;
+    outline: none   ;
+    background: transparent;
+}
+
+.bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bottom .left{
+    width: 20%;
+    background: #d90000;
+    display: flex;
+    gap: .5rem;
+    color: #fff;
+    border-radius: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+.bottom .left img{
+    width: 10%;
+}
+.bottom .right{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    width: 30%;
+    justify-content: flex-end;
+}
+.right .rightdiv.advanceSearch{
+    border: #d90000 solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4%;
+    border-radius: 40px;
+    font-weight: 500;
+}
+.right .rightdiv.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #d90000;
+    color: #fff;
+    padding: 0 4%;
+    border-radius: 40px;
+    gap: .5rem;
+    font-weight: bold;
+}

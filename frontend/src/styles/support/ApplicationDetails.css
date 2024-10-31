@@ -1,0 +1,359 @@
+.application-details-container .bodySection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding: 2%;
+}
+
+.bodySection .secondTab {
+  width: 100%;
+}
+.bodySection .contentContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.closeApplicationBtn {
+  background: green;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+.contentContainer .mainContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1% 0;
+}
+.mainContent .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.okay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.okay button {
+  font-weight: bold;
+  padding: 7px 30px;
+  color: white;
+  background-color: #ff2800;
+  border: none;
+  border-radius: 10px;
+}
+.successHeader {
+  margin: 0;
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.successBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContent .right .topCard {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1%;
+  border: 1px solid #8c9094;
+  align-items: center;
+  border-radius: 20px;
+  padding: 1% 2%;
+}
+.mainContent .right .bottomCard {
+  display: flex;
+  width: 100%;
+  padding: 1%;
+}
+.mainContent .right .topCard .leftPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+.mainContent .right .topCard .leftPart .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 80%;
+}
+.mainContent .right .topCard .leftPart .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px #8c9094 solid;
+  padding: 1%;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+.mainContent #title {
+  width: 100%;
+  text-align: left;
+}
+.mainContent #loc {
+  font-weight: normal;
+  width: 100%;
+  font-size: 1rem;
+  text-align: left;
+}
+.mainContent .right .topCard .rightCard {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-fit: contain;
+}
+.mainContent .right .topCard .rightCard img {
+  width: 70%;
+  height: 40vh;
+  border-radius: 20px;
+}
+.mainContent .mainTitle {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 1% 1%;
+}
+.centerContent {
+  width: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  grid-area: 1rem;
+}
+.centerContent h1 {
+  color: black;
+  opacity: 80%;
+  width: 95%;
+}
+.centerContent .firstField {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.centerContent p {
+  padding: 10px;
+  border: #8c9094 1px solid;
+  border-radius: 10px;
+}
+.centerContent .secondField {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1rem;
+  width: 100%;
+}
+.centerContent .secondField .field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.CenterContentTitle {
+  width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  color: black;
+}
+.centerContent p.ID {
+  width: 23%;
+}
+
+.lastField .topAddress label {
+  text-align: left;
+  width: 100% !important;
+}
+.field label {
+  text-align: left;
+}
+.centerContent label {
+  color: #8c9094;
+}
+.centerContent .lastField {
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 50% 20%;
+  gap: 2.6%;
+}
+
+.centerContent p.address {
+  width: 100%;
+}
+.contentContainer .actionButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1% 3%;
+  align-items: center;
+}
+.actionButtons .back {
+  font-size: 3rem;
+  width: 20%;
+  color: #ff2800;
+}
+.actionButtons button {
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px gray;
+  border: none;
+  background: #ff2800;
+}
+.requirementsDocuments {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.requirementsCard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+}
+.card p span {
+  color: #ff2800;
+}
+.contentContainer .approval {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+}
+.imgContainer {
+  border-radius: 20px;
+
+  border: 1px solid #ccc;
+}
+.imgContainer img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.avrivate {
+  font-size: 0.7rem;
+}
+.details-header {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+}
+.detailsClosed {
+  width: 20%;
+}
+.detailsClosed p {
+  color: #8c9094;
+}
+@media only screen and (max-width: 770px) {
+  .contentContainer .mainContent {
+    flex-direction: column;
+  }
+  .contentContainer .mainContent .right .topCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .mainContent .right .topCard .leftPart .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainContent .right .topCard .leftPart {
+    width: 100%;
+  }
+  .mainContent .right .topCard .rightCard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainContent .right .topCard .rightCard img {
+    width: 80%;
+  }
+  .bottomCard .btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .centerContent .secondField {
+    display: flex;
+    flex-direction: column;
+  }
+  .centerContent p.ID {
+    width: 30%;
+  }
+  .centerContent p.address {
+    width: 94%;
+  }
+  .mainContent .contentContainer .actionButtons {
+    padding-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 860px) and (min-width: 770px) {
+  .contentContainer .mainContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentContainer .mainContent .right .topCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainContent .right .topCard .leftPart .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottomCard .btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .centerContent .secondField {
+    display: flex;
+    flex-direction: column;
+  }
+  .centerContent p.ID {
+    width: 30%;
+  }
+  .centerContent p.address {
+    width: 94%;
+  }
+  .mainContent .contentContainer .actionButtons {
+    padding-top: 5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+}

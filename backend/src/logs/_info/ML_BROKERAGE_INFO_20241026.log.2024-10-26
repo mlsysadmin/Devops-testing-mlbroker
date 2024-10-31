@@ -1,0 +1,206 @@
+INFO 2024-10-26T08:32:56.003 HOTGQCD09 
+ ML Brokerage Server listening on port 8002
+INFO 2024-10-26T09:11:29.155 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"db153a0a9511d3e35cea534d7d98d72fa78ef922854c327a11bc2e782112870bbbbae2ad0e0a29805d31db665de0e8a4103ad5a4cfa915092e5f15706506e030"},"signature":"mlibApiKey|mlibSecret|2024-10-26"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzI5OTA1Mzg5MTE3LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3Mjk5MDUwODksImV4cCI6MTcyOTkwNTM4OX0.nKvVJ-wO0RCs0b27Ycn7QKu6YTilpliPdOP55lo2mKM"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.159 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"db153a0a9511d3e35cea534d7d98d72fa78ef922854c327a11bc2e782112870bbbbae2ad0e0a29805d31db665de0e8a4103ad5a4cfa915092e5f15706506e030"},"signature":"mlibApiKey|mlibSecret|2024-10-26"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzI5OTA1Mzg5MTIwLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3Mjk5MDUwODksImV4cCI6MTcyOTkwNTM4OX0.-fh6ZIhp-mSvi2W02ALEXAgTIUGRiGfZCAtyDeNXAq0"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.350 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com//api/v1/customers/exact-search',
+    method: 'GET',
+    query: '{"cellphoneNumber":"09856346185"}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzI5OTA1Mzg5MTE3LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3Mjk5MDUwODksImV4cCI6MTcyOTkwNTM4OX0.nKvVJ-wO0RCs0b27Ycn7QKu6YTilpliPdOP55lo2mKM","Accept":"application/json","Content-Type":"application/json"},"params":{"cellphoneNumber":"09856346185"}}'
+  },
+  RES: {
+    data: '"X230900000328K1"',
+    status: 200,
+    code: 'OK',
+    message: 'KYC Retrieved Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.351 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/search-kyc',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"payload":{"cellphoneNumber":"09856346185"}}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","content-length":"45","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Google Chrome\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","content-type":"application/json","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cookie":"remote_login_coordinates=%7B%22latitude%22%3A10.3049258%2C%22longitude%22%3A123.9094527%7D; ML_W_W_S=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJja3ljSWQiOiJYMjMwOTAwMDAwMzI4SzEiLCJzdWIiOjY1MjQsIm1haW5BY2NvdW50SWQiOiJYMjMwOTAwMDAwMzI4SzEiLCJ0eXBlIjoiTk9STUFMIiwiaWF0IjoxNzI3NDMyMDk5LCJleHAiOjE3Mjg3MjgwOTl9.vagR4USG7JeHMNK9mWoEoLhoiykawhr_o0fJxy6Ep4E; account session=Fe26.2*1*df591721f734a14f12eb3a42a75ab6ded2126fd6a9ac5bd879a37a6b366cb470*BeLIj0yFdqOiAt2YgGiuLg*9JoUQFfcWWGTa69tW6beuv_L8r1KxP44Z2F84n906o2TITZEqlCfzsOYVE77mPRfq4pUJXruhjgZA4UamXrCEHEZ6aGpFjSE9frvwP0_I_2skJsptRH6DyMh56nK3ToMrKI9ZzzPrphOaUILepCiD-Lk-idfxm8tdHHbHUB16Rl72pcRSuRz7TJAYkykqMK-7-CWTs0QwgTXVteHAz-UO-lLqdNCZNbFZkKb6B8l78DFbgWmGeE8n6jDw3-KN_mYnvyciDp-kEqIqJDES5FC3Vr9KapFHfc0u01TQ1jGoKXfihoDKCxc31UtE7Ifb3jrfpousLfCDgnFyFvTR_enlL540XGTbklqhQuM3AmwM4EDQOi8ntD0ZyeYDy1K7PH7QevJno3_588MUMgYlx9v35NAnRRD2tKG3QbB9eS48E4RDSdFioNpnw1mfPuu3nzB_Ys2N0rgjQR_KE2oiUkG0F1lD_z1fMMhLfxcZjLp_iVmQKCfYbC1NQSQXmz09wxl2PDOnlKT4V0ltFOhcAnxXeuspiMhJObG1bFVHwXqt9I*1728641731420*1da96e04de122f8b666bd1b21291e9fc5767fbb58b4a45b81e51349fb5bd56cb*zYSVd2ZtlTPm7dOkeVeEY8uz2NLCYiH3BNTsgFaMyZw~2; account_details=%7B%22address%22%3A%7B%22otherAddress%22%3A%22ML%20TG%20QD%22%2C%22addressL1Name%22%3A%22CEBU%22%2C%22addressL2Name%22%3A%22CEBU%20CITY%22%2C%22addressL0Name%22%3A%22PHILIPPINES%22%2C%22zipCode%22%3Anull%7D%2C%22birthDate%22%3A%221990-01-17%22%2C%22civilStatus%22%3A%22SINGLE%22%2C%22ckycId%22%3A%22X230900000328K1%22%2C%22email%22%3A%22jonalyn.mobilla%40gmail.com%22%2C%22firstName%22%3A%22DEVTESTQD%22%2C%22gender%22%3A%22FEMALE%22%2C%22lastName%22%3A%22QDTEST%22%2C%22middleName%22%3Anull%2C%22mlWalletNumber%22%3Anull%2C%22mobileNumber%22%3A%2209856346185%22%2C%22nationality%22%3A%22FILIPINO%22%2C%22placeOfBirth%22%3A%22QD%20DEV%22%2C%22suffix%22%3Anull%7D"}'
+  },
+  RES: {
+    data: '{"tier":{"tierLimits":[],"tierRequirements":[[{"requirement":"FULL NAME","kycTierRequirementId":19,"kycTierId":5,"set":1},{"requirement":"MOBILE","kycTierRequirementId":20,"kycTierId":5,"set":1},{"requirement":"EMAIL","kycTierRequirementId":21,"kycTierId":5,"set":1},{"requirement":"BIRTHDAY","kycTierRequirementId":22,"kycTierId":5,"set":1},{"requirement":"FULL ADDRESS","kycTierRequirementId":23,"kycTierId":5,"set":1},{"requirement":"GOVT ID (ONLINE)","kycTierRequirementId":24,"kycTierId":5,"set":1},{"requirement":"SOURCE OF INCOME","kycTierRequirementId":25,"kycTierId":5,"set":1},{"requirement":"NATURE OF WORK","kycTierRequirementId":26,"kycTierId":5,"set":1}]],"description":"FULLY VERIFIED","isAwarded":0,"kycTierId":5,"label":"FULLY VERIFIED","level":25,"maxBalance":250000,"expirationDays":null,"availableAtService":["KPX","ML MONEY"],"type":null},"addresses":{"current":{"addressId":14770,"addressL0Id":1,"addressL0Name":"PHILIPPINES","addressL1Id":25,"addressL1Name":"CEBU","addressL2Id":828,"addressL2Name":"CEBU CITY","addressL3Id":null,"addressL3Name":null,"addressL4Id":null,"addressL4Name":null,"addressL5Id":null,"addressL5Name":null,"otherAddress":"ML TG QD","zipCode":null},"permanent":{"addressId":14771,"addressL0Id":1,"addressL0Name":"PHILIPPINES","addressL1Id":25,"addressL1Name":"CEBU","addressL2Id":828,"addressL2Name":"CEBU CITY","addressL3Id":null,"addressL3Name":null,"addressL4Id":null,"addressL4Name":null,"addressL5Id":null,"addressL5Name":null,"intlProvinceCity":null,"otherAddress":"ML TG QD","zipCode":null}},"birthDate":"1990-01-17","branchRemarks":null,"cellphoneNumber":"09856346185","civilStatus":"SINGLE","ckycId":"X230900000328K1","createdAtBranchId":null,"createdByService":"ML MONEY","createdByUserId":null,"dateCreated":"2023-09-27 09:46:43","dateModified":null,"modifiedByUserId":null,"modifiedByService":null,"modifiedAtBranchId":null,"customerId":7331,"email":"jonalyn.mobilla@gmail.com","gender":"FEMALE","ids":[{"category":null,"expirationDate":null,"idCardId":null,"idNumber":null,"type":null,"validIdCardId":null,"isRequired":1,"customerId":7331,"verificationType":null,"hasExpiry":null,"otherDetails":null}],"occupation":{"organizationName":"","pensionSource":null,"workAddress":null,"workRemarks":null,"yearRetired":null,"offering":null,"workPosition":null,"natureOfWork":null,"sourceOfIncome":null},"pictures":{"customerPhoto":null,"idPhoto1":null,"idPhoto2":null,"idPhoto3Front":null,"idPhoto3Back":null,"kycBottom":null,"kycTop":null},"placeOfBirth":"QD DEV","name":{"firstName":"DEVTESTQD","lastName":"QDTEST","middleName":null,"suffix":null},"nationality":"FILIPINO","vpoRemarks":null,"seccomRemarks":null,"telephoneNumber":null,"originSystem":"MLMONEY","isWatchlist":null,"isActive":1,"activeStatusRemarks":null,"emailVerificationStatus":"UNVERIFIED","countryOfBirth":null,"tgRemarks":null}',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'KYC Retrieved Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.432 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com//api/v1/customers/exact-search',
+    method: 'GET',
+    query: '{"cellphoneNumber":"09856346185"}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzI5OTA1Mzg5MTIwLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3Mjk5MDUwODksImV4cCI6MTcyOTkwNTM4OX0.-fh6ZIhp-mSvi2W02ALEXAgTIUGRiGfZCAtyDeNXAq0","Accept":"application/json","Content-Type":"application/json"},"params":{"cellphoneNumber":"09856346185"}}'
+  },
+  RES: {
+    data: '"X230900000328K1"',
+    status: 200,
+    code: 'OK',
+    message: 'KYC Retrieved Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.433 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/search-kyc',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"payload":{"cellphoneNumber":"09856346185"}}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","content-length":"45","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Google Chrome\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","content-type":"application/json","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cookie":"remote_login_coordinates=%7B%22latitude%22%3A10.3049258%2C%22longitude%22%3A123.9094527%7D; ML_W_W_S=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJja3ljSWQiOiJYMjMwOTAwMDAwMzI4SzEiLCJzdWIiOjY1MjQsIm1haW5BY2NvdW50SWQiOiJYMjMwOTAwMDAwMzI4SzEiLCJ0eXBlIjoiTk9STUFMIiwiaWF0IjoxNzI3NDMyMDk5LCJleHAiOjE3Mjg3MjgwOTl9.vagR4USG7JeHMNK9mWoEoLhoiykawhr_o0fJxy6Ep4E; account session=Fe26.2*1*df591721f734a14f12eb3a42a75ab6ded2126fd6a9ac5bd879a37a6b366cb470*BeLIj0yFdqOiAt2YgGiuLg*9JoUQFfcWWGTa69tW6beuv_L8r1KxP44Z2F84n906o2TITZEqlCfzsOYVE77mPRfq4pUJXruhjgZA4UamXrCEHEZ6aGpFjSE9frvwP0_I_2skJsptRH6DyMh56nK3ToMrKI9ZzzPrphOaUILepCiD-Lk-idfxm8tdHHbHUB16Rl72pcRSuRz7TJAYkykqMK-7-CWTs0QwgTXVteHAz-UO-lLqdNCZNbFZkKb6B8l78DFbgWmGeE8n6jDw3-KN_mYnvyciDp-kEqIqJDES5FC3Vr9KapFHfc0u01TQ1jGoKXfihoDKCxc31UtE7Ifb3jrfpousLfCDgnFyFvTR_enlL540XGTbklqhQuM3AmwM4EDQOi8ntD0ZyeYDy1K7PH7QevJno3_588MUMgYlx9v35NAnRRD2tKG3QbB9eS48E4RDSdFioNpnw1mfPuu3nzB_Ys2N0rgjQR_KE2oiUkG0F1lD_z1fMMhLfxcZjLp_iVmQKCfYbC1NQSQXmz09wxl2PDOnlKT4V0ltFOhcAnxXeuspiMhJObG1bFVHwXqt9I*1728641731420*1da96e04de122f8b666bd1b21291e9fc5767fbb58b4a45b81e51349fb5bd56cb*zYSVd2ZtlTPm7dOkeVeEY8uz2NLCYiH3BNTsgFaMyZw~2; account_details=%7B%22address%22%3A%7B%22otherAddress%22%3A%22ML%20TG%20QD%22%2C%22addressL1Name%22%3A%22CEBU%22%2C%22addressL2Name%22%3A%22CEBU%20CITY%22%2C%22addressL0Name%22%3A%22PHILIPPINES%22%2C%22zipCode%22%3Anull%7D%2C%22birthDate%22%3A%221990-01-17%22%2C%22civilStatus%22%3A%22SINGLE%22%2C%22ckycId%22%3A%22X230900000328K1%22%2C%22email%22%3A%22jonalyn.mobilla%40gmail.com%22%2C%22firstName%22%3A%22DEVTESTQD%22%2C%22gender%22%3A%22FEMALE%22%2C%22lastName%22%3A%22QDTEST%22%2C%22middleName%22%3Anull%2C%22mlWalletNumber%22%3Anull%2C%22mobileNumber%22%3A%2209856346185%22%2C%22nationality%22%3A%22FILIPINO%22%2C%22placeOfBirth%22%3A%22QD%20DEV%22%2C%22suffix%22%3Anull%7D"}'
+  },
+  RES: {
+    data: '{"tier":{"tierLimits":[],"tierRequirements":[[{"requirement":"FULL NAME","kycTierRequirementId":19,"kycTierId":5,"set":1},{"requirement":"MOBILE","kycTierRequirementId":20,"kycTierId":5,"set":1},{"requirement":"EMAIL","kycTierRequirementId":21,"kycTierId":5,"set":1},{"requirement":"BIRTHDAY","kycTierRequirementId":22,"kycTierId":5,"set":1},{"requirement":"FULL ADDRESS","kycTierRequirementId":23,"kycTierId":5,"set":1},{"requirement":"GOVT ID (ONLINE)","kycTierRequirementId":24,"kycTierId":5,"set":1},{"requirement":"SOURCE OF INCOME","kycTierRequirementId":25,"kycTierId":5,"set":1},{"requirement":"NATURE OF WORK","kycTierRequirementId":26,"kycTierId":5,"set":1}]],"description":"FULLY VERIFIED","isAwarded":0,"kycTierId":5,"label":"FULLY VERIFIED","level":25,"maxBalance":250000,"expirationDays":null,"availableAtService":["KPX","ML MONEY"],"type":null},"addresses":{"current":{"addressId":14770,"addressL0Id":1,"addressL0Name":"PHILIPPINES","addressL1Id":25,"addressL1Name":"CEBU","addressL2Id":828,"addressL2Name":"CEBU CITY","addressL3Id":null,"addressL3Name":null,"addressL4Id":null,"addressL4Name":null,"addressL5Id":null,"addressL5Name":null,"otherAddress":"ML TG QD","zipCode":null},"permanent":{"addressId":14771,"addressL0Id":1,"addressL0Name":"PHILIPPINES","addressL1Id":25,"addressL1Name":"CEBU","addressL2Id":828,"addressL2Name":"CEBU CITY","addressL3Id":null,"addressL3Name":null,"addressL4Id":null,"addressL4Name":null,"addressL5Id":null,"addressL5Name":null,"intlProvinceCity":null,"otherAddress":"ML TG QD","zipCode":null}},"birthDate":"1990-01-17","branchRemarks":null,"cellphoneNumber":"09856346185","civilStatus":"SINGLE","ckycId":"X230900000328K1","createdAtBranchId":null,"createdByService":"ML MONEY","createdByUserId":null,"dateCreated":"2023-09-27 09:46:43","dateModified":null,"modifiedByUserId":null,"modifiedByService":null,"modifiedAtBranchId":null,"customerId":7331,"email":"jonalyn.mobilla@gmail.com","gender":"FEMALE","ids":[{"category":null,"expirationDate":null,"idCardId":null,"idNumber":null,"type":null,"validIdCardId":null,"isRequired":1,"customerId":7331,"verificationType":null,"hasExpiry":null,"otherDetails":null}],"occupation":{"organizationName":"","pensionSource":null,"workAddress":null,"workRemarks":null,"yearRetired":null,"offering":null,"workPosition":null,"natureOfWork":null,"sourceOfIncome":null},"pictures":{"customerPhoto":null,"idPhoto1":null,"idPhoto2":null,"idPhoto3Front":null,"idPhoto3Back":null,"kycBottom":null,"kycTop":null},"placeOfBirth":"QD DEV","name":{"firstName":"DEVTESTQD","lastName":"QDTEST","middleName":null,"suffix":null},"nationality":"FILIPINO","vpoRemarks":null,"seccomRemarks":null,"telephoneNumber":null,"originSystem":"MLMONEY","isWatchlist":null,"isActive":1,"activeStatusRemarks":null,"emailVerificationStatus":"UNVERIFIED","countryOfBirth":null,"tgRemarks":null}',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'KYC Retrieved Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.447 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"db153a0a9511d3e35cea534d7d98d72fa78ef922854c327a11bc2e782112870bbbbae2ad0e0a29805d31db665de0e8a4103ad5a4cfa915092e5f15706506e030"},"signature":"mlibApiKey|mlibSecret|2024-10-26"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzI5OTA1Mzg5NDE4LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3Mjk5MDUwODksImV4cCI6MTcyOTkwNTM4OX0.fgWgn_jdwDYnZDCOql3DVlEf6Hb2hJ_XytV1pPUl5mQ"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.450 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-authservice-dev.df.r.appspot.com/api/v1/external-user',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"reqBody":{"apiKey":"mlibApiKey","signature":"db153a0a9511d3e35cea534d7d98d72fa78ef922854c327a11bc2e782112870bbbbae2ad0e0a29805d31db665de0e8a4103ad5a4cfa915092e5f15706506e030"},"signature":"mlibApiKey|mlibSecret|2024-10-26"}',
+    headers: '{}'
+  },
+  RES: {
+    data: '{"data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzI5OTA1Mzg5NDIyLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3Mjk5MDUwODksImV4cCI6MTcyOTkwNTM4OX0.WJzRzTDDASYqh7ddbo0htpGsWGuVX60KYx0E69YxTZ0"},"code":"SUCCESS"}',
+    status: 201,
+    code: 'CREATED',
+    message: 'Token Created Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.542 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com//api/v1/customers/exact-search',
+    method: 'GET',
+    query: '{"cellphoneNumber":"09856346185"}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzI5OTA1Mzg5NDE4LCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3Mjk5MDUwODksImV4cCI6MTcyOTkwNTM4OX0.fgWgn_jdwDYnZDCOql3DVlEf6Hb2hJ_XytV1pPUl5mQ","Accept":"application/json","Content-Type":"application/json"},"params":{"cellphoneNumber":"09856346185"}}'
+  },
+  RES: {
+    data: '"X230900000328K1"',
+    status: 200,
+    code: 'OK',
+    message: 'KYC Retrieved Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.543 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/search-kyc',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"payload":{"cellphoneNumber":"09856346185"}}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","content-length":"45","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Google Chrome\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","content-type":"application/json","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cookie":"remote_login_coordinates=%7B%22latitude%22%3A10.3049258%2C%22longitude%22%3A123.9094527%7D; ML_W_W_S=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJja3ljSWQiOiJYMjMwOTAwMDAwMzI4SzEiLCJzdWIiOjY1MjQsIm1haW5BY2NvdW50SWQiOiJYMjMwOTAwMDAwMzI4SzEiLCJ0eXBlIjoiTk9STUFMIiwiaWF0IjoxNzI3NDMyMDk5LCJleHAiOjE3Mjg3MjgwOTl9.vagR4USG7JeHMNK9mWoEoLhoiykawhr_o0fJxy6Ep4E; account session=Fe26.2*1*df591721f734a14f12eb3a42a75ab6ded2126fd6a9ac5bd879a37a6b366cb470*BeLIj0yFdqOiAt2YgGiuLg*9JoUQFfcWWGTa69tW6beuv_L8r1KxP44Z2F84n906o2TITZEqlCfzsOYVE77mPRfq4pUJXruhjgZA4UamXrCEHEZ6aGpFjSE9frvwP0_I_2skJsptRH6DyMh56nK3ToMrKI9ZzzPrphOaUILepCiD-Lk-idfxm8tdHHbHUB16Rl72pcRSuRz7TJAYkykqMK-7-CWTs0QwgTXVteHAz-UO-lLqdNCZNbFZkKb6B8l78DFbgWmGeE8n6jDw3-KN_mYnvyciDp-kEqIqJDES5FC3Vr9KapFHfc0u01TQ1jGoKXfihoDKCxc31UtE7Ifb3jrfpousLfCDgnFyFvTR_enlL540XGTbklqhQuM3AmwM4EDQOi8ntD0ZyeYDy1K7PH7QevJno3_588MUMgYlx9v35NAnRRD2tKG3QbB9eS48E4RDSdFioNpnw1mfPuu3nzB_Ys2N0rgjQR_KE2oiUkG0F1lD_z1fMMhLfxcZjLp_iVmQKCfYbC1NQSQXmz09wxl2PDOnlKT4V0ltFOhcAnxXeuspiMhJObG1bFVHwXqt9I*1728641731420*1da96e04de122f8b666bd1b21291e9fc5767fbb58b4a45b81e51349fb5bd56cb*zYSVd2ZtlTPm7dOkeVeEY8uz2NLCYiH3BNTsgFaMyZw~2; account_details=%7B%22address%22%3A%7B%22otherAddress%22%3A%22ML%20TG%20QD%22%2C%22addressL1Name%22%3A%22CEBU%22%2C%22addressL2Name%22%3A%22CEBU%20CITY%22%2C%22addressL0Name%22%3A%22PHILIPPINES%22%2C%22zipCode%22%3Anull%7D%2C%22birthDate%22%3A%221990-01-17%22%2C%22civilStatus%22%3A%22SINGLE%22%2C%22ckycId%22%3A%22X230900000328K1%22%2C%22email%22%3A%22jonalyn.mobilla%40gmail.com%22%2C%22firstName%22%3A%22DEVTESTQD%22%2C%22gender%22%3A%22FEMALE%22%2C%22lastName%22%3A%22QDTEST%22%2C%22middleName%22%3Anull%2C%22mlWalletNumber%22%3Anull%2C%22mobileNumber%22%3A%2209856346185%22%2C%22nationality%22%3A%22FILIPINO%22%2C%22placeOfBirth%22%3A%22QD%20DEV%22%2C%22suffix%22%3Anull%7D"}'
+  },
+  RES: {
+    data: '{"tier":{"tierLimits":[],"tierRequirements":[[{"requirement":"FULL NAME","kycTierRequirementId":19,"kycTierId":5,"set":1},{"requirement":"MOBILE","kycTierRequirementId":20,"kycTierId":5,"set":1},{"requirement":"EMAIL","kycTierRequirementId":21,"kycTierId":5,"set":1},{"requirement":"BIRTHDAY","kycTierRequirementId":22,"kycTierId":5,"set":1},{"requirement":"FULL ADDRESS","kycTierRequirementId":23,"kycTierId":5,"set":1},{"requirement":"GOVT ID (ONLINE)","kycTierRequirementId":24,"kycTierId":5,"set":1},{"requirement":"SOURCE OF INCOME","kycTierRequirementId":25,"kycTierId":5,"set":1},{"requirement":"NATURE OF WORK","kycTierRequirementId":26,"kycTierId":5,"set":1}]],"description":"FULLY VERIFIED","isAwarded":0,"kycTierId":5,"label":"FULLY VERIFIED","level":25,"maxBalance":250000,"expirationDays":null,"availableAtService":["KPX","ML MONEY"],"type":null},"addresses":{"current":{"addressId":14770,"addressL0Id":1,"addressL0Name":"PHILIPPINES","addressL1Id":25,"addressL1Name":"CEBU","addressL2Id":828,"addressL2Name":"CEBU CITY","addressL3Id":null,"addressL3Name":null,"addressL4Id":null,"addressL4Name":null,"addressL5Id":null,"addressL5Name":null,"otherAddress":"ML TG QD","zipCode":null},"permanent":{"addressId":14771,"addressL0Id":1,"addressL0Name":"PHILIPPINES","addressL1Id":25,"addressL1Name":"CEBU","addressL2Id":828,"addressL2Name":"CEBU CITY","addressL3Id":null,"addressL3Name":null,"addressL4Id":null,"addressL4Name":null,"addressL5Id":null,"addressL5Name":null,"intlProvinceCity":null,"otherAddress":"ML TG QD","zipCode":null}},"birthDate":"1990-01-17","branchRemarks":null,"cellphoneNumber":"09856346185","civilStatus":"SINGLE","ckycId":"X230900000328K1","createdAtBranchId":null,"createdByService":"ML MONEY","createdByUserId":null,"dateCreated":"2023-09-27 09:46:43","dateModified":null,"modifiedByUserId":null,"modifiedByService":null,"modifiedAtBranchId":null,"customerId":7331,"email":"jonalyn.mobilla@gmail.com","gender":"FEMALE","ids":[{"category":null,"expirationDate":null,"idCardId":null,"idNumber":null,"type":null,"validIdCardId":null,"isRequired":1,"customerId":7331,"verificationType":null,"hasExpiry":null,"otherDetails":null}],"occupation":{"organizationName":"","pensionSource":null,"workAddress":null,"workRemarks":null,"yearRetired":null,"offering":null,"workPosition":null,"natureOfWork":null,"sourceOfIncome":null},"pictures":{"customerPhoto":null,"idPhoto1":null,"idPhoto2":null,"idPhoto3Front":null,"idPhoto3Back":null,"kycBottom":null,"kycTop":null},"placeOfBirth":"QD DEV","name":{"firstName":"DEVTESTQD","lastName":"QDTEST","middleName":null,"suffix":null},"nationality":"FILIPINO","vpoRemarks":null,"seccomRemarks":null,"telephoneNumber":null,"originSystem":"MLMONEY","isWatchlist":null,"isActive":1,"activeStatusRemarks":null,"emailVerificationStatus":"UNVERIFIED","countryOfBirth":null,"tgRemarks":null}',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'KYC Retrieved Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.631 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: 'https://ml-ckyc-dev.df.r.appspot.com//api/v1/customers/exact-search',
+    method: 'GET',
+    query: '{"cellphoneNumber":"09856346185"}',
+    params: '{}',
+    body: '{}',
+    headers: '{"headers":{"Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJtbGliQXBpS2V5IiwibmFtZSI6Ik1MIElCIiwiZXhwaXJlc0luIjoxNzI5OTA1Mzg5NDIyLCJyZXNvdXJjZVBlcm1pc3Npb24iOnt9LCJpYXQiOjE3Mjk5MDUwODksImV4cCI6MTcyOTkwNTM4OX0.WJzRzTDDASYqh7ddbo0htpGsWGuVX60KYx0E69YxTZ0","Accept":"application/json","Content-Type":"application/json"},"params":{"cellphoneNumber":"09856346185"}}'
+  },
+  RES: {
+    data: '"X230900000328K1"',
+    status: 200,
+    code: 'OK',
+    message: 'KYC Retrieved Successfully'
+  }
+}
+INFO 2024-10-26T09:11:29.632 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/search-kyc',
+    method: 'POST',
+    query: '{}',
+    params: '{}',
+    body: '{"payload":{"cellphoneNumber":"09856346185"}}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","content-length":"45","sec-ch-ua-platform":"\\"Windows\\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\\"Chromium\\";v=\\"130\\", \\"Google Chrome\\";v=\\"130\\", \\"Not?A_Brand\\";v=\\"99\\"","content-type":"application/json","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cookie":"remote_login_coordinates=%7B%22latitude%22%3A10.3049258%2C%22longitude%22%3A123.9094527%7D; ML_W_W_S=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJja3ljSWQiOiJYMjMwOTAwMDAwMzI4SzEiLCJzdWIiOjY1MjQsIm1haW5BY2NvdW50SWQiOiJYMjMwOTAwMDAwMzI4SzEiLCJ0eXBlIjoiTk9STUFMIiwiaWF0IjoxNzI3NDMyMDk5LCJleHAiOjE3Mjg3MjgwOTl9.vagR4USG7JeHMNK9mWoEoLhoiykawhr_o0fJxy6Ep4E; account session=Fe26.2*1*df591721f734a14f12eb3a42a75ab6ded2126fd6a9ac5bd879a37a6b366cb470*BeLIj0yFdqOiAt2YgGiuLg*9JoUQFfcWWGTa69tW6beuv_L8r1KxP44Z2F84n906o2TITZEqlCfzsOYVE77mPRfq4pUJXruhjgZA4UamXrCEHEZ6aGpFjSE9frvwP0_I_2skJsptRH6DyMh56nK3ToMrKI9ZzzPrphOaUILepCiD-Lk-idfxm8tdHHbHUB16Rl72pcRSuRz7TJAYkykqMK-7-CWTs0QwgTXVteHAz-UO-lLqdNCZNbFZkKb6B8l78DFbgWmGeE8n6jDw3-KN_mYnvyciDp-kEqIqJDES5FC3Vr9KapFHfc0u01TQ1jGoKXfihoDKCxc31UtE7Ifb3jrfpousLfCDgnFyFvTR_enlL540XGTbklqhQuM3AmwM4EDQOi8ntD0ZyeYDy1K7PH7QevJno3_588MUMgYlx9v35NAnRRD2tKG3QbB9eS48E4RDSdFioNpnw1mfPuu3nzB_Ys2N0rgjQR_KE2oiUkG0F1lD_z1fMMhLfxcZjLp_iVmQKCfYbC1NQSQXmz09wxl2PDOnlKT4V0ltFOhcAnxXeuspiMhJObG1bFVHwXqt9I*1728641731420*1da96e04de122f8b666bd1b21291e9fc5767fbb58b4a45b81e51349fb5bd56cb*zYSVd2ZtlTPm7dOkeVeEY8uz2NLCYiH3BNTsgFaMyZw~2; account_details=%7B%22address%22%3A%7B%22otherAddress%22%3A%22ML%20TG%20QD%22%2C%22addressL1Name%22%3A%22CEBU%22%2C%22addressL2Name%22%3A%22CEBU%20CITY%22%2C%22addressL0Name%22%3A%22PHILIPPINES%22%2C%22zipCode%22%3Anull%7D%2C%22birthDate%22%3A%221990-01-17%22%2C%22civilStatus%22%3A%22SINGLE%22%2C%22ckycId%22%3A%22X230900000328K1%22%2C%22email%22%3A%22jonalyn.mobilla%40gmail.com%22%2C%22firstName%22%3A%22DEVTESTQD%22%2C%22gender%22%3A%22FEMALE%22%2C%22lastName%22%3A%22QDTEST%22%2C%22middleName%22%3Anull%2C%22mlWalletNumber%22%3Anull%2C%22mobileNumber%22%3A%2209856346185%22%2C%22nationality%22%3A%22FILIPINO%22%2C%22placeOfBirth%22%3A%22QD%20DEV%22%2C%22suffix%22%3Anull%7D"}'
+  },
+  RES: {
+    data: '{"tier":{"tierLimits":[],"tierRequirements":[[{"requirement":"FULL NAME","kycTierRequirementId":19,"kycTierId":5,"set":1},{"requirement":"MOBILE","kycTierRequirementId":20,"kycTierId":5,"set":1},{"requirement":"EMAIL","kycTierRequirementId":21,"kycTierId":5,"set":1},{"requirement":"BIRTHDAY","kycTierRequirementId":22,"kycTierId":5,"set":1},{"requirement":"FULL ADDRESS","kycTierRequirementId":23,"kycTierId":5,"set":1},{"requirement":"GOVT ID (ONLINE)","kycTierRequirementId":24,"kycTierId":5,"set":1},{"requirement":"SOURCE OF INCOME","kycTierRequirementId":25,"kycTierId":5,"set":1},{"requirement":"NATURE OF WORK","kycTierRequirementId":26,"kycTierId":5,"set":1}]],"description":"FULLY VERIFIED","isAwarded":0,"kycTierId":5,"label":"FULLY VERIFIED","level":25,"maxBalance":250000,"expirationDays":null,"availableAtService":["KPX","ML MONEY"],"type":null},"addresses":{"current":{"addressId":14770,"addressL0Id":1,"addressL0Name":"PHILIPPINES","addressL1Id":25,"addressL1Name":"CEBU","addressL2Id":828,"addressL2Name":"CEBU CITY","addressL3Id":null,"addressL3Name":null,"addressL4Id":null,"addressL4Name":null,"addressL5Id":null,"addressL5Name":null,"otherAddress":"ML TG QD","zipCode":null},"permanent":{"addressId":14771,"addressL0Id":1,"addressL0Name":"PHILIPPINES","addressL1Id":25,"addressL1Name":"CEBU","addressL2Id":828,"addressL2Name":"CEBU CITY","addressL3Id":null,"addressL3Name":null,"addressL4Id":null,"addressL4Name":null,"addressL5Id":null,"addressL5Name":null,"intlProvinceCity":null,"otherAddress":"ML TG QD","zipCode":null}},"birthDate":"1990-01-17","branchRemarks":null,"cellphoneNumber":"09856346185","civilStatus":"SINGLE","ckycId":"X230900000328K1","createdAtBranchId":null,"createdByService":"ML MONEY","createdByUserId":null,"dateCreated":"2023-09-27 09:46:43","dateModified":null,"modifiedByUserId":null,"modifiedByService":null,"modifiedAtBranchId":null,"customerId":7331,"email":"jonalyn.mobilla@gmail.com","gender":"FEMALE","ids":[{"category":null,"expirationDate":null,"idCardId":null,"idNumber":null,"type":null,"validIdCardId":null,"isRequired":1,"customerId":7331,"verificationType":null,"hasExpiry":null,"otherDetails":null}],"occupation":{"organizationName":"","pensionSource":null,"workAddress":null,"workRemarks":null,"yearRetired":null,"offering":null,"workPosition":null,"natureOfWork":null,"sourceOfIncome":null},"pictures":{"customerPhoto":null,"idPhoto1":null,"idPhoto2":null,"idPhoto3Front":null,"idPhoto3Back":null,"kycBottom":null,"kycTop":null},"placeOfBirth":"QD DEV","name":{"firstName":"DEVTESTQD","lastName":"QDTEST","middleName":null,"suffix":null},"nationality":"FILIPINO","vpoRemarks":null,"seccomRemarks":null,"telephoneNumber":null,"originSystem":"MLMONEY","isWatchlist":null,"isActive":1,"activeStatusRemarks":null,"emailVerificationStatus":"UNVERIFIED","countryOfBirth":null,"tgRemarks":null}',
+    status: 200,
+    code: 'RETRIEVED_SUCCESSFULLY',
+    message: 'KYC Retrieved Successfully'
+  }
+}

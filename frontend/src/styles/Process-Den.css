@@ -1,0 +1,46 @@
+.banner-processing {
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 20px 10px 10px auto
+}
+
+.banner-content h2 {
+    color: #D90000;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.banner-content p {
+    color: red;
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* Banner Denied */
+
+.banner-Denied {
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 20px 10px 10px auto
+}
+
+.banner-Denied-content h2 {
+    color: #D90000;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.banner-Denied-content p {
+    color: red;
+    margin: 0;
+    font-size: 20px;
+}

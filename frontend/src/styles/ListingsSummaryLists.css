@@ -1,0 +1,355 @@
+/* Container */
+.listings-summary-container {
+  width: 100%;
+  border-radius: 10px;
+}
+.summary-contentContainer{
+  
+  display: flex;
+   width: auto;
+    gap: "1rem" ;
+}
+/* Header Section */
+.listings-summary-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  background-color: rgba(140, 144, 148, 0.18);
+}
+/* @media (max-width: 768px) {
+  .listings-summary-container .listings-table-header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+} */
+.listings-summary-container{
+  margin: 0px 10px;
+}
+.listings-summary-button{
+  border: none;
+  color: black;
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.listings-summary-button:hover{
+transform: scale(1.1);
+background-color: #ffffff;
+
+}
+/* Tabs */
+.listings-summary-tabs {
+  display: flex;
+  gap: 20px;
+}
+
+/* Tab */
+.tab {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.tab.active {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+ 
+
+}
+
+/* Search Input Container */
+.search-inp-container {
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 34px;
+  border-radius: 30px;
+  padding: 3px 8px;
+}
+.searchwrapper{
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 34px;
+  position: relative;
+}
+
+/* Search Icon */
+.search-icon {
+  position: absolute;
+  left: 12px; /* Adjust the position of the icon */
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: black;
+}
+
+/* Search Input */
+.search-Inputss {
+  width: 100%;
+  padding: 8px 16px 8px 40px; /* Increase the left padding to make space for the icon */
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+.search-Input::placeholder {
+  color: black;
+
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+/* Dropdown */
+.dropdown {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.summary-entries-count{
+  color: black;
+  margin-left: 17%;
+}
+/* Table */
+.listing-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header */
+.listing-summary-table th {
+  background-color: #f8f9fa;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+
+  
+}
+
+/* Row */
+.listing-summary-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.listing-summary-tabletr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.listing-summary-table td {
+  padding: 10px;
+  text-align: center;
+ 
+}
+
+/* Status Cell */
+.status-cell.processing {
+  color: green;
+}
+
+.status-cell.denied {
+  color: red;
+}
+
+.status-cell.other {
+  color: black;
+}
+
+/* Show Details Button */
+.listings-summary-show-details-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #8c9094;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.listings-summary-show-details-button:hover {
+  background-color: #5a6268;
+}
+
+/* Listings Table Wrapper */
+.listings-table-wrapper {
+  background-color: #e9ecef;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+/* New Button */
+.new-button {
+  border: none;
+  color: black;
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.new-button:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+}
+
+/* Pagination */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+  .pageLink {
+    display: block;
+    padding: 10px 15px;
+    color: Black;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+  }
+  
+  .pageLink.active {
+    background-color: #D90000;
+    color: white;
+  }
+  
+  .pageLink:hover {
+    background-color: #e9ecef;
+  }
+  
+
+  .listings-table-container {
+    border-radius: 30px;
+   
+    border-radius: 4px; 
+  }
+  
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+ 
+
+
+
+
+
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+   .summary-contentContainer{
+  
+    display: flex;
+  
+      gap: "1rem" ;
+  }
+    .listings-summary-container {
+    margin: 0px 20px;
+    }
+    
+    .listings-summary-header-section {
+      width: 95%;
+    }
+    
+    .listings-summary-tabs {
+    gap: 5px;
+    }
+    
+    .tab {
+    padding: 8px 16px;
+    }
+    
+    .search-inp-container {
+    width: 150px;
+    height: 32px;
+    }
+    
+    .search-Inputss {
+    padding: 6px 12px 6px 35px;
+    font-size: 13px;
+    }
+    
+    .search-icon {
+    left: 10px;
+    }
+    
+    .listing-summary-table {
+      width:auto;
+
+
+    }
+  
+    .listing-summary-table th, 
+    .listing-summary-table td {
+      background-color: #f8f9fa;
+      padding: 0.5rem; /* Use em units for more flexibility */
+      margin: 0.5em;
+      font-size: 1em; /* Relative units */
+      text-align: left;
+      box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    }
+  
+    .listing-summary-table th {
+ 
+      
+    }
+  
+    .listing-summary-table td {
+      font-size: 13px; /* 13px equivalent */
+    
+    }
+    .listings-summary-show-details-button {
+    padding: 2px 4px;
+    font-size: 11px;
+    margin-bottom: 10px;
+    }
+    
+    .new-button {
+    padding: 20px 25px;
+    font-size: 15px;
+    }
+    
+    .pagination-list .pageLink {
+    padding: 8px 12px;
+    }
+    }
+  

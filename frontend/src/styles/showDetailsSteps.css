@@ -1,0 +1,145 @@
+
+
+
+.pending-listing-steps-container {
+    background-color: #FFF0F0;
+    border-radius: 35px;
+    height: 320px;
+    width: 65%;
+    height: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .pending-notes{
+    font-size: 11px;
+    color: #8C9094;
+    text-align: justify;
+    padding: 0 20px; /* Adjust the padding value as needed */
+  }
+  :where(.css-dev-only-do-not-override-m4timi).ant-steps.ant-steps-vertical{
+    width: 70%;
+  }
+  :where(.css-dev-only-do-not-override-m4timi).ant-steps .ant-steps-item-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .step-intro {
+    font-family: "Poppins", Helvetica;
+    margin: auto;
+    width: 60%;
+    align-items: center;
+  }
+  
+  .step-intro .show-listing{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 1000;
+    margin-top: 18px;
+    width: 100%;
+  }
+  .step-intro .show-status{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 1000;
+    margin-top: 18px;
+    width: 100%;
+  }
+  .step-intro .listing-id{
+    color: #D90000;
+  }
+  .step-intro .status-id{
+    color: #F68721;
+  }
+  .steps {
+    font-family: "Poppins", Helvetica;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 2% 5%;
+  }
+  
+  
+  .ant-steps-item-icon {
+    background-color: transparent !important; 
+    border-color: #ff0000 !important;
+    border-width: 2px !important; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .ant-steps-item-process .ant-steps-item-icon {
+    background-color: transparent !important;
+  
+  }
+  
+  .ant-steps-item-finish .ant-steps-item-icon {
+    background-color: #ff0000!important;
+    
+  }
+  
+  :where(.css-dev-only-do-not-override-m4timi).ant-steps .ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+    color: #000000;
+}
+  
+  .ant-steps-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ant-steps-item-wait .ant-steps-item-icon .ant-steps-icon {
+    display: none;
+  }
+  .pending-listing-steps-container {
+    background-color: #FFF0F0;
+    border-radius: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pending-step-intro{
+    font-size: 18px;
+  }
+  
+  .pending-notes {
+    font-size: 10px;
+    color: #8C9094;
+    text-align: justify;
+    padding: 0 20px; /* Adjust the padding value as needed */
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px; /* Space between the buttons */
+    margin-top: 40px; /* Space above the buttons */
+    margin: 30px;
+  }
+  
+  .preview-listing-button {
+    background-color: white;
+    color: #D90000;
+    border: 1px solid #D90000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .edit-listing-button {
+    background-color: #D90000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  

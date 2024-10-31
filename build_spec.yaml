@@ -5,74 +5,48 @@ runAs: root
 shell: bash
 env:
   variables:
-    npm_config_build_from_source: true # Forces bcrypt to build from source
+    key: "value"
+
   exportedVariables:
     - BUILDRUN_HASH
 
 steps:
   - type: Command
-    name: "Install dependencies for bcrypt and node-gyp"
-    timeoutInSeconds: 600
+    name: "Define Tagging"
+    timeoutInSeconds: 60
     command: |
-      echo "Installing necessary build tools for bcrypt and node-gyp..."
-      apt-get update
-      apt-get install -y python3 make g++ build-essential libssl-dev
+          export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
+          echo "BUILDRUN_HASH: " $BUILDRUN_HASH
+
+    onFailure:
+      - type: Command
+        command: |
+          echo "Handling Failure in Frontend Build"
+        timeoutInSeconds: 1200
+        runAs: root                 
+      
+  - type: Command
+    name: "Build Frontend Container Image"
+    timeoutInSeconds: 3600
+    command: |
+      cd frontend
+      docker build --pull --rm -t mlbroker:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
+      cd ..
+
 
   - type: Command
-    name: "Define unique image tag"
-    timeoutInSeconds: 40
+    name: "Build Backend Container Image"
+    timeoutInSeconds: 3600
     command: |
-      export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
-      echo "BUILDRUN_HASH: $BUILDRUN_HASH"
+      cd backend
+      docker build --pull --rm -t mlbrokerbe:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
+      cd ..
 
-  - type: Command
-    name: "Install Node.js dependencies"
-    timeoutInSeconds: 1200
-    command: |
-      echo "Running npm install..."
-      npm install || { 
-        echo "Initial npm install failed. Retrying..."; 
-        sleep 5; 
-        npm install; 
-      }
-
-  - type: Command
-    name: "Build application"
-    timeoutInSeconds: 600
-    command: |
-      echo "Building application..."
-      npm run build || { echo "Build failed"; exit 1; }
-
-  - type: Command
-    name: "Package application for deployment"
-    timeoutInSeconds: 600
-    command: |
-      echo "Packaging application for deployment..."
-      zip -r application.zip . || { echo "Packaging failed"; exit 1; }
-
-  - type: Command
-    timeoutInSeconds: 1200
-    name: "Build container image"
-    command: |
-      docker build --pull --rm -t nrt.ocir.io/nrcbpbtrtyz0/regs-container:${BUILDRUN_HASH} -f Dockerfile .
-
-  - type: Command
-    timeoutInSeconds: 1200
-    name: "Push container image to registry"
-    command: |
-      docker push nrt.ocir.io/nrcbpbtrtyz0/regs-container:${BUILDRUN_HASH}
-
-  - type: Command
-    name: "Upload artifact"
-    timeoutInSeconds: 40
-    command: |
-      oci artifacts generic artifact upload-by-path \
-          --repository-id ocid1.devopsdeployartifact.oc1.ap-tokyo-1.amaaaaaa46pqqoyaju5tunynouos245zkyll6bmxzdfy25wkkeppprzh6rgq \
-          --artifact-path BACKEND-ml-brokerage-manifest \
-          --artifact-version "${BUILDRUN_HASH}"
-      echo "Artifact uploaded."
 
 outputArtifacts:
-  - name: output01
+  - name: frontendImage
     type: DOCKER_IMAGE
-    location: oci_devops_java_app:latest
+    location: mlbroker:${BUILDRUN_HASH}
+  - name: backendImage
+    type: DOCKER_IMAGE
+    location: mlbrokerbe:${BUILDRUN_HASH}
