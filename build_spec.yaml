@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.2
 component: build
 timeoutInSeconds: 6000
 runAs: root
@@ -7,12 +7,11 @@ shell: bash
 env:
   variables:
     key: "value"
-
   exportedVariables:
     - BUILDRUN_HASH
 
 steps:
-  # Step 1: Define Tagging
+  # Step 1: Define the Tagging Variable
   - type: Command
     name: "Define Tagging"
     timeoutInSeconds: 60
@@ -20,35 +19,25 @@ steps:
       export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
       echo "BUILDRUN_HASH: $BUILDRUN_HASH"
 
-    onFailure:
-      - type: Command
-        command: |
-          echo "Handling Failure in Frontend Build"
-        timeoutInSeconds: 1200
-        runAs: root
-
-  # Step 2: Build Frontend Container Image
+  # Step 2: Build Frontend Docker Image
   - type: Command
     name: "Build Frontend Container Image"
     timeoutInSeconds: 3600
     command: |
-      cd frontend
-      docker build --pull --rm -t mlbroker:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
-      cd ..
+      docker build --pull --rm -t mlbroker-frontend:$BUILDRUN_HASH ./frontend || { echo "Frontend build failed"; exit 1; }
 
-  # Step 3: Build Backend Container Image
+  # Step 3: Build Backend Docker Image
   - type: Command
     name: "Build Backend Container Image"
     timeoutInSeconds: 3600
     command: |
-      cd backend
-      docker build --pull --rm -t mlbrokerbe:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
-      cd ..
+      docker build --pull --rm -t mlbroker-backend:$BUILDRUN_HASH ./backend || { echo "Backend build failed"; exit 1; }
 
 outputArtifacts:
   - name: frontendImage
     type: DOCKER_IMAGE
-    location: mlbroker:${BUILDRUN_HASH}
+    location: mlbroker-frontend:${BUILDRUN_HASH}
+
   - name: backendImage
     type: DOCKER_IMAGE
-    location: mlbrokerbe:${BUILDRUN_HASH}
+    location: mlbroker-backend:${BUILDRUN_HASH}
