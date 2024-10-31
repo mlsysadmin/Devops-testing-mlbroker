@@ -3,10 +3,10 @@ component: build
 timeoutInSeconds: 6000
 runAs: root
 shell: bash
+
 env:
   variables:
     key: "value"
-
   exportedVariables:
     - BUILDRUN_HASH
 
@@ -15,33 +15,31 @@ steps:
     name: "Define Tagging"
     timeoutInSeconds: 60
     command: |
-          export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
-          echo "BUILDRUN_HASH: " $BUILDRUN_HASH
+      export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
+      echo "BUILDRUN_HASH: $BUILDRUN_HASH"
 
     onFailure:
       - type: Command
         command: |
-          echo "Handling Failure in Frontend Build"
-        timeoutInSeconds: 1200
-        runAs: root                 
-      
+          echo "Handling Failure in Define Tagging"
+        timeoutInSeconds: 120
+        runAs: root
+
   - type: Command
     name: "Build Frontend Container Image"
     timeoutInSeconds: 3600
     command: |
       cd frontend
-      docker build --pull --rm -t mlbroker:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
+      docker build --pull --rm -t mlbroker:${BUILDRUN_HASH} . || { echo "Frontend build failed"; exit 1; }
       cd ..
-
 
   - type: Command
     name: "Build Backend Container Image"
     timeoutInSeconds: 3600
     command: |
       cd backend
-      docker build --pull --rm -t mlbrokerbe:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
+      docker build --pull --rm -t mlbrokerbe:${BUILDRUN_HASH} . || { echo "Backend build failed"; exit 1; }
       cd ..
-
 
 outputArtifacts:
   - name: frontendImage
