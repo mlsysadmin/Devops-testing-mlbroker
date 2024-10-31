@@ -9,48 +9,46 @@ env:
   exportedVariables:
     - BUILDRUN_HASH
 
-phases:
-  install:
-    runtime-versions:
-      nodejs: 18
-    commands:
-      - echo "Installing necessary build tools for bcrypt and node-gyp..."
-      - apt-get update
-      - apt-get install -y python3 make g++ build-essential libssl-dev
-  pre_build:
-    commands:
-      - echo "Setting up environment for bcrypt compilation"
-  build:
-    commands:
-      - echo "Running npm install..."
-      - |
-        npm install || { 
-          echo "Initial npm install failed. Retrying..."; 
-          sleep 5; 
-          npm install; 
-        }
-      - echo "Building application..."
-      - npm run build || { echo "Build failed"; exit 1; }
-  post_build:
-    commands:
-      - echo "Build completed at $(date)"
-      - echo "Packaging application for deployment..."
-      - zip -r application.zip . || { echo "Packaging failed"; exit 1; }
-
 steps:
+  - type: Command
+    name: "Install dependencies for bcrypt and node-gyp"
+    timeoutInSeconds: 600
+    command: |
+      echo "Installing necessary build tools for bcrypt and node-gyp..."
+      apt-get update
+      apt-get install -y python3 make g++ build-essential libssl-dev
+
   - type: Command
     name: "Define unique image tag"
     timeoutInSeconds: 40
     command: |
       export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
       echo "BUILDRUN_HASH: $BUILDRUN_HASH"
-    onFailure:
-      - type: Command
-        command: |
-          echo "Handling Failure"
-          echo "Failure successfully handled"
-        timeoutInSeconds: 40
-        runAs: root
+
+  - type: Command
+    name: "Install Node.js dependencies"
+    timeoutInSeconds: 1200
+    command: |
+      echo "Running npm install..."
+      npm install || { 
+        echo "Initial npm install failed. Retrying..."; 
+        sleep 5; 
+        npm install; 
+      }
+
+  - type: Command
+    name: "Build application"
+    timeoutInSeconds: 600
+    command: |
+      echo "Building application..."
+      npm run build || { echo "Build failed"; exit 1; }
+
+  - type: Command
+    name: "Package application for deployment"
+    timeoutInSeconds: 600
+    command: |
+      echo "Packaging application for deployment..."
+      zip -r application.zip . || { echo "Packaging failed"; exit 1; }
 
   - type: Command
     timeoutInSeconds: 1200
@@ -63,13 +61,6 @@ steps:
     name: "Push container image to registry"
     command: |
       docker push nrt.ocir.io/nrcbpbtrtyz0/regs-container:${BUILDRUN_HASH}
-    onFailure:
-      - type: Command
-        command: |
-          echo "Failed to create a docker image"
-          echo "Failure successfully handled"
-        timeoutInSeconds: 40
-        runAs: root
 
   - type: Command
     name: "Upload artifact"
@@ -80,13 +71,6 @@ steps:
           --artifact-path BACKEND-ml-brokerage-manifest \
           --artifact-version "${BUILDRUN_HASH}"
       echo "Artifact uploaded."
-    onFailure:
-      - type: Command
-        command: |
-          echo "Handling Failure"
-          echo "Failure successfully handled"
-        timeoutInSeconds: 40
-        runAs: root
 
 outputArtifacts:
   - name: output01
