@@ -19,27 +19,43 @@ steps:
       export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
       echo "BUILDRUN_HASH: $BUILDRUN_HASH"
 
-  # Step 2: Build Frontend Docker Image
+  # Step 2: Verify Frontend Directory Contents
+  - type: Command
+    name: "Verify Frontend Directory Contents"
+    timeoutInSeconds: 60
+    command: |
+      echo "Listing files in frontend directory:"
+      ls -l ./frontend
+      if [ ! -f ./frontend/package.json ]; then
+        echo "Error: package.json not found in frontend directory."
+        exit 1
+      fi
+
+  # Step 3: Build Frontend Docker Image
   - type: Command
     name: "Build Frontend Container Image"
     timeoutInSeconds: 3600
     command: |
-      docker build --pull --rm -t mlbroker-frontend:$BUILDRUN_HASH -f frontend/Dockerfile ./frontend || { echo "Frontend build failed"; exit 1; }
+      docker build --pull --rm -t mlbroker-frontend:$BUILDRUN_HASH ./frontend || { echo "Frontend build failed"; exit 1; }
 
-  # Step 3: Build Backend Docker Image
+  # Step 4: Verify Backend Directory Contents
+  - type: Command
+    name: "Verify Backend Directory Contents"
+    timeoutInSeconds: 60
+    command: |
+      echo "Listing files in backend directory:"
+      ls -l ./backend
+      if [ ! -f ./backend/package.json ]; then
+        echo "Error: package.json not found in backend directory."
+        exit 1
+      fi
+
+  # Step 5: Build Backend Docker Image
   - type: Command
     name: "Build Backend Container Image"
     timeoutInSeconds: 3600
     command: |
-      docker build --pull --rm -t mlbroker-backend:$BUILDRUN_HASH -f backend/Dockerfile ./backend || { echo "Backend build failed"; exit 1; }
-
-
-  # Step 4: Build Backend Docker Image
-  - type: Command
-    name: "Build Backend Container Image"
-    timeoutInSeconds: 3600
-    command: |
-      docker build --pull --rm -t mlbroker-backend:$BUILDRUN_HASH -f backend/Dockerfile ./backend || { echo "Backend build failed"; exit 1; }
+      docker build --pull --rm -t mlbroker-backend:$BUILDRUN_HASH ./backend || { echo "Backend build failed"; exit 1; }
 
 outputArtifacts:
   - name: frontendImage
