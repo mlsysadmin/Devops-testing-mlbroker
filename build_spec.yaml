@@ -3,12 +3,14 @@ component: build
 timeoutInSeconds: 6000
 runAs: root
 shell: bash
+failImmediatelyOnError: true
 
 env:
   variables:
     key: "value"
   exportedVariables:
     - BUILDRUN_HASH
+    - BuildServiceDemoVersion
 
 steps:
   # Step 1: Define the Tagging Variable
@@ -57,11 +59,54 @@ steps:
     command: |
       docker build --pull --rm -t mlbroker-backend:$BUILDRUN_HASH ./backend || { echo "Backend build failed"; exit 1; }
 
+  # Step 6: Build Source for Build Service Demo
+  - type: Command
+    name: "Build Source"
+    timeoutInSeconds: 4000
+    command: |
+      echo $PATH
+      mvn clean install
+
+  # Step 7: Dockerize Build Service Demo
+  - type: Command
+    timeoutInSeconds: 400
+    name: "Dockerizer"
+    command: |
+      BuildServiceDemoVersion=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
+      echo $BuildServiceDemoVersion
+      docker build -t build-service-demo .
+
+  # Step 8: Scan Maven Repo for Vulnerabilities
+  - type: VulnerabilityAudit
+    name: "Scan my Maven Repo"
+    vulnerabilityAuditName: Report-${OCI_BUILD_RUN_ID}
+    vulnerabilityAuditCompartmentId: ocid1.compartment.oc1.iad.restoftheocid
+    knowledgeBaseId: ocid1.knowledgebase.oc1.iad.restoftheocid
+    configuration:
+      buildType: maven
+      pomFilePath: ./pom.xml
+      packagesToIgnore:
+        - "oracle.jdbc.*"
+        - "org.apache.logging.log4j:1.2"
+      maxPermissibleCvssV2Score: 5.0  
+      maxPermissibleCvssV3Score: 5.1
+      freeFormTags:
+        key1: value1
+        key2: value2
+
 outputArtifacts:
   - name: frontendImage
     type: DOCKER_IMAGE
     location: mlbroker-frontend:${BUILDRUN_HASH}
-
+  
   - name: backendImage
     type: DOCKER_IMAGE
     location: mlbroker-backend:${BUILDRUN_HASH}
+  
+  - name: build-service-demo
+    type: DOCKER_IMAGE
+    location: build-service-demo
+
+  - name: build-service-demo-kube-manifest
+    type: BINARY
+    location: deployment/app.yml
