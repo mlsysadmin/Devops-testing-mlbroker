@@ -9,7 +9,7 @@ COPY package*.json ./
 
 # Install dependencies (only production dependencies if building for production)
 RUN npm install --omit=dev && npm install -g serve
-
+RUN npm run build
 # Copy the rest of the application files
 COPY . .
 
@@ -21,3 +21,4 @@ EXPOSE 3003
 
 # Command to run the server
 CMD ["serve", "-s", "build", "-l", "3003"]
+CMD ["npm", "start"]
