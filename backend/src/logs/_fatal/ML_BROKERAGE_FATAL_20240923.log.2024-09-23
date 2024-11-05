@@ -1,8 +1,0 @@
-FATAL 2024-09-23T17:20:26.649 HOTGQCD09 
- Logging.. | ML BROKERAGE Error: connect ETIMEDOUT 142.251.221.20:443 72     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:72:25)
-    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
-    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
-    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:646:15

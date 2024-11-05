@@ -1,112 +1,70 @@
-# Get Started
+# Getting Started with Create React App
 
-## - BACKEND SET UP -
-Run project on your local machine
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Install required packages
-### Run Command: 
-This will create a node_modules folder containing installed packages.
-   
-```
-npm i 
-```
+## Available Scripts
 
-## Copy and Create .env file
-### Run Command: 
-This will copy and paste .env.example to the directory and rename to .env.
+In the project directory, you can run:
 
-Ask for the values of .env file server
-```
-cp .env.example .env
-```
-     
-## Run backend server
-### Run Command: 
+### `npm start`
 
-```
-npm run dev
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Running on localhost
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Server
-Server will run on localhost on port 8002:
-`
-http://localhost:8002
-`
+### `npm test`
 
-## - FRONTEND SET UP -
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Run project on your local machine
+### `npm run build`
 
-## Install required packages
-### Run Command: 
-This will create a node_modules folder containing installed packages.
-   
-```
-npm i 
-```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Copy and Create .env file
-### Run Command: 
-This will copy and paste .env.example to the directory and rename to .env.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Ask for the values of .env file server
-```
-cp .env.example .env
-```
-     
-## Run frontend server
-### Run Command: 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```
-npm start
-```
+### `npm run eject`
 
-## Running on localhost
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Server
-Server will run on localhost on port `3000`:
-`
-http://localhost:3000
-`
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# Contributing
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### 1. Create a branch reference to `master`
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Branch naming guidelines:
+## Learn More
 
-- `feature/feature-name` - For code that adds a feature.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- `fix/fix-name` - For code that needs fixing from an existing feature.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- `adjustment/adjustment-name` - For code that needs changes to an existing feature.
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### 2. Commiting codes
+### Analyzing the Bundle Size
 
-Commit according to codes' purpose. If your adding a new feature, make sure to use proper commit message, e.g: `[Feature][Jona] Create middleware`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Commit messages format:
-`[Commit type][dev-name] message`
+### Making a Progressive Web App
 
-Commit Types:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- `Feature` - For commits that adds a feature.
-- `Fix` - For commits that has fixes from an existing feature.
-- `Adjustments` - For commits that has changes to an existing feature.
+### Advanced Configuration
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### 3. Push Changes to `dev` Branch: Rebase often
+### Deployment
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Make sure your branch is in sync with the `dev` branch. To do so, try to `pull` from the `dev` branch more often to avoid code conflicts. Check your code, if no conflicts found, you're good to go.
+### `npm run build` fails to minify
 
-### 4. Pull request
-
-When ready, create a `Pull Request` from your branch to the dev branch.
-
-### 5. Merge
-
-Good Job! Keep it up!! 🥳😎
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
