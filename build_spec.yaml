@@ -8,9 +8,9 @@ steps:
     timeoutInSeconds: 1200
     name: "Build container image"
     command: |
-      d ${OCI_WORKSPACE_DIR}/node_app
+      cd ${OCI_WORKSPACE_DIR}/node_app
       docker build -t frontend  .
 outputArtifacts:
- - name: myapp-image
-  type: DOCKER_IMAGE
-  location: frontend:v1.0
+  - name: myapp-image
+    type: DOCKER_IMAGE
+    location: frontend:v1.0
