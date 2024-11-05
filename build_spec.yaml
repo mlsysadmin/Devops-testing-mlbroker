@@ -9,8 +9,8 @@ steps:
     name: "Build container image"
     command: |
       d ${OCI_WORKSPACE_DIR}/node_app
-      docker build -t frontend:v1.0  .
+      docker build -t frontend  .
 outputArtifacts:
  - name: myapp-image
   type: DOCKER_IMAGE
-  location: myapp:v1.0
+  location: frontend:v1.0
