@@ -1,24 +1,14 @@
 # START BUILD CLIENT
-FROM node:20 AS frontend-build
+FROM node:18 AS frontend-build
+WORKDIR /frontend
 
-# Set the working directory
-WORKDIR /app
-
-# Copy package files first for better cache utilization
 COPY package*.json ./
+RUN npm install
 
-# Install dependencies (only production dependencies if building for production)
-RUN npm install --omit=dev && npm install -g serve
-#UN npm run build
-# Copy the rest of the application files
-COPY . .
+COPY . ./
 
-# Build the frontend application
-RUN npm run build
+RUN npm install -g serve
 
-# Expose the port for the application
+CMD ["sh", "-c", "npm run build && npx serve -s build -l 3003"]
+
 EXPOSE 3003
-
-# Command to run the server
-CMD ["serve", "-s", "build", "-l", "3003"]
-#CMD ["npm", "start"]
