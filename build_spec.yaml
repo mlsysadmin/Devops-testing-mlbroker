@@ -32,22 +32,24 @@ steps:
     timeoutInSeconds: 1200
     name: "Build backend container image"
     command: |
-      cd ${OCI_WORKSPACE_DIR}/backend
-      docker build --pull --rm -t oci_devops_backend_app .
+      cd backend
+      docker build --pull --rm -t mlbrokerbe:$BUILDRUN_HASH .
+      cd ..
 
   # Build frontend container image
   - type: Command
     timeoutInSeconds: 1200
     name: "Build frontend container image"
     command: |
-      cd ${OCI_WORKSPACE_DIR}/frontend
-      docker build --pull --rm -t oci_devops_frontend_app .
+      cd frontend
+      docker build --pull --rm -t mlbroker:$BUILDRUN_HASH .
+      cd ..
 
 outputArtifacts:
   - name: backendImage
     type: DOCKER_IMAGE
-    location: oci_devops_backend_app:latest
+    location: mlbrokerbe:${BUILDRUN_HASH}
 
   - name: frontendImage
     type: DOCKER_IMAGE
-    location: oci_devops_frontend_app:latest
+    location: mlbroker:${BUILDRUN_HASH}
