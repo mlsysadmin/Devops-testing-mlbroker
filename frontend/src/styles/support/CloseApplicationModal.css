@@ -1,0 +1,57 @@
+.modalCloseApplicationBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#modalHeader {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1rem;
+  width: 95%;
+}
+.modalFooter button {
+  padding: 9px;
+  border-radius: 10px;
+  border: red 1px solid;
+  color: red;
+}
+.group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body p {
+  width: 90%;
+}
+.Formgroup {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.group input,
+.group textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #d9d9d9;
+  outline: none;
+  resize: none;
+}

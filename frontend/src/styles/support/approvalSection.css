@@ -1,0 +1,59 @@
+.support-approval--wrapper{
+    width: 85%;
+    margin: auto;
+}
+.support-approval--wrapper .support-approval--header{
+    padding: 20px 0px 5px 0px;
+    color: #000000bd;
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.support-approval--content-item{
+    margin: 20px 0px;
+    width: 800px;
+}
+
+.support-approval--content-item .support-approval--content-item-body .support-approval--item-noted,
+.support-approval--content-item .support-approval--content-item-body .support-approval--item-date,
+.support-approval--content-item-buttons{
+    display: flex;
+    gap: 10px;
+    margin: 5px 0px;
+}
+
+.support-approval--content-item-input textarea{
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px;
+}
+.support-approval--content-item-input textarea:hover,
+.support-approval--content-item-input textarea:focus{
+    border-color: var(--red);
+    box-shadow: 0 0 0 2px #f778783f !important;
+}
+.support-approval--content-item-input textarea:disabled{
+    color: rgb(0 0 0 / 63%);
+    background-color: rgb(0 0 0 / 3%);
+}
+
+.support-approval--content-item-buttons{
+    margin-top: 10px;
+    justify-content: flex-end;
+    margin: 10px 0px;
+}
+.support-approval--content-item-buttons button {
+    padding: 20px 25px;
+    font-weight: 500;
+}
+.support-approval--content-item-buttons .ant-btn.approve-btn,
+.support-approval--content-item-buttons .ant-btn.approve-btn:hover{
+    background: rgb(0, 114, 0);
+}
+
+.support-approval--content-item-buttons .ant-btn.denied-btn,
+.support-approval--content-item-buttons .ant-btn.denied-btn:hover {
+    background: var(--red);
+}

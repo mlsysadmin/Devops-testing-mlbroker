@@ -1,0 +1,110 @@
+.view-more-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.view-more-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-height: 80vh; /* Add this line to limit the height of the modal */
+  overflow: hidden; /* Ensure the modal itself handles overflow */
+}
+
+.view-more-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.drag-and-drop-area {
+  border: 2px dashed #007bff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drag-and-drop-area:hover {
+  background-color: #f8f9fa;
+}
+
+.uploaded-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  overflow-y: auto; /* Ensure vertical scroll */
+  max-height: calc(80vh - 160px); /* Calculate based on modal height minus other content height */
+  padding-right: 10px; /* Add padding to avoid overlap with scrollbar */
+}
+
+.uploaded-photo {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.uploaded-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.row .large-photo {
+  flex: 2;
+}
+
+.row .small-photo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row .small-photo .uploaded-photo {
+  flex: 1;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1%;
+}
+.buttons button{
+  padding: .5% 3%;
+  border: gray 1px solid;
+  border-radius: 10px;
+  font-weight: bold;
+  background: #fff;
+}
+button.update{
+  background: gray;
+}

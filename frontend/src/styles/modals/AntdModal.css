@@ -1,0 +1,48 @@
+.ant-modal-wrap.confirm-modal .ant-modal-confirm-body-wrapper,
+.ant-modal-wrap.success-modal .ant-modal-confirm-body-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ant-modal-wrap.confirm-modal .ant-modal-confirm .ant-modal-confirm-paragraph,
+.ant-modal-wrap.success-modal .ant-modal-confirm .ant-modal-confirm-paragraph{
+    row-gap: 20px;
+}
+
+.ant-modal-wrap.confirm-modal .ant-modal-confirm .ant-modal-confirm-content,
+.ant-modal-wrap.success-modal .ant-modal-confirm .ant-modal-confirm-content{
+    font-size: 15px;
+}
+
+.ant-modal-wrap.confirm-modal .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns,
+.ant-modal-wrap.success-modal .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+.ant-modal-wrap.confirm-modal .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button,
+.ant-modal-wrap.success-modal .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button{
+    padding: 17px 20px;
+    margin: auto 10px;
+}
+
+.ant-modal-wrap.confirm-modal .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:first-child, 
+.ant-modal-wrap.confirm-modal .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:first-child:hover{
+    border: 1px solid var(--red);
+    color: black;
+}
+
+.ant-modal-wrap.confirm-modal .ant-modal-confirm-body-wrapper .ant-modal-confirm-btns button:last-child{
+    background-color: var(--red);
+    color: white;
+}
+
+.ant-modal-wrap.success-modal .ant-modal-confirm-success.success-modal .ant-modal-confirm-btns button:first-child{
+    background-color: var(--green);
+}
+
+.is-btn--wrapper .is-btn.ant-btn:hover{
+    border-color: black;
+    color: black;
+}

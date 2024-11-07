@@ -1,0 +1,60 @@
+.divs-btn-group {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 10px 0px 50px 0px;
+	gap: 2rem;
+}
+
+.divs-btn-group .submit-btn {
+	background-color: var(--red);
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px !important;
+	width: 250px;
+	height: 50px;
+	border: 1px solid var(--red);
+	font-size: 16px;
+	color: white;
+}
+
+.submit-btn:hover {
+	background-color: #ffffff;
+	color: var(--red);
+	cursor: pointer;
+}
+
+.divs-btn-group span {
+	/* width: 60%; */
+	justify-content: center;
+	align-items: center;
+	/* font-size: 18px; 
+    color: #8C9094 !important; */
+	text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+	.divs-btn-group span {
+		width: 80%;
+		font-size: 12px;
+	}
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+	.divs-btn-group span {
+		width: 80%;
+		font-size: 12px;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.divs-btn-group span {
+		width: 80%;
+		font-size: 16px;
+	}
+	.divs-btn-group .submit-btn {
+		width: 250px;
+		height: 60px;
+		font-size: 20px;
+	}
+}

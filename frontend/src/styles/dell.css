@@ -1,0 +1,16 @@
+.dell {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .dell .ellipse {
+    border: 2px solid;
+    border-color: var(--lineicon);
+    border-radius: 10px;
+    height: 20px;
+    left: 2px;
+    position: relative;
+    top: 2px;
+    width: 20px;
+  }
+  

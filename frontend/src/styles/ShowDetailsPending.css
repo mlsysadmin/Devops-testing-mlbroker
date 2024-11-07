@@ -1,0 +1,32 @@
+.show-details-pending-listing-banner {
+    /* background-color: #fff; */
+    border-radius:30px;
+    padding: 10px; /* Adjust padding to match design */
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid red;
+  }
+  
+  .show-details-pending-listing-banner h1 {
+    color: red;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .show-details-pending-listing-banner p {
+    color: red;
+    font-size: 16px;
+  }
+  .pending-step-intro{
+    font-size: 20px;
+  }
+  .pending-listing-id{
+    color: #d90000;
+  }
+  .pending-status-id{
+    color: #F68721;
+  }

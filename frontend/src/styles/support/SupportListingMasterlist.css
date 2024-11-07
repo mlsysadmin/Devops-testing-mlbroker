@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.listings-container {
+  font-family: Arial, sans-serif;
+  padding: 2%;
+  height: auto;
+  min-height: 65vh;
+}
+
+.listings-container h1 {
+  font-size: 2rem;
+}
+
+.listings-container .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.listings-container .controls .entries,
+.listings-container .controls .searchbar {
+  display: flex;
+  align-items: center;
+}
+
+.listings-container .controls .entries label,
+.listings-container .controls .searchbar p {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.listings-container .controls .entries select,
+.listings-container .controls .searchbar input {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.listings-container .table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.listings-container .table table thead {
+  background-color: #f5f5f5;
+}
+
+.listings-container .table table th,
+.listings-container .table table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.listings-container .table table th {
+  background-color: #f9f9f9;
+}
+
+.listings-container .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listings-container .btns .pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  justify-content: flex-end;
+}
+
+.listings-container .btns .pagination li {
+  margin: 0 5px;
+}
+
+.listings-container .btns .pagination li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.listings-container .btns .pagination li a:hover,
+.listings-container .btns .pagination li a.active {
+  color: #fff;
+}
+
+.showDetails {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: black;
+  border: #d90000 solid 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.listings-container .btns .actions {
+  display: inline-block;
+  margin-right: auto;
+}
+
+.listings-container .btns .actions button {
+  margin-right: 1em;
+  padding: 8px;
+  border: none;
+  color: #fff;
+}
+
+.listings-container .btns .actions #approve {
+  background: #256e2c;
+  border-radius: 10px;
+}
+
+.listings-container .btns .actions #disapprove {
+  background: #d90000;
+  border-radius: 10px;
+}
+
+.listings-container .entries-summary {
+  font-size: small;
+  color: #8c9094;
+}
+
+@media (max-width: 768px) {
+  .showDetails {
+    font-size: x-small;
+  }
+
+  .table {
+    overflow: scroll;
+    font-size: x-small;
+  }
+
+  .controls {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .controls,
+  .entries label,
+  .entries select {
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .entries {
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .searchbar {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .searchbar p {
+    font-size: small;
+  }
+
+  .searchbar input[type="text"] {
+    width: 50%;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+  }
+
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu .options select {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .entries,
+  .searchbar {
+    flex-direction: column;
+  }
+
+  .entries label,
+  .searchbar p {
+    margin-right: 0;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .entries select,
+  .searchbar input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

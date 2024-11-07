@@ -1,0 +1,163 @@
+  /* SKELETON */
+  .skeleton--card-listing,
+  .skeleton--card-listing .skeleton--card-img .ant-skeleton-image {
+    width: 380px;
+    margin-bottom: 50px;
+  }
+
+  .skeleton--card-listing .skeleton--card-img {
+    height: 180px !important;
+  }
+
+  .skeleton--card-listing .ant-skeleton-title {
+    height: 30px !important;
+  }
+
+  .skeleton--features {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skeleton--card-price {
+    width: 150px;
+  }
+
+  .skeleton--feature-items {
+    display: flex;
+
+  }
+
+  .skeleton--card-feature {
+    margin: 0 7px;
+  }
+
+  /* FEATURES */
+  .skeleton--feature-price {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  .skeleton--feature-title {
+    width: 250px;
+    margin: 25px 0 15px;
+  }
+
+  .skeleton--feature-sale_type {
+    width: 150px;
+
+  }
+
+  .skeleton--feature-items {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .skeleton--feature-img {
+    height: 200px !important;
+    border-radius: 10px;
+    /* object-fit: cover;
+    width: 100%; */
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 599px) {
+    .skeleton--card-listing {
+      width: 300px;
+      margin-bottom: 55px;
+    }
+
+    .skeleton--card-listing .skeleton--card-img .ant-skeleton-image {
+      width: 300px !important;
+    }
+
+    .skeleton--card-listing .skeleton--card-img {
+      height: 130px !important;
+    }
+    .skeleton--feature-img{
+      height: 150px !important;
+    }
+    .skeleton--feature-img{
+      margin: 0 !important;
+    }
+    .skeleton--feature-listing{
+      padding: 0 20px !important;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 624px) {
+    .skeleton--card-listing {
+      width: 270px;
+      margin-bottom: 55px;
+    }
+    .skeleton--feature-img{
+      height: 150px !important;
+    }
+
+    .skeleton--card-listing .skeleton--card-img .ant-skeleton-image {
+      width: 270px;
+    }
+  }
+  @media screen and (min-width: 625px) and (max-width: 644px) {
+    .skeleton--card-listing {
+      width: 280px;
+      margin-bottom: 55px;
+    }
+
+    .skeleton--card-listing .skeleton--card-img .ant-skeleton-image {
+      width: 280px;
+    }
+  }
+  @media screen and (min-width: 645px) and (max-width: 789px) {
+    .skeleton--card-listing {
+      width: 290px;
+      margin-bottom: 55px;
+    }
+
+    .skeleton--card-listing .skeleton--card-img .ant-skeleton-image {
+      width: 290px;
+    }
+  }
+  @media screen and (min-width: 790px) and (max-width: 869px) {
+    .skeleton--card-listing {
+      width: 280px;
+      margin-bottom: 55px;
+    }
+
+    .skeleton--card-listing .skeleton--card-img .ant-skeleton-image {
+      width: 280px;
+    }
+  }
+  @media screen and (min-width: 870px) and (max-width: 899px) {
+    .skeleton--card-listing {
+      width: 260px;
+      margin-bottom: 55px;
+    }
+
+    .skeleton--card-listing .skeleton--card-img .ant-skeleton-image {
+      width: 260px;
+    }
+  }
+  @media screen and (min-width: 900px) and (max-width: 919px) {
+    .skeleton--card-listing {
+      width: 270px;
+      margin-bottom: 55px;
+    }
+
+    .skeleton--card-listing .skeleton--card-img .ant-skeleton-image {
+      width: 270px;
+    }
+  }
+  /* @media screen and (min-width: 920px) and (max-width: 1500px) {
+    .skeleton--card-listing {
+      width: 280px;
+      margin-bottom: 55px;
+    }
+
+    .skeleton--card-listing .skeleton--card-img .ant-skeleton-image {
+      width: 280px;
+    }
+
+    .skeleton--card-listing .skeleton--card-img {
+      height: 130px !important;
+    }
+  } */

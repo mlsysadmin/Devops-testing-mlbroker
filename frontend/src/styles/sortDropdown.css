@@ -1,0 +1,43 @@
+/* custom.css */
+
+
+.sort-dropdown {
+  position: relative;
+}
+
+.sort-dropdown-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #8C9094;
+}
+
+.sort-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+
+.sort-dropdown-option {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.sort-dropdown-option:hover {
+  background: #f0f0f0;
+}
+
+.dropdown-arrow {
+  margin-left: 8px;
+}

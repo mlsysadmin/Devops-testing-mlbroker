@@ -1,0 +1,646 @@
+@import "./root.css";
+
+.ListingDetails {
+  display: grid;
+  /* grid-template-columns: 49% 49%; */
+  gap: 50px;
+}
+
+.ListingDetails .propertyDetailsText,
+.descriptionText,
+.unitDetailsText,
+.locationText,
+.featureText,
+.uploadPhotosText {
+  padding: 20px 0px 5px 0px;
+  color: #000000bd;
+  font-family: var(--font-family);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.descriptionFields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.description-caption {
+  padding: 10px;
+}
+
+.description-caption:hover,
+.description-caption:focus {
+  border-color: var(--red) !important;
+  box-shadow: 0 0 0 2px #f778783f !important;
+}
+
+#caption {
+  height: 60vh;
+}
+
+/* Modals.css */
+
+.fmodal,
+.smodal {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+  height: auto;
+  max-height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.fmodal h2 {
+  margin-bottom: 20px;
+  color: #d90000;
+}
+
+.smodal h2 {
+  color: green;
+}
+
+.fmodal p {
+  font-size: 1.1rem;
+}
+
+.support--submit-btn {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+.support--submit-btn .submit-btn,
+.support--submit-btn .submit-btn.ant-btn:hover {
+  padding: 28px 33px;
+  font-size: 16px;
+  background: var(--red);
+}
+.support--submit-btn .cancel-btn,
+.support--submit-btn .cancel-btn.ant-btn:hover{
+  padding: 28px 33px;
+  font-size: 16px;
+  background: transparent;
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+.fmodal .button-primary {
+  background-color: #d90000;
+  color: white;
+}
+
+.smodal .button-primary {
+  background: green;
+  color: #fff;
+}
+
+.button-secondary {
+  background-color: #fff;
+  border: 1px solid #d90000;
+  color: black;
+}
+
+.ListingDetails .leftSide {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* margin-left: 5%; */
+  gap: 15px;
+}
+
+.ListingDetails .leftSide .propertyDetailsFields,
+.unitDetailsFields,
+.ListingDetails .support-location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ListingDetails .leftSide .custom-select-type {
+  margin: 10px 0px 0px 0px;
+}
+
+.ListingDetails .fieldClassName.ant-select-outlined .ant-select-selector:hover,
+.ListingDetails .fieldClassName.ant-select-focused .ant-select-selector,
+.ListingDetails .features .FeaturesFields .fieldFeatures.ant-select-outlined .ant-select-selector:hover,
+.ListingDetails .features .FeaturesFields .fieldFeatures.ant-select-focused .ant-select-selector,
+.ListingDetails .features .FeaturesFields .ammenitiesInputField.ant-input:hover,
+.ListingDetails .features .FeaturesFields .ammenitiesInputField.ant-input:focus,
+.ListingDetails .features .FeaturesFields .includesInputField.ant-input:hover,
+.ListingDetails .features .FeaturesFields .includesInputField.ant-input:focus {
+  border-color: var(--red) !important;
+  box-shadow: 0 0 0 2px #f778783f !important;
+
+}
+
+.fieldClassName .ant-select-arrow {
+  color: var(--mute-gray) !important;
+}
+
+.fieldClassName,
+.ListingDetails .features .FeaturesFields .fieldFeatures {
+  /* border: 1px solid;
+  border-color: var(--red); */
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  /* padding: 0px 10px 0px 10px; */
+}
+
+.custom-select-type .labelClassName {
+  color: var(--gray-border-color);
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.custom-select-type .fieldClassName option {
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 10px;
+  line-height: normal;
+}
+
+/* Description */
+.ListingDetails .rightSide {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  gap: 15px;
+}
+
+.text-field {
+  margin: 15px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.text-field .textLabel,
+.caption-textLabel {
+  color: #8c9094;
+  font-family: "Poppins", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.googleMapDisplay {
+  border-radius: 10px;
+  border: 1px #8c9094 dashed;
+  /* height: 260px; */
+  /* width: 93%; */
+  /* height: 47%; */
+}
+
+.ListingDetails .features {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* width: 99%; */
+  /* padding: 1%; */
+  grid-column: 1 / span 2;
+}
+
+.featuresAndAmmenities,
+.includes {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100%;
+  height: 30px;
+}
+
+.indoorFeaturesText,
+.outdoorFeaturesText,
+.featuresAndAmenitiesText,
+.includesText {
+  color: #8c9094;
+  font-family: "Poppins", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.ListingDetails .features .featuresButton {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: end;
+
+}
+
+.ListingDetails .features .support--add-btn:hover,
+.ListingDetails .features .support--subtract-btn:hover {
+  border-color: var(--red) !important;
+  box-shadow: 0 0 0 2px #f778783f !important;
+}
+
+.ListingDetails .features .support--add-btn,
+.ListingDetails .features .support--add-btn:hover {
+  background: var(--red);
+  color: white;
+}
+
+.ListingDetails .features .support--subtract-btn,
+.ListingDetails .features .support--subtract-btn:hover {
+  background: transparent;
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.ListingDetails .features .inputFieldss {
+  display: grid;
+  width: 100%;
+  height: 50%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  /* padding: 5px; */
+}
+
+.ListingDetails .features .ammenitiesFields,
+.includesFields {
+  display: grid;
+  width: 100%;
+  height: 50%;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.IndoorFeatures,
+.OutdoorFeatures,
+.featuresAndAmmenities,
+.includes {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.support--features .FeaturesFields input:disabled, 
+.support--features .FeaturesFields .fieldFeatures.ant-select-disabled .ant-select-selector,
+.ListingDetails .fieldClassName.ant-select-disabled .ant-select-selector {
+  color: rgb(0 0 0 / 63%);
+  background-color: rgb(0 0 0 / 3%);
+}
+
+.description-caption.ant-input:disabled {
+  color: rgb(0 0 0 / 63%);
+  background-color: rgb(0 0 0 / 3%);
+}
+
+.features .support--features {
+  margin: 8px 0;
+}
+
+.support--upload-photos {
+  margin: 35px 0 20px 0;
+}
+
+.support--upload-photos .drag-upload.ant-upload-wrapper {
+  display: block;
+}
+
+.support--upload-photos .drag-upload.ant-upload-wrapper .ant-upload {
+  padding: 30px;
+}
+
+.support--upload-photos .drag-upload.ant-upload-wrapper .ant-upload:hover {
+  border-color: var(--red);
+
+}
+
+.support--upload-photos .drag-upload.ant-upload-wrapper .ant-upload-list .ant-upload-list {
+  width: 150px;
+  height: 150px;
+}
+
+.support--upload-photos .drag-upload.ant-upload-wrapper .ant-upload-list .ant-upload-list-item {
+  padding: 0;
+  border-radius: 10px;
+}
+
+.support--upload-photos .drag-upload.ant-upload-wrapper .ant-upload-list .ant-upload-list-item::before {
+  width: 0;
+  height: 0;
+}
+
+.support--upload-photos .drag-upload.ant-upload-wrapper .ant-upload-list.ant-upload-list-picture-card {
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.support--upload-photos .drag-upload.ant-upload-wrapper .ant-upload-list .ant-upload-list-item-thumbnail img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+.support--upload-photos .upload-photos--header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+/* SUPPORT SUB BTNS */
+
+.support-listing--wrapper .sub-btns {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+/* SUPPORT SUB BTNS */
+.support-listing--wrapper .sub-btns button.listing-details--sub-btn,
+.support-listing--wrapper .sub-btns button.listing-details--sub-btn:hover {
+  border-color: var(--red);
+  color: var(--red);
+  font-weight: bold;
+}
+
+.support-listing--wrapper .sub-btns button.listing-details--sub-btn.ant-btn-lg {
+  height: 45px;
+}
+
+
+@media only screen and (max-width: 330px) {
+
+  .IndoorFeatures,
+  .OutdoorFeatures,
+  .featuresAndAmmenities,
+  .includes {
+    padding-bottom: 5%;
+  }
+ 
+}
+
+@media only screen and (max-width: 770px) {
+  .ListingDetails .leftSide {
+    padding-left: 0;
+    width: 80%;
+  }
+
+  .ListingDetails.uploadPhotos {
+    width: 85%;
+  }
+
+  .leftSide {
+    padding-left: 0px;
+  }
+
+  .ListingDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ListingDetails .leftSide .propertyDetailsFields,
+  .unitDetailsFields {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .ListingDetails.features {
+    padding-top: 60%;
+  }
+
+  .ListingDetails .features .IndoorFeatures,
+  .OutdoorFeatures,
+  .featuresAndAmmenities,
+  .includes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .featuresButton {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featuresButton {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featuresAndAmmenities {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ListingDetails .features .inputFieldss {
+    padding-top: 8%;
+    grid-template-columns: 1fr;
+    display: grid;
+    width: 80%;
+  }
+
+  .ListingDetails .features .featuresButton {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  .ListingDetails .features .featuresButton .addButton {
+    width: 100%;
+  }
+
+  .ListingDetails .features .featuresButton .subtractButton {
+    width: 100%;
+  }
+
+  .googleMapDisplay {
+    margin: 100px 0px 0px 0px;
+    border-radius: 10px;
+    border: 1px #8c9094 solid;
+    width: 100%;
+    height: 30%;
+  }
+
+  .ListingDetails .features .ammenitiesFields {
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+  }
+
+  .ListingDetails .features .includesFields {
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+  }
+
+  .ListingDetails.uploadPhotos {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 860px) and (min-width: 770px) {
+  .featureText {
+    width: 50%;
+  }
+
+  .indoorFeaturesText {
+    width: 60%;
+  }
+
+  .ListingDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ListingDetails .leftSide .propertyDetailsFields,
+  .unitDetailsFields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ListingDetails .features {
+    width: 90%;
+    padding-top: 60%;
+  }
+
+  .ListingDetails .features .IndoorFeatures,
+  .OutdoorFeatures,
+  .featuresAndAmmenities,
+  .includes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .featuresButton {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featuresButton {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featuresAndAmmenities {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ListingDetails .features .inputFieldss {
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .ListingDetails .features .featuresButton {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .ListingDetails .features .featuresButton .addButton {
+    width: 30%;
+  }
+
+  .ListingDetails .features .featuresButton .subtractButton {
+    width: 30%;
+  }
+
+  .googleMapDisplay {
+    margin: 100px 0px 0px 0px;
+    border-radius: 10px;
+    border: 1px #8c9094 solid;
+    width: 100%;
+    height: 30%;
+  }
+
+  .ListingDetails .features .ammenitiesFields {
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+  }
+
+  .ListingDetails .features .includesFields {
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+  }
+
+  .location {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .ListingDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ListingDetails .leftSide {
+    width: 100vw;
+  }
+
+  .ListingDetails .features {
+    padding-top: 6%;
+  }
+
+  .ListingDetails .features .inputFieldss {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .ListingDetails .features .IndoorFeatures,
+  .ListingDetails .features .OutdoorFeatures,
+  .ListingDetails .features .featuresAndAmmenities,
+  .ListingDetails .features .includes {
+    width: 90vw;
+  }
+
+  .ListingDetails .features .ammenitiesFields,
+  .ListingDetails .features .includesFields {
+    grid-template-columns: 1fr 1fr;
+    width: 89vw;
+  }
+
+  .googleMapDisplay {
+    margin: 100px 0px 0px 0px;
+    border-radius: 10px;
+    border: 1px #8c9094 solid;
+    width: 100%;
+    height: 20%;
+  }
+
+  .unitDetailsFields {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

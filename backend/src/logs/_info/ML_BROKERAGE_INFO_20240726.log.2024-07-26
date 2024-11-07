@@ -1,0 +1,1007 @@
+INFO 2024-07-26T11:01:40.752 HOTGOJT128 
+ ML Brokerage Server listening on port undefined
+INFO 2024-07-26T11:05:16.629 HOTGOJT128 
+ ML Brokerage Server listening on port 8002
+INFO 2024-07-26T11:05:23.025 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:05:23.269 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:05:23.493 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:05:23.736 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:08:21.954 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:08:22.179 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:08:22.413 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:08:22.636 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:08:59.585 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/one?payload[listing_id]=BLTNPEJRHXJ&payload[property_status]=ACTIVE',
+    method: 'GET',
+    query: '{"payload":{"listing_id":"BLTNPEJRHXJ","property_status":"ACTIVE"}}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}'
+  },
+  RES: {
+    data: '{"listing_id":"BLTNPEJRHXJ"}',
+    status: 200,
+    code: 'LISTING_FOUND',
+    message: 'Listing retrieved'
+  }
+}
+INFO 2024-07-26T11:08:59.874 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/one?payload[listing_id]=BLTNPEJRHXJ&payload[property_status]=ACTIVE',
+    method: 'GET',
+    query: '{"payload":{"listing_id":"BLTNPEJRHXJ","property_status":"ACTIVE"}}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"b25-DT2DsdSHJFMBNJr91Bc16HjcyuM\\""}'
+  },
+  RES: {
+    data: '{"listing_id":"BLTNPEJRHXJ"}',
+    status: 200,
+    code: 'LISTING_FOUND',
+    message: 'Listing retrieved'
+  }
+}
+INFO 2024-07-26T11:09:00.100 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:00.336 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:13.107 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/one?payload[listing_id]=BLTNPEJRHXJ&payload[property_status]=ACTIVE',
+    method: 'GET',
+    query: '{"payload":{"listing_id":"BLTNPEJRHXJ","property_status":"ACTIVE"}}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"b25-DT2DsdSHJFMBNJr91Bc16HjcyuM\\""}'
+  },
+  RES: {
+    data: '{"listing_id":"BLTNPEJRHXJ"}',
+    status: 200,
+    code: 'LISTING_FOUND',
+    message: 'Listing retrieved'
+  }
+}
+INFO 2024-07-26T11:09:13.409 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/one?payload[listing_id]=BLTNPEJRHXJ&payload[property_status]=ACTIVE',
+    method: 'GET',
+    query: '{"payload":{"listing_id":"BLTNPEJRHXJ","property_status":"ACTIVE"}}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"b25-DT2DsdSHJFMBNJr91Bc16HjcyuM\\""}'
+  },
+  RES: {
+    data: '{"listing_id":"BLTNPEJRHXJ"}',
+    status: 200,
+    code: 'LISTING_FOUND',
+    message: 'Listing retrieved'
+  }
+}
+INFO 2024-07-26T11:09:13.647 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:13.880 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:18.905 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:19.148 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:19.370 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:19.626 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:52.942 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:53.182 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:53.432 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:09:53.657 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:00.012 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:00.250 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:00.478 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:00.745 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:01.241 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:01.472 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:01.720 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:02.150 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:02.373 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:02.613 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:02.835 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:03.259 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:03.487 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:03.714 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:03.942 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:04.787 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:05.018 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:05.240 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:05.472 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:14.970 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Google Chrome\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?1","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/15.0.0 Mobile/15A5370a Safari/602.1","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"iOS","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"document","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cache-control":"no-cache","pragma":"no-cache"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:15.201 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Google Chrome\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?1","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/15.0.0 Mobile/15A5370a Safari/602.1","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"iOS","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"document","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cache-control":"no-cache","pragma":"no-cache"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:15.356 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Google Chrome\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?1","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/15.0.0 Mobile/15A5370a Safari/602.1","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"iOS","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"document","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cache-control":"no-cache","pragma":"no-cache"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:10:15.358 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Google Chrome\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?1","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/15.0.0 Mobile/15A5370a Safari/602.1","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"iOS","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"document","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cache-control":"no-cache","pragma":"no-cache"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:12:47.023 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Google Chrome\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?1","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/15.0.0 Mobile/15A5370a Safari/602.1","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"iOS","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"document","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cache-control":"no-cache","pragma":"no-cache"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:12:47.026 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Google Chrome\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?1","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/15.0.0 Mobile/15A5370a Safari/602.1","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"iOS","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"document","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cache-control":"no-cache","pragma":"no-cache"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:12:47.042 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Google Chrome\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?1","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/15.0.0 Mobile/15A5370a Safari/602.1","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"iOS","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"document","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cache-control":"no-cache","pragma":"no-cache"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:12:47.045 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Google Chrome\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?1","user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/15.0.0 Mobile/15A5370a Safari/602.1","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"iOS","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"document","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","cache-control":"no-cache","pragma":"no-cache"}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:13:47.145 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:13:47.372 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:13:47.620 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T11:13:47.856 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T15:31:33.481 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T15:31:33.703 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T15:31:33.934 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}
+INFO 2024-07-26T15:31:34.160 HOTGOJT128 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/get/listing/all',
+    method: 'GET',
+    query: '{}',
+    params: '{}',
+    body: '{}',
+    headers: '{"host":"localhost:8002","connection":"keep-alive","sec-ch-ua":"\\"Not/A)Brand\\";v=\\"8\\", \\"Chromium\\";v=\\"126\\", \\"Microsoft Edge\\";v=\\"126\\"","accept":"application/json, text/plain, */*","sec-ch-ua-mobile":"?0","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0","x-api-key":"AIzaSyDC86gN1O512Ucqzc9UEtYnyosw8vpLIFM","sec-ch-ua-platform":"\\"Windows\\"","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","if-none-match":"W/\\"876-5Wab1MCpsasTfX/8g3HszYJlWuE\\""}'
+  },
+  RES: {
+    data: '{"listing_count":4}',
+    status: 200,
+    code: 'LISTING_RETRIEVED',
+    message: 'SUCCESS'
+  }
+}

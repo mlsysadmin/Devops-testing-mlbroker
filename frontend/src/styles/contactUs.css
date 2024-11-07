@@ -1,0 +1,1128 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.contactUsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+}
+
+.contactUsContainer .banner {
+  background-image: url('../asset/banners/house_car_LE_auto_x2-transformed.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  /* width: 100%;
+    max-height: 70%; */
+}
+
+.bannerTitle {
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+.bannerSubTitle {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contactUsContent {
+  position: relative;
+  margin-top: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  gap: 200px;
+}
+
+.location {
+  /* width: 30%; */
+  text-align: left;
+  /* margin-top: 2%; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* margin-left: 5%; */
+}
+
+.location-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.location-header {
+  font-size: 1.6rem;
+}
+
+#location {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.pinned-location {
+  font-size: 1.1rem;
+}
+
+.map {
+  width: 500px;
+  position: relative;
+}
+
+#map {
+  width: 80%;
+  height: auto;
+}
+
+.pinned {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+padding: 10px;
+  left: 40%;
+  top: 35%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.FAQs-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 5%;
+  margin-top: 3%;
+}
+
+.FAQs-field {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.questions {
+  width: 35%;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.questions-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.questions .toggle {
+  border: none;
+  background-color: transparent;
+  font-size: large;
+  font-weight: bold;
+}
+
+.questions .answer {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+#sub-info {
+  font-size: 1.1rem;
+}
+
+hr {
+  border-top: 1px solid #C8CCD0;
+  width: 100%;
+}
+
+.FAQs {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  text-align: left;
+}
+
+#FAQs {
+  font-size: 1.4rem;
+}
+
+.FAQs-email {
+  border-radius: 5px;
+  color: #8C9094;
+  text-align: left;
+  padding: 7%;
+  height: 9%;
+  outline: none;
+  border: 1px solid red;
+}
+
+#submitbtn {
+  background-color: #d90000;
+  color: #fff;
+  padding: 6%;
+  height: 1%;
+  border-radius: 5px;
+  margin-top: 0px;
+
+}
+
+.contact-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 16%;
+  position: absolute;
+  background-color: #fff;
+  width: 65%;
+  left: 17%;
+  height: 25%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inputFields {
+  /* padding-top: 3.5%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  /* gap: 1rem; */
+  align-items: center;
+
+}
+
+#input-header {
+  padding: 0;
+  text-align: start;
+  width: 100%;
+}
+
+#input-header h1 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0%;
+}
+
+#input-header p {
+  font-size: 1rem;
+}
+
+.inputFields #inputField {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.name,
+.input,
+#messageField {
+
+  background-color: #d9d9d98a;
+  border-radius: 5px;
+  color: black;
+  padding: 2.5%;
+  text-align: left;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+
+.contactInfos {
+  width: 36%;
+}
+
+#contactInfos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: #d90000 1px solid;
+  border-radius: 5px;
+  text-align: left;
+  padding: 3%;
+  gap: 1.5rem;
+}
+
+.contactInfos h2 {
+  font-size: 1.2rem;
+}
+
+#customercare {
+  display: flex;
+  font-size: 0.9rem;
+}
+
+.phone-num {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  font-size: 0.9rem;
+}
+
+#foreignContact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+#foreignContact h4 {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+#others {
+  display: flex;
+  margin-top: 7%;
+  font-size: 1rem;
+}
+
+#messagebtn {
+  background-color: var(--red);
+  border-radius: 5px;
+  padding: 5%;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.contact-field .field-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .contactUsContainer{
+    display: block;
+  }
+  .contactUsContainer .banner {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+  }
+
+  .bannerTitle {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0px 5px 5px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+
+  .bannerSubTitle {
+    font-size: .9rem;
+    text-align: center;
+    margin: 0px 5px 10px;
+    text-wrap:wrap;
+    flex-wrap: wrap;
+  }
+  .contactInfos, .inputFields #inputField, .contactUsContent, .FAQs-container {
+    width: 95%;
+  }
+  .contactUsContent {
+    flex-direction: column;
+    justify-content: center;
+    margin: 1050px auto 30px;
+    padding: 10px;
+  }
+
+  .location {
+    margin-top: 20px;
+    gap: .5rem;
+    margin-left: 0%;
+  }
+
+  .location-container {
+    gap: .5rem;
+  }
+
+  #location {
+    font-size: 1.2rem;
+  }
+
+  .pinned-location {
+    font-size: 1rem;
+  }
+
+  .map, .location, .FAQs {
+    width: 100%;
+  }
+
+  #map {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .pinned {
+    gap: .8rem;
+    left: 30%;
+    width: 60%;
+    top: 15%;
+  }
+
+  .pinned p {
+    font-size: 13px;
+  }
+
+  .pinned img {
+    width: 15px;
+  }
+
+  .FAQs-container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin: auto auto 70px;
+    padding: 10px;
+  }
+
+  .FAQs-field {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .questions {
+    width: 100%;
+    gap: 1.8rem;
+    margin-top: 5%;
+    margin-left: 0px;
+  }
+
+  .dropdown-content{
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .FAQs-container #questions h2 {
+    font-size: large;
+  }
+
+  #sub-info {
+    font-size: 15px;
+  }
+
+  hr {
+    border-top: 1px solid #C8CCD0;
+    width: 100%;
+  }
+
+  .FAQs {
+    gap: 1rem;
+  }
+
+  #FAQs {
+    font-size: 1.6rem;
+  }
+
+  .FAQs-email {
+    padding: 10px;
+    outline: none;
+    height: auto;
+    border: 1px solid var(--red);
+    font-size: small;
+    width: 100%;
+  }
+
+  #submitbtn {
+    padding: 3%;
+    font-size: small;
+  }
+
+  .contact-field {
+    top: 7%;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    height: 800px;
+    border-radius: 0%;
+    box-shadow: none;
+  }
+
+  .inputFields {
+    justify-content: flex-start;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  #input-header h1 {
+    font-size: x-large;
+  }
+
+  .inputFields #inputField {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .nameField {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: left;
+    width: 100%;
+  }
+
+
+  #messagebtn{
+    padding: 6%;
+  }
+
+  #contactInfos {
+    margin-top: 40px;
+  }
+
+  .contactInfos h2 {
+    font-size: 1.2rem;
+  }
+
+  #customercare {
+    display: flex;
+    font-size: .9rem;
+  }
+
+  .phone-num {
+    font-size: .9rem;
+    gap: 1rem;
+  }
+
+  #foreignContact {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    font-size: .9rem;
+  }
+
+  #foreignContact h4 {
+    color: #000;
+    font-size: 1.2rem;
+  }
+
+  #others {
+    display: flex;
+    margin-top: 7%;
+    font-size: 1rem;
+  }
+  .name, .input, #messageField{
+    font-size: 14px;
+    padding: 3%;
+  }
+
+  .contact-field .field-container {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+
+  .contactUsContainer .banner {
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+  }
+
+  .bannerTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 15px 10px;
+  }
+
+  .bannerSubTitle {
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px 15px 10px;
+  }
+  .contactInfos, .inputFields #inputField, .contactUsContent, .FAQs-container {
+    width: 90%;
+  }
+  .contactUsContent {
+    flex-direction: column;
+    justify-content: center;
+    margin: 730px auto 30px;
+    padding: 10px;
+    gap: 50px;
+  }
+
+  .location {
+    margin-top: 20px;
+    gap: .5rem;
+    margin-left: 0%;
+  }
+
+  .location-container {
+    gap: .5rem;
+  }
+
+  #location {
+    font-size: 1.2rem;
+  }
+
+  .pinned-location {
+    font-size: 1rem;
+  }
+
+  .map, .location, .FAQs {
+    width: 100%;
+  }
+
+  #map {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .pinned {
+    gap: .8rem;
+    left: 30%;
+    width: 60%;
+    top: 20%;
+  }
+
+  .pinned p {
+    font-size: 13px;
+  }
+
+  .pinned img {
+    width: 15px;
+  }
+
+  .FAQs-container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin: auto auto 70px;
+    padding: 10px;
+  }
+
+  .FAQs-field {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .questions {
+    width: 100%;
+    gap: 1.8rem;
+    margin-top: 5%;
+    margin-left: 0px;
+  }
+
+  .dropdown-content{
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .FAQs-container #questions h2 {
+    font-size: large;
+  }
+
+  #sub-info {
+    font-size: 15px;
+  }
+
+  hr {
+    border-top: 1px solid #C8CCD0;
+    width: 100%;
+  }
+
+  .FAQs {
+    gap: 1rem;
+  }
+
+  #FAQs {
+    font-size: 1.6rem;
+  }
+
+  .FAQs-email {
+    padding: 10px;
+    outline: none;
+    height: auto;
+    border: 1px solid var(--red);
+    font-size: small;
+    width: 100%;
+  }
+
+  #submitbtn {
+    padding: 3%;
+    font-size: small;
+  }
+
+  .contact-field {
+    top: 8%;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    height: 800px;
+    border-radius: 0%;
+    box-shadow: none;
+  }
+
+  .inputFields {
+    justify-content: flex-start;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  #input-header h1 {
+    font-size: x-large;
+  }
+
+  .inputFields #inputField {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .nameField {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: left;
+    width: 100%;
+  }
+
+
+  #messagebtn{
+    padding: 6%;
+  }
+
+  #contactInfos {
+    margin-top: 40px;
+  }
+
+  .contactInfos h2 {
+    font-size: 1.2rem;
+  }
+
+  #customercare {
+    display: flex;
+    font-size: .9rem;
+  }
+
+  .phone-num {
+    font-size: .95rem;
+  }
+
+  #foreignContact {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    font-size: .9rem;
+  }
+
+  #foreignContact h4 {
+    color: #000;
+    font-size: 1.2rem;
+  }
+
+  #others {
+    display: flex;
+    margin-top: 7%;
+    font-size: 1rem;
+  }
+  .name, .input, #messageField{
+    font-size: 14px;
+    padding: 3%;
+  }
+
+  .contact-field .field-container {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 364px) {
+  .contactUsContent{
+    margin-top: 800px !important;
+  }
+}
+
+@media screen and (min-width: 365px) and (max-width: 480px) {
+  .contactUsContent{
+    margin-top: 740px !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .inputFields {
+    padding-top: 3.5%;
+    align-items: baseline;
+    width: 100%;
+    height: 100%;
+    gap: 0rem;
+  }
+
+  .contact-field {
+    top: 13%;
+    width: 90%;
+    left: 5%;
+    height: 25%;
+  }
+
+  .contactUsContainer .banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+
+  .inputFields #inputField {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contactInfos {
+    width: 40%;
+  }
+  .bannerTitle{
+    font-size: 3rem;
+    text-align: center;
+    margin: 50px 20px 5px;
+  }
+  .bannerSubTitle {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .contactUsContent {
+    padding-left: 10px;
+    /* margin: 480px auto; */
+    /* width: 95%; */
+    margin: 480px auto 0;
+  }
+
+  .FAQs-container{
+    width: 95%;
+    margin: 8% auto 6%;
+  }
+
+  .contactUsContent,
+  .FAQs-container {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .location, .questions{
+    margin-left: 0%;
+  }
+
+  .location, .questions{
+    width: 50%;
+  }
+
+  .map, .FAQs{
+    width: 40%;
+  }
+  #map{
+    width: 100%;
+  }
+
+  .pinned {
+    height: 32%;
+    width: 80%;
+    left: 12%;
+    top: 10%;
+    gap: 0.3rem;
+  }
+  .phone-num{
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 659px) {
+  .inputFields{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding-top: 5%;
+    justify-content: start;
+    gap: 40px;
+  }
+  .inputFields #inputField, .contactInfos{
+    width: 100%;
+  }
+
+  .contact-field{
+    height: 30%;
+    top: 10%;
+  }
+
+  .contactUsContent {
+    margin-top: 1000px;
+    flex-direction: column;
+  }
+
+  .FAQs-container{
+     gap: 40px;
+     width: 80%;
+    flex-direction: column-reverse;
+  }
+  .location-header, .FAQs #FAQs p{
+    font-size: 1.9rem;
+  }
+ .location{
+  text-align: center;
+ }
+  .location, .questions, .FAQs{
+    width: 100%;
+  }
+  .FAQs{
+    margin-top: 10%;
+    gap: 2rem;
+  }
+  .questions{
+    gap: 2.8rem;
+  }
+
+  .map{
+    width: 70%;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .inputFields {
+    width: 100%;
+    height: 100%;
+    gap: 0rem;
+    padding-top: 3.5%;
+    align-items: baseline;
+  }
+
+  .contact-field {
+    top: 15%;
+    width: 90%;
+    left: 5%;
+    height: 27%;
+  }
+
+  .inputFields #inputField {
+    width: 45%;
+  }
+
+  .contactInfos {
+    width: 40%;
+  }
+
+  .bannerTitle,
+  .bannerSubTitle {
+    margin: 0 15px;
+  }
+
+  .bannerTitle {
+    margin-top: 6%;
+  }
+
+  .bannerSubTitle {
+    text-align: center;
+  }
+
+  .contactUsContent {
+    margin-top: 450px;
+    padding: 0px;
+  }
+
+  .contactUsContent,
+  .FAQs-container {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .location,
+  .questions {
+    margin: 0px;
+    width: 50%;
+  }
+
+  .map,
+  .FAQs {
+    width: 35%;
+  }
+
+  #map {
+    width: 100%;
+    height: auto;
+  }
+
+  .pinned {
+    padding: 5px;
+  }
+
+  .FAQs-container {
+    margin-top: 7%;
+    margin-bottom: 6%;
+  }
+
+  .contactUsContainer .banner {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 825px) {
+  .contact-field {
+    top: 15%;
+    width: 93%;
+    left: 4%;
+    height: 28%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .contact-field {
+    top: 16%;
+    width: 83%;
+    left: 9%;
+    height: 27%;
+  }
+
+  .contactUsContainer .banner {
+    height: 650px;
+  }
+
+  .bannerTitle {
+    margin-top: 80px;
+  }
+
+  .contactUsContent,
+  .FAQs-container {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .contactUsContent {
+    margin-top: 35%;
+    padding-left: 0px;
+  }
+
+  .location {
+    gap: 1rem;
+    margin: 0px;
+    width: 37%;
+  }
+
+  .map {
+    width: 40%;
+    position: relative;
+  }
+
+  #map {
+    width: 100%;
+    height: auto;
+  }
+
+  .pinned {
+    height: 25%;
+    width: 40%;
+    left: 50%;
+    top: 40%;
+  }
+
+  .questions {
+    width: 37%;
+    gap: 2rem;
+    margin-left: 0px;
+  }
+
+  .FAQs {
+    width: 40%;
+    gap: 1.5rem;
+    text-align: left;
+  }
+
+  .FAQs-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+
+@media screen and (min-width:1201px) and (max-width:1400px) {
+  .pinned {
+    height: 30%;
+    width: 45%;
+    left: 50%;
+  }
+
+  #map {
+    width: 100%;
+    height: auto;
+  }
+  .contactUsContent{
+  padding-left:0px;
+  }
+
+  .contactUsContent,
+  .FAQs-container {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .location {
+    width: 35%;
+    margin: 0px;
+  }
+
+  .contact-field {
+    top: 13%;
+    width: 70%;
+    height: 25%;
+    left: 15%;
+  }
+
+  .contactUsContainer .banner {
+    height: 700px;
+  }
+
+  .FAQs-container {
+    margin-top: 6%;
+    margin-bottom: 5%;
+  }
+
+  .questions {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width:1201px) and (max-width:1336px) {
+  .FAQs-container {
+    margin-top: 6%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (min-width:1201px) and (max-width:1336px) {
+
+  .contactUsContainer {
+    margin-top: 20%;
+  }
+}

@@ -1,0 +1,301 @@
+/* ListingsTableComponent.css */
+
+/* Base styles */
+
+.listings-table-container{
+ width: 100%;
+}
+.listings-table-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: rgba(140, 144, 148, 0.18);
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.tabs-listings-table {
+  display: flex;
+}
+
+.table-header-button {
+  border: none;
+  color: black;
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.table-header-button:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+}
+/* .Entries{
+  display: flex;
+  font-size: 200px ;
+  font-weight: bold;
+} */
+
+.listsum-search-section {
+  display: flex;
+  align-items: center;
+  
+}
+
+.table-dropdown {
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.search-input-container {
+  position: relative;
+}
+
+.search-input-wrapper {
+  position: relative;
+  color: black;
+}
+
+.search-input {
+
+  width: 90%;
+  padding: 8px 16px 8px 40px; /* Increase the left padding to make space for the icon */
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.listings-whole-table {
+  overflow-x: auto;
+}
+
+.listings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.listings-table th,
+.listings-table td {
+  padding: 10px;
+  text-align: left;
+  
+}
+
+.listings-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.even {
+  background-color: #f9f9f9;
+}
+
+.listings-show-details-button {
+  padding: 5px 10px;
+  background-color: #8C9094;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Pagination */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f28a8a;
+  color: black;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.page-link:hover {
+  background-color: #e07070;
+}
+
+.page-link.active {
+  background-color: #ff0000;
+  color: black;
+}
+
+/* Responsive styles for 320px — 480px */
+@media (min-width: 320px) and (max-width: 480px) {
+  .listings-table-header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .tabs-listings-table {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .table-header-button {
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+  }
+
+  .listsum-search-section {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .table-dropdown {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .search-input-container {
+    width: 100%;
+  }
+
+  .search-input {
+    width: calc(100% - 20px); /* Account for padding and icon */
+    font-size: 14px;
+  }
+
+  .listings-whole-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+ .listings-table{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+  .listings-table th,
+  .listings-table td {
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .listings-table th {
+    font-size: 14px;
+  }
+
+  .listings-show-details-button {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .pagination-list .page-link {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+}
+/* Base styles remain as is */
+
+/* Responsive adjustments for screen sizes between 481px and 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .listings-table-header-section {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .table-header-button {
+    padding: 20px 25px;
+    font-size: 14px;
+  }
+
+  .listsum-search-section {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .search-icon {
+    right: 15px;
+  }
+
+  .table-dropdown {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .listings-whole-table {
+    overflow-x: auto;
+  }
+
+  .listings-table th,
+  .listings-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .listings-show-details-button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .pagination-container {
+    flex-direction: column;
+  }
+
+  .pagination-list {
+    margin-bottom: 10px;
+  }
+
+  .page-link {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+  }
+}
+

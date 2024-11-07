@@ -8,16 +8,9 @@ env:
   variables:
     key: "value"
 
-  # the value of a vaultVariable is the secret-id (in OCI ID format) stored in the OCI Vault service
-  # you can then access the value of that secret in your build_spec.yaml commands
-  vaultVariables:
-  #  EXAMPLE_SECRET: "YOUR-SECRET-OCID"
-  
-  # exportedVariables are made available to use as parameters in sucessor Build Pipeline stages
-  # For this Build to run, the Build Pipeline needs to have a BUILDRUN_HASH parameter set
   exportedVariables:
     - BUILDRUN_HASH
-
+    
 steps:
   - type: Command
     name: "Define unique image tag"
@@ -25,19 +18,6 @@ steps:
     command: |
       export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
       echo "BUILDRUN_HASH: " $BUILDRUN_HASH
-
-  # - type: Command
-  #   timeoutInSeconds: 600
-  #   name: "Install Node Prereqs"
-  #   command: |
-  #     cd ${OCI_WORKSPACE_DIR}/node_express
-  #     # install nvm
-  #     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-  #     export NVM_DIR="$HOME/.nvm"
-  #     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-  #     nvm install lts/erbium
-  #     echo "NODE VERSION: $(node -v)"
-  #     echo "NPM VERSION: $(npm -v)"
 
     onFailure:
       - type: Command
@@ -47,37 +27,27 @@ steps:
         timeoutInSeconds: 40
         runAs: root
   
-  # - type: Command
-  #   timeoutInSeconds: 600
-  #   name: "NPM install"
-  #   command: |
-  #     cd ${OCI_WORKSPACE_DIR}/node_express
-  #     npm install
-  #   onFailure:
-  #     - type: Command
-  #       command: |
-  #         echo "Handling Failure"
-  #         echo "Failure successfully handled"
-  #       timeoutInSeconds: 40
-  #       runAs: root
-
-  # - type: Command
-  #   timeoutInSeconds: 1200
-  #   name: "Run Tests"
-  #   command: |
-  #     cd ${OCI_WORKSPACE_DIR}/node_express
-  #     npm test
-
+  # Build backend container image
   - type: Command
     timeoutInSeconds: 1200
-    name: "Build container image"
+    name: "Build backend container image"
     command: |
-      cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java
-      docker build --pull --rm -t oci_devops_java_app .
+      cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java/backend
+      docker build --pull --rm -t oci_devops_backend_app .
+
+  # Build frontend container image
+  - type: Command
+    timeoutInSeconds: 1200
+    name: "Build frontend container image"
+    command: |
+      cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java/frontend
+      docker build --pull --rm -t oci_devops_frontend_app .
 
 outputArtifacts:
-  - name: output01
+  - name: backendImage
     type: DOCKER_IMAGE
-    # this location tag doesn't effect the tag used to deliver the container image
-    # to the Container Registry
-    location: oci_devops_java_app:latest
+    location: oci_devops_backend_app:latest
+
+  - name: frontendImage
+    type: DOCKER_IMAGE
+    location: oci_devops_frontend_app:latest

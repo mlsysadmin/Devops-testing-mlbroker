@@ -1,0 +1,26 @@
+.address{
+    display: flex;
+}
+#buttonShowMap{
+    padding: 25px;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+#buttonShowMap:hover{
+    border: #d90000 1px solid;
+    color: #d90000;
+}
+.buttonBottom{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.buttonBottom .buttonCancel{
+    border: #8C9094 1px solid;
+    padding: 1% 2%;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+.ant-drawer .ant-drawer-body{
+    font-family: var(--font-family);
+}
+.ant-drawer-content-wrapper{
+    width: 370px !important;
+}
+.side-bar--drawer .sidebar-menu.ant-menu{
+    width: 100% !important;
+}
+
+.side-bar--drawer .ant-drawer-header .ant-drawer-close{
+    margin-top: 0px;
+    right: 0px;
+    /* display: none; */
+    position: absolute;
+}
+
+.side-bar--drawer .sidebar-menu.ant-menu.ant-menu-root.ant-menu-inline{
+    border-inline-end: none !important;
+    font-family: var(--font-family);
+
+
+}
+.sidebar-menu .ant-menu-submenu .ant-menu-sub .ant-menu-item-group-list li{
+    padding-left: 48px !important;
+    font-family: var(--font-family);
+}
+
+.sidebar-menu li.ant-menu-item, .sidebar-menu li.ant-menu-submenu .ant-menu-submenu-title{
+    /* padding-left: 0px !important; */
+    font-family: var(--font-family);
+}
+
+.sidebar-menu.ant-menu .ant-menu-item-selected,
+.sidebar-menu.ant-menu .ant-menu-item-selected:hover,
+.sidebar-menu.ant-menu .ant-menu-item-active,
+.sidebar-menu.ant-menu .ant-menu-item:hover,
+.sidebar-menu.ant-menu .ant-menu-item-selected .rent-menu--btn
+{
+    background: var(--red);
+    color: white;
+    border-radius: 30px;
+    font-family: var(--font-family);
+}
+.sidebar-menu .ant-menu-submenu-selected >.ant-menu-submenu-title .ant-menu-title-content, 
+.sidebar-menu .ant-menu-submenu-selected >.ant-menu-submenu-title .ant-menu-submenu-arrow{
+    color: var(--red);
+}
+.sidebar-menu .ant-menu-submenu-title,
+.sidebar-menu .ant-menu-light:not(.ant-menu-horizontal) .ant-menu-submenu-title:hover{
+    background: none;
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .ant-menu-item-group-title .otherServices-col-2{
+        margin-top: 0px !important;
+    }
+}

@@ -1,0 +1,126 @@
+
+.card { 
+    font-family: "Poppins", sans-serif ;
+    position: relative;
+    margin-top: 2%;
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+
+  }
+  .imageContainer img{
+    width: 100%;
+  }
+  .image {
+    width: 90%;
+    height: auto;
+  }
+  
+  .label{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    top: 3%;
+    left: 1rem;
+    font-size: 1.2rem;
+    height: 25px;
+  }
+  
+  /* .iconContainer{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* .icon {
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: '0 0 5px rgba(0, 0, 0, 0.3)';
+  } */
+
+  .icon.topRight{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    height: 25px;
+    width: 50px;
+    position: absolute;
+    color: #d90000;
+    top: 3%;
+    left: 85%;
+    font-size: 1.2rem;
+  }
+
+  .icon.bottomLeft{
+    background: #fff;
+    border-radius: 50%; 
+    position: absolute;
+    width: 8%;
+    height: 12%;
+    color: #d90000;
+    top: 80%;
+    left: 75%;
+    align-items: center;
+  }
+
+  .icon.bottomRight{
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    width: 8%;
+    height: 12%;
+    color: #d90000;
+    top: 80%;
+    left: 85%;
+    align-items: center;
+  }
+  
+  .icon img{
+    width: 90%;
+    margin-top: 8%;
+  }
+
+  .textContainer {
+    text-align: start;
+    margin-top: 4%;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 1.4rem;
+  }
+  
+  .subTitle {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 22px;
+    color: #8C9094;
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+  }
+  .price span{
+    width: 40%;
+  }
+  .detail img{
+    width: 10%;
+  }
+  
+  .detail {
+    font-size: 20px;
+    color: #8C9094;
+  }
+
+  

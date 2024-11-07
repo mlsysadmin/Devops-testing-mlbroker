@@ -1,0 +1,289 @@
+/* styles.css */
+
+.sold-properties-container {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sold-properties-headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: rgba(140, 144, 148, 0.18);
+  border-radius: 30px;
+ 
+}
+.sold-properties-searchSection label{
+  display: flex;
+ 
+  
+  border-radius: 5px;
+}
+
+.sold-properties-tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+}
+
+.wrappsearch {
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 34px;
+  position: relative;
+}
+
+.sold-properties-searchSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sold-properties-srchInputContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 30px;
+  padding: 3px 8px;
+}
+
+.sold-properties-searchIcons {
+  position: absolute;
+  left: 12px; /* Adjust the position of the icon */
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: black;
+}
+
+.searchInpt {
+  width: 100%;
+  padding: 8px 16px 8px 40px; /* Increase the left padding to make space for the icon */
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
+
+.searchInpt::placeholder {
+  color: black;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.dropdown {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sold-properties-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sold-properties-table th,
+.sold-properties-table td {
+  border:  #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.sold-properties-headerSection .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.row.even {
+  background-color: #f9f9f9;
+}
+
+.cell {
+  flex: 1;
+  text-align: center;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 5px;
+}
+
+.actionButton {
+  border: none;
+  background-color: #3d8857;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid;
+}
+
+.actionButton:hover {
+  background-color: #8c9094;
+}
+
+.sold-properties-showDetailsButton {
+  padding: 5px 10px;
+  border: none;
+  background-color: #8c9094;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sold-properties-showDetailsButton:hover {
+  background-color: #5a6268;
+}
+
+/* .listingsTableWrapper {
+  background-color: #e9ecef;
+  border-radius: 30px;
+  width: 100%;
+  display: flex;
+} */
+
+.newButton {
+  border: none;
+  color: black;
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.newButton:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+}
+.sold-entries-count{
+  margin-left: 16%;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginationList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pageItem {
+  margin: 0 5px;
+}
+
+.pageLink {
+  display: block;
+  padding: 10px 15px;
+  color: Black;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+}
+
+.pageLink.active {
+  background-color: #D90000;
+  color: white;
+}
+
+.pageLink:hover {
+  background-color: #e9ecef;
+}
+
+/* Responsive styles for tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sold-properties-headerSection {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    border-radius: 30px;
+    background-color: rgba(140, 144, 148, 0.18);
+
+  }
+  .sold-properties-table th,
+.sold-properties-table td {
+  border:  #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 12px;
+}
+
+  .sold-properties-tabs {
+    
+    justify-content: flex-start;
+  }
+
+  .wrappsearch {
+    width: 100%;
+    height: auto;
+  }
+
+  .srchInputContainer {
+    padding: 3px 5px;
+  }
+
+  .searchIcons {
+    left: 8px;
+  }
+
+  .searchInpt {
+    padding: 8px 16px 8px 32px;
+    font-size: 13px;
+  }
+
+  .header, .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cell {
+    text-align: left;
+    width: 100%;
+  }
+
+  .paginationList {
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 50px;
+  }
+
+  .pageItem {
+    margin: 5px 0;
+  }
+}

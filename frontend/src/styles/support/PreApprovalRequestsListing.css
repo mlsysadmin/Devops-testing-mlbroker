@@ -1,0 +1,53 @@
+.MainContent {
+  padding: 2% 0;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  width: 100%;
+  gap: 3rem;
+}
+.MainContent label,
+.CenterContent label,
+.BottomContent label {
+  color: #8c9094;
+}
+.MainContent p,
+.CenterContent p,
+.BottomContent p {
+  padding: 10px;
+  border: 1px solid #8c9094;
+  border-radius: 10px;
+}
+.TimelinePart,
+.propertyPart,
+.leftField,
+.rightField {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.TimelinePart b,
+.propertyPart b,
+.CenterContent b,
+.BottomContent b {
+  font-size: 1.5rem;
+}
+.CenterContent,
+.BottomContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.CenterContent .fieldsSet {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 3rem;
+}
+.BottomContent .fieldsWrapUp {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  column-gap: 3rem;
+  row-gap: 1rem;
+}

@@ -1,0 +1,51 @@
+.coming-soon {
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0.4)
+		),
+		url("../asset/banners/dashboard-banner.png");
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-blend-mode: lighten !important;
+}
+
+.content {
+	text-align: center;
+	background: rgba(255, 255, 255);
+	padding: 20px;
+	border-radius: 50px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+	width: 400px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+	padding: 35px 20px 60px 20px;
+}
+
+.coming-soon .content h1 {
+	font-size: 24px;
+	color: #333;
+}
+.coming-soon .content .working-on-it-info {
+	margin-top: 20px;
+}
+.coming-soon .content p {
+	font-size: 1.5rem;
+	color: #666;
+}
+.coming-soon .content .working-on-it-info span {
+	font-size: 17px;
+}
+.coming-soon .content .img-logo-coming-soon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}

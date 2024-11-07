@@ -1,0 +1,41 @@
+.show-details-listing-banner {
+    /* background-color: #fff; */
+    border-radius:30px;
+    padding: 10px; /* Adjust padding to match design */
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid red;
+  }
+  
+  .show-details-listing-banner h1 {
+    color: red;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .show-details-listing-banner p {
+    color: red;
+    font-size: 16px;
+  }
+  .show-listing{
+    display: flex;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .show-status{
+    display: flex;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .open-listing-id{
+    color: #d90000;
+  }
+  .open-status-id{
+    color: #256E2C;
+  }

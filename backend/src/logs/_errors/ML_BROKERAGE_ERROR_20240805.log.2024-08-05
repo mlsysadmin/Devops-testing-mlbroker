@@ -1,0 +1,1144 @@
+ERROR 2024-08-05T16:05:57.906 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:05:57.913 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:05:57.916 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:05:57.922 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:05:57.939 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:05:57.943 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:05:57.945 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:05:57.947 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:05:58.005 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:05:58.007 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:30.742 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:30.749 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:30.752 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:30.757 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:30.767 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:30.769 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:30.771 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:30.774 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:30.847 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:30.849 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:33.234 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:33.236 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:33.245 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:33.248 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:33.259 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:33.261 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:33.262 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:33.264 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:33.325 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:33.327 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:35.376 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:35.377 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:35.387 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:35.391 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:35.401 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:35.403 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:35.404 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:35.406 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:35.465 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:35.466 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:38.445 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:06:38.446 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:07:05.037 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:07:05.039 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:07:05.047 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:07:05.051 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:07:05.060 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:07:05.061 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:07:05.063 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:07:05.069 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/listing/all',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:07:05.169 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
+ERROR 2024-08-05T16:07:05.170 HOTGQCD09 
+ Logging.. | ML BROKERAGE {
+  REQ: {
+    url: '/api/public/get/countries',
+    method: 'OPTIONS',
+    query: {},
+    params: {},
+    body: '{}'
+  },
+  RES: {
+    data: '"{\\"name\\":\\"API_KEY_NOT_FOUND\\",\\"message\\":\\"No api key found\\"}"',
+    status: 403,
+    code: 'FORBIDDEN',
+    message: 'You are not authorized to access the resource'
+  }
+} 40     at ErrorHandler (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\src\utils\_helper\ErrorHandler.helper.js:40:19)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:326:13)
+    at C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle_error (C:\Users\BEJO20248201\Documents\ML-Brokerage\backend\node_modules\express\lib\router\layer.js:67:12)
