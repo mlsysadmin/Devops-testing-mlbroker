@@ -33,6 +33,11 @@ steps:
       cd backend
       docker build --pull --rm -t mlbrokerbe:latest .
       cd ..
+  - type: Command
+    name: "Verify backend image"
+    timeoutInSeconds: 40
+    command: |
+      docker images | grep mlbrokerbe
 
   # Build frontend container image
   - type: Command
@@ -42,6 +47,12 @@ steps:
       cd frontend
       docker build --pull --rm -t mlbroker:latest .
       cd ..
+
+  - type: Command
+    name: "List backend directory"
+    timeoutInSeconds: 40
+    command: |
+      ls -la backend
 
 outputArtifacts:
   - name: backendImage
