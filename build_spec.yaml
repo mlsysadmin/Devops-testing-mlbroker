@@ -31,7 +31,7 @@ steps:
     timeoutInSeconds: 1200
     name: "Build backend container image"
     command: |
-      cd backend
+      cd ${OCI_WORKSPACE_DIR}/backend
       docker build --pull --rm -t oci_devops_java_appbe .
       cd ..
 
@@ -40,7 +40,7 @@ steps:
     timeoutInSeconds: 1200
     name: "Build frontend container image"
     command: |
-      cd frontend
+      cd ${OCI_WORKSPACE_DIR}/frontend
       docker build --pull --rm -t oci_devops_java_app .
       cd ..
 
