@@ -24,35 +24,72 @@ steps:
           echo "Failure successfully handled"
         timeoutInSeconds: 40
         runAs: root
-  
-  # Build backend container image
-  - type: Command
-    timeoutInSeconds: 1200
-    name: "Build backend container image"
-    command: |
-      cd backend
-      docker build --pull --rm -t mlbrokerbe:latest .
-      cd ..
-  - type: Command
-    name: "Verify backend image"
-    timeoutInSeconds: 40
-    command: |
-      docker images | grep mlbrokerbe
 
-  # Build frontend container image
-  - type: Command
-    timeoutInSeconds: 1200
-    name: "Build frontend container image"
-    command: |
-      cd frontend
-      docker build --pull --rm -t mlbroker:latest .
-      cd ..
-
+  # Check if backend directory exists
   - type: Command
     name: "List backend directory"
     timeoutInSeconds: 40
     command: |
-      ls -la backend
+      echo "Checking backend directory contents:"
+      ls -la backend || (echo "Backend directory not found!" && exit 1)
+
+  # Build backend container image with error handling
+  - type: Command
+    timeoutInSeconds: 1200
+    name: "Build backend container image"
+    command: |
+      set -e
+      cd backend
+      if [ -f Dockerfile ]; then
+        docker build --pull --rm -t mlbrokerbe:latest .
+      else
+        echo "Dockerfile not found in backend directory" && exit 1
+      fi
+      cd ..
+
+  # Verify backend image exists after build
+  - type: Command
+    name: "Verify backend image"
+    timeoutInSeconds: 40
+    command: |
+      if docker images | grep -q mlbrokerbe; then
+        echo "Backend image mlbrokerbe:latest built successfully."
+      else
+        echo "Backend image not found!" && exit 1
+      fi
+
+  # Check if frontend directory exists
+  - type: Command
+    name: "List frontend directory"
+    timeoutInSeconds: 40
+    command: |
+      echo "Checking frontend directory contents:"
+      ls -la frontend || (echo "Frontend directory not found!" && exit 1)
+
+  # Build frontend container image with error handling
+  - type: Command
+    timeoutInSeconds: 1200
+    name: "Build frontend container image"
+    command: |
+      set -e
+      cd frontend
+      if [ -f Dockerfile ]; then
+        docker build --pull --rm -t mlbroker:latest .
+      else
+        echo "Dockerfile not found in frontend directory" && exit 1
+      fi
+      cd ..
+
+  # Verify frontend image exists after build
+  - type: Command
+    name: "Verify frontend image"
+    timeoutInSeconds: 40
+    command: |
+      if docker images | grep -q mlbroker; then
+        echo "Frontend image mlbroker:latest built successfully."
+      else
+        echo "Frontend image not found!" && exit 1
+      fi
 
 outputArtifacts:
   - name: backendImage
