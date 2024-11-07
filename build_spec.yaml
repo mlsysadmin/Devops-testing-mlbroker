@@ -6,10 +6,9 @@ shell: bash
 env:
   variables:
     key: "value"
-
   exportedVariables:
     - BUILDRUN_HASH
-    
+
 steps:
   - type: Command
     name: "Define unique image tag"
@@ -25,24 +24,46 @@ steps:
           echo "Failure successfully handled"
         timeoutInSeconds: 40
         runAs: root
-  
+
   # Build backend container image
   - type: Command
     timeoutInSeconds: 1200
     name: "Build backend container image"
     command: |
-      cd ${OCI_WORKSPACE_DIR}/backend
-      docker build --pull --rm -t oci_devops_java_appbe .
+      cd backend
+      docker build --pull --rm -t oci_devops_java_appbe:latest .
       cd ..
+
+  # Verify backend image exists after build
+  - type: Command
+    name: "Verify backend image"
+    timeoutInSeconds: 40
+    command: |
+      if docker images | grep -q "oci_devops_java_appbe"; then
+        echo "Backend image oci_devops_java_appbe:latest built successfully."
+      else
+        echo "Backend image not found!" && exit 1
+      fi
 
   # Build frontend container image
   - type: Command
     timeoutInSeconds: 1200
     name: "Build frontend container image"
     command: |
-      cd ${OCI_WORKSPACE_DIR}/frontend
-      docker build --pull --rm -t oci_devops_java_app .
+      cd frontend
+      docker build --pull --rm -t oci_devops_java_app:latest .
       cd ..
+
+  # Verify frontend image exists after build
+  - type: Command
+    name: "Verify frontend image"
+    timeoutInSeconds: 40
+    command: |
+      if docker images | grep -q "oci_devops_java_app"; then
+        echo "Frontend image oci_devops_java_app:latest built successfully."
+      else
+        echo "Frontend image not found!" && exit 1
+      fi
 
 outputArtifacts:
   - name: output01
