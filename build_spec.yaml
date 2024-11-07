@@ -4,7 +4,6 @@ timeoutInSeconds: 6000
 runAs: root
 shell: bash
 env:
-  # these are local variables to the build config
   variables:
     key: "value"
 
@@ -27,16 +26,19 @@ steps:
         timeoutInSeconds: 40
         runAs: root
   
+  # Build backend container image
   - type: Command
     timeoutInSeconds: 1200
-    name: "Build container image"
+    name: "Build backend container image"
     command: |
       cd backend
       docker build --pull --rm -t oci_devops_java_appbe .
       cd ..
+
+  # Build frontend container image
   - type: Command
     timeoutInSeconds: 1200
-    name: "Build container image"
+    name: "Build frontend container image"
     command: |
       cd frontend
       docker build --pull --rm -t oci_devops_java_app .
@@ -46,8 +48,6 @@ outputArtifacts:
   - name: output01
     type: DOCKER_IMAGE
     location: oci_devops_java_appbe:latest
-
-outputArtifacts:
   - name: output02
     type: DOCKER_IMAGE
     location: oci_devops_java_app:latest
