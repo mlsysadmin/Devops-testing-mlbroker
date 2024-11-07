@@ -4,13 +4,11 @@ timeoutInSeconds: 6000
 runAs: root
 shell: bash
 env:
-  # these are local variables to the build config
   variables:
     key: "value"
-
   exportedVariables:
     - BUILDRUN_HASH
-    
+
 steps:
   - type: Command
     name: "Define unique image tag"
@@ -33,7 +31,7 @@ steps:
     name: "Build backend container image"
     command: |
       cd backend
-      docker build --pull --rm -t mlbrokerbe:$BUILDRUN_HASH .
+      docker build --pull --rm -t mlbrokerbe:latest .
       cd ..
 
   # Build frontend container image
@@ -42,14 +40,14 @@ steps:
     name: "Build frontend container image"
     command: |
       cd frontend
-      docker build --pull --rm -t mlbroker:$BUILDRUN_HASH .
+      docker build --pull --rm -t mlbroker:latest .
       cd ..
 
 outputArtifacts:
   - name: backendImage
     type: DOCKER_IMAGE
-    location: mlbrokerbe:${BUILDRUN_HASH}
+    location: mlbrokerbe:latest
 
   - name: frontendImage
     type: DOCKER_IMAGE
-    location: mlbroker:${BUILDRUN_HASH}
+    location: mlbroker:latest
