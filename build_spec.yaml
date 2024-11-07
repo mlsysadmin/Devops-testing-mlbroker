@@ -32,7 +32,7 @@ steps:
     timeoutInSeconds: 1200
     name: "Build backend container image"
     command: |
-      cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java/backend
+      cd ${OCI_WORKSPACE_DIR}/backend
       docker build --pull --rm -t oci_devops_backend_app .
 
   # Build frontend container image
@@ -40,7 +40,7 @@ steps:
     timeoutInSeconds: 1200
     name: "Build frontend container image"
     command: |
-      cd ${OCI_WORKSPACE_DIR}/github_OCI-DevOps-Java/frontend
+      cd ${OCI_WORKSPACE_DIR}/frontend
       docker build --pull --rm -t oci_devops_frontend_app .
 
 outputArtifacts:
