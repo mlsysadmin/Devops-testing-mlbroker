@@ -6,69 +6,47 @@ shell: bash
 env:
   variables:
     key: "value"
+
   exportedVariables:
     - BUILDRUN_HASH
 
 steps:
   - type: Command
-    name: "Define unique image tag"
-    timeoutInSeconds: 40
+    name: "Define Tagging"
+    timeoutInSeconds: 60
     command: |
-      export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
-      echo "BUILDRUN_HASH: " $BUILDRUN_HASH
+          export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
+          echo "BUILDRUN_HASH: " $BUILDRUN_HASH
 
     onFailure:
       - type: Command
         command: |
-          echo "Handling Failure"
-          echo "Failure successfully handled"
-        timeoutInSeconds: 40
-        runAs: root
-
-  # Build backend container image
+          echo "Handling Failure in Frontend Build"
+        timeoutInSeconds: 1200
+        runAs: root                 
+      
   - type: Command
-    timeoutInSeconds: 1200
-    name: "Build backend container image"
-    command: |
-      cd backend
-      docker build --pull --rm -t oci_devops_java_appbe:latest .
-      cd ..
-
-  # Verify backend image exists after build
-  - type: Command
-    name: "Verify backend image"
-    timeoutInSeconds: 40
-    command: |
-      if docker images | grep -q "oci_devops_java_appbe"; then
-        echo "Backend image oci_devops_java_appbe:latest built successfully."
-      else
-        echo "Backend image not found!" && exit 1
-      fi
-
-  # Build frontend container image
-  - type: Command
-    timeoutInSeconds: 1200
-    name: "Build frontend container image"
+    name: "Build Frontend Container Image"
+    timeoutInSeconds: 3600
     command: |
       cd frontend
-      docker build --pull --rm -t oci_devops_java_app:latest .
+      docker build --pull --rm -t brokerage:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
       cd ..
 
-  # Verify frontend image exists after build
+
   - type: Command
-    name: "Verify frontend image"
-    timeoutInSeconds: 40
+    name: "Build Backend Container Image"
+    timeoutInSeconds: 3600
     command: |
-      if docker images | grep -q "oci_devops_java_app"; then
-        echo "Frontend image oci_devops_java_app:latest built successfully."
-      else
-        echo "Frontend image not found!" && exit 1
-      fi
+      cd backend
+      docker build --pull --rm -t brokeragebe:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
+      cd ..
+
 
 outputArtifacts:
-  - name: output01
+  - name: brokerage
     type: DOCKER_IMAGE
-    location: oci_devops_java_appbe:latest
-  - name: output02
+    location: brokerage:${BUILDRUN_HASH}
+  - name: brokeragebe
     type: DOCKER_IMAGE
-    location: oci_devops_java_app:latest
+    location: brokeragebe:${BUILDRUN_HASH}
