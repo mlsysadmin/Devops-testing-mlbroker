@@ -15,33 +15,38 @@ steps:
     name: "Define Tagging"
     timeoutInSeconds: 60
     command: |
-          export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
-          echo "BUILDRUN_HASH: " $BUILDRUN_HASH
+      if [ -z "$OCI_BUILD_RUN_ID" ]; then
+        echo "OCI_BUILD_RUN_ID is not set"; exit 1;
+      fi
+      export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
+      echo "BUILDRUN_HASH: " $BUILDRUN_HASH
 
     onFailure:
       - type: Command
         command: |
           echo "Handling Failure in Frontend Build"
         timeoutInSeconds: 1200
-        runAs: root                 
+        runAs: root                  
       
   - type: Command
     name: "Build Frontend Container Image"
     timeoutInSeconds: 3600
     command: |
-      cd frontend
+      echo "Starting frontend build..."
+      cd frontend || { echo "Frontend directory not found"; exit 1; }
       docker build --pull --rm -t brokerage:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
+      echo "Frontend build succeeded."
       cd ..
-
 
   - type: Command
     name: "Build Backend Container Image"
     timeoutInSeconds: 3600
     command: |
-      cd backend
+      echo "Starting backend build..."
+      cd backend || { echo "Backend directory not found"; exit 1; }
       docker build --pull --rm -t brokeragebe:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
+      echo "Backend build succeeded."
       cd ..
-
 
 outputArtifacts:
   - name: brokerage
