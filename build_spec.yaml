@@ -15,57 +15,38 @@ steps:
     name: "Define Tagging"
     timeoutInSeconds: 60
     command: |
-      if [ -z "$OCI_BUILD_RUN_ID" ]; then
-        echo "OCI_BUILD_RUN_ID is not set"; exit 1;
-      fi
-      export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
-      echo "BUILDRUN_HASH: $BUILDRUN_HASH"
+          export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
+          echo "BUILDRUN_HASH: " $BUILDRUN_HASH
 
     onFailure:
       - type: Command
         command: |
           echo "Handling Failure in Frontend Build"
         timeoutInSeconds: 1200
-        runAs: root                  
-
+        runAs: root                 
+      
   - type: Command
     name: "Build Frontend Container Image"
     timeoutInSeconds: 3600
     command: |
-      echo "Starting frontend build..."
-      echo "Current directory: $(pwd)"
-      echo "Listing files:"
-      ls -la
-      if [ ! -d "frontend" ]; then
-        echo "Frontend directory not found"; exit 1;
-      fi
-      cd frontend || { echo "Failed to change directory to frontend"; exit 1; }
-      echo "Building Docker image..."
-      docker build --pull --rm -t frontend:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
-      echo "Frontend build succeeded."
+      cd ${OCI_WORKSPACE_DIR}/frontend
+      docker build --pull --rm -t mlbroker:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
       cd ..
+
 
   - type: Command
     name: "Build Backend Container Image"
     timeoutInSeconds: 3600
     command: |
-      echo "Starting backend build..."
-      echo "Current directory: $(pwd)"
-      echo "Listing files:"
-      ls -la
-      if [ ! -d "backend" ]; then
-        echo "Backend directory not found"; exit 1;
-      fi
-      cd backend || { echo "Failed to change directory to backend"; exit 1; }
-      echo "Building Docker image..."
-      docker build --pull --rm -t backend:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
-      echo "Backend build succeeded."
+      cd ${OCI_WORKSPACE_DIR}/backend
+      docker build --pull --rm -t mlbrokerbe:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
       cd ..
 
+
 outputArtifacts:
-  - name: frontend
+  - name: frontendImage
     type: DOCKER_IMAGE
-    location: frontend:${BUILDRUN_HASH}
-  - name: backend
+    location: mlbroker:${BUILDRUN_HASH}
+  - name: backendImage
     type: DOCKER_IMAGE
-    location: backend:${BUILDRUN_HASH}
+    location: mlbrokerbe:${BUILDRUN_HASH}
