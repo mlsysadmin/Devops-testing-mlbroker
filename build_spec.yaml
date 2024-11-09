@@ -34,7 +34,7 @@ steps:
     command: |
       echo "Starting frontend build..."
       cd frontend || { echo "Frontend directory not found"; exit 1; }
-      docker build --pull --rm -t brokerage:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
+      docker build --pull --rm -t frontend:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
       echo "Frontend build succeeded."
       cd ..
 
@@ -44,14 +44,14 @@ steps:
     command: |
       echo "Starting backend build..."
       cd backend || { echo "Backend directory not found"; exit 1; }
-      docker build --pull --rm -t brokeragebe:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
+      docker build --pull --rm -t backend:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
       echo "Backend build succeeded."
       cd ..
 
 outputArtifacts:
-  - name: brokerage
+  - name: frontend
     type: DOCKER_IMAGE
-    location: brokerage:${BUILDRUN_HASH}
-  - name: brokeragebe
+    location: frontend:${BUILDRUN_HASH}
+  - name: backend
     type: DOCKER_IMAGE
-    location: brokeragebe:${BUILDRUN_HASH}
+    location: backend:${BUILDRUN_HASH}
