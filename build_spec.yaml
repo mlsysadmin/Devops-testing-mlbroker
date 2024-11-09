@@ -1,52 +1,29 @@
-version: 0.1
-component: build
-timeoutInSeconds: 6000
-runAs: root
-shell: bash
-env:
-  variables:
-    key: "value"
+version: 0.2
 
-  exportedVariables:
-    - BUILDRUN_HASH
+phases:
+  install:
+    runtime-versions:
+      docker: 18.09.0
+    commands:
+      - echo Installing dependencies...
+      - pip install -r backend/requirements.txt
+  build:
+    commands:
+      - echo Building backend...
+      - cd backend
+      - docker build -t backend .
+      - cd ..
+      - echo Building frontend...
+      - cd frontend
+      - docker build -t frontend .
+      - cd ..
+  post_build:
+    commands:
+      - echo Pushing images to ECR...
+      - docker push backend
+      - docker push frontend
 
-steps:
-  - type: Command
-    name: "Define Tagging"
-    timeoutInSeconds: 60
-    command: |
-          export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
-          echo "BUILDRUN_HASH: " $BUILDRUN_HASH
-
-    onFailure:
-      - type: Command
-        command: |
-          echo "Handling Failure in Frontend Build"
-        timeoutInSeconds: 1200
-        runAs: root                 
-      
-  - type: Command
-    name: "Build Frontend Container Image"
-    timeoutInSeconds: 3600
-    command: |
-      cd ${OCI_WORKSPACE_DIR}/frontend
-      docker build --pull --rm -t mlbroker:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
-      cd ..
-
-
-  - type: Command
-    name: "Build Backend Container Image"
-    timeoutInSeconds: 3600
-    command: |
-      cd ${OCI_WORKSPACE_DIR}/backend
-      docker build --pull --rm -t mlbrokerbe:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
-      cd ..
-
-
-outputArtifacts:
-  - name: frontendImage
-    type: DOCKER_IMAGE
-    location: mlbroker:${BUILDRUN_HASH}
-  - name: backendImage
-    type: DOCKER_IMAGE
-    location: mlbrokerbe:${BUILDRUN_HASH}
+artifacts:
+  files:
+    - backend/Dockerfile
+    - frontend/Dockerfile
