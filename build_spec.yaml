@@ -19,7 +19,7 @@ steps:
         echo "OCI_BUILD_RUN_ID is not set"; exit 1;
       fi
       export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
-      echo "BUILDRUN_HASH: " $BUILDRUN_HASH
+      echo "BUILDRUN_HASH: $BUILDRUN_HASH"
 
     onFailure:
       - type: Command
@@ -27,13 +27,20 @@ steps:
           echo "Handling Failure in Frontend Build"
         timeoutInSeconds: 1200
         runAs: root                  
-      
+
   - type: Command
     name: "Build Frontend Container Image"
     timeoutInSeconds: 3600
     command: |
       echo "Starting frontend build..."
-      cd frontend || { echo "Frontend directory not found"; exit 1; }
+      echo "Current directory: $(pwd)"
+      echo "Listing files:"
+      ls -la
+      if [ ! -d "frontend" ]; then
+        echo "Frontend directory not found"; exit 1;
+      fi
+      cd frontend || { echo "Failed to change directory to frontend"; exit 1; }
+      echo "Building Docker image..."
       docker build --pull --rm -t frontend:$BUILDRUN_HASH . || { echo "Frontend build failed"; exit 1; }
       echo "Frontend build succeeded."
       cd ..
@@ -43,7 +50,14 @@ steps:
     timeoutInSeconds: 3600
     command: |
       echo "Starting backend build..."
-      cd backend || { echo "Backend directory not found"; exit 1; }
+      echo "Current directory: $(pwd)"
+      echo "Listing files:"
+      ls -la
+      if [ ! -d "backend" ]; then
+        echo "Backend directory not found"; exit 1;
+      fi
+      cd backend || { echo "Failed to change directory to backend"; exit 1; }
+      echo "Building Docker image..."
       docker build --pull --rm -t backend:$BUILDRUN_HASH . || { echo "Backend build failed"; exit 1; }
       echo "Backend build succeeded."
       cd ..
