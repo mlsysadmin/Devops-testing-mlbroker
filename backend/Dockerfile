@@ -4,6 +4,7 @@ WORKDIR /app
 
 # Install required build tools for bcrypt and other native modules
 RUN apk add --no-cache python3 make g++
+COPY ./src /app/src
 
 COPY package*.json ./
 RUN npm install --omit=dev

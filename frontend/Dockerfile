@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Copy package files first for better cache utilization
 COPY package*.json ./
+COPY ./src /app/src
 
 # Install dependencies (only production dependencies if building for production)
 RUN npm install --omit=dev && npm install -g serve
