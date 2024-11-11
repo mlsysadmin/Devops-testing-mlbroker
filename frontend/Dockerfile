@@ -2,7 +2,7 @@
 FROM node:20 AS frontend-build
 
 # Set the working directory
-WORKDIR /frontend
+WORKDIR /app
 
 # Copy package files first for better cache utilization
 COPY package*.json ./

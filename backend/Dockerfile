@@ -1,6 +1,6 @@
 # START BUILD SERVER
 FROM node:18-alpine AS backend-build
-WORKDIR /backend
+WORKDIR /app
 
 # Install required build tools for bcrypt and other native modules
 RUN apk add --no-cache python3 make g++
