@@ -6,7 +6,6 @@ shell: bash
 env:
   variables:
     key: "value"
-
   exportedVariables:
     - BUILDRUN_HASH
 
@@ -15,24 +14,24 @@ steps:
     name: "Define Tagging"
     timeoutInSeconds: 60
     command: |
-          export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
-          echo "BUILDRUN_HASH: " $BUILDRUN_HASH
-
+      export BUILDRUN_HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
+      echo "BUILDRUN_HASH: " $BUILDRUN_HASH
     onFailure:
       - type: Command
         command: |
           echo "Handling Failure in Frontend Build"
         timeoutInSeconds: 1200
-        runAs: root                 
-      
-  build:
-    commands:
-      - echo "Building Docker images for backend and frontend..."
-      - cd backend
-      - docker build -t nrt.ocir.io/nrcbpbtrtyz0/regs-container:mlbroker .
-      - cd ../frontend
-      - docker build -t nrt.ocir.io/nrcbpbtrtyz0/regs-container:mlbrokerbe .
+        runAs: root
 
+  - type: Command  # Added this to indicate a new command step
+    name: "Build Docker Images"
+    timeoutInSeconds: 1200
+    command: |
+      echo "Building Docker images for backend and frontend..."
+      cd backend
+      docker build -t nrt.ocir.io/nrcbpbtrtyz0/regs-container:mlbroker .
+      cd ../frontend
+      docker build -t nrt.ocir.io/nrcbpbtrtyz0/regs-container:mlbrokerbe .
 
 outputArtifacts:
   - name: frontendImage
